@@ -12,7 +12,7 @@ Generate professional AI videos where every clip flows seamlessly into the next.
 ## 🚀 Quick Start (3 Steps)
 
 ### 1. Fill Out the Form
-Open `seamless_video_prompt_template_COMPACT.txt` and fill out the 8 fields at the top.
+Open `seamless_video_prompt_template.txt` and fill out the 8 fields at the top.
 
 ### 2. Give It to an AI
 Paste the filled template into ChatGPT, Claude, Gemini, or Grok and say:
