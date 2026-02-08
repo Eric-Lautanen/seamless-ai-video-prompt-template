@@ -15,7 +15,7 @@ This template includes:
 
 ═══════════════════════════════════════════════════════════════════════════════
 
-## FILL OUT THIS FORM (DEFAULT EXAMPLES FOR ALL TYPES)
+## FILL OUT THIS FORM
 
 CONTENT TYPE(S): [Narrative, Dialogue, Dance, Landscape, Wildlife, Product, Action, VFX, Aerial]
 VIDEO DURATION: [Total seconds, e.g., 24]
