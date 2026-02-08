@@ -46,7 +46,7 @@ At the top of the template file, you'll find a simple form to fill out:
 ```
 CONTENT TYPE(S): [What kind of video? Action? Dialogue? Nature? Sci-fi?]
 VIDEO DURATION: [How long? e.g., 60 seconds]
-CLIP LENGTH: [Always 6 seconds - this is what AI video generators work best with]
+CLIP LENGTH: [ e.g., 6 seconds ]
 SUBJECT/CONCEPT: [Describe your entire video idea in detail]
 STYLE GUIDELINES: [What should it look like? Photorealistic? Anime? Cinematic?]
 ASPECT RATIO: [16:9 for YouTube, 2.35:1 for movies, etc.]
