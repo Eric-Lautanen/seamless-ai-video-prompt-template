@@ -2,7 +2,7 @@
 
 **The Ultimate Template for Creating Continuous-Shot AI Video Sequences**
 
-Generate professional, single-take-style AI videos by breaking down your concept into perfectly connected 6-second clips. No more jarring transitions—just smooth, cinematic sequences that flow like they were shot in one continuous take.
+Generate professional, single-take-style AI videos by breaking down your concept into perfectly connected  clips. No more jarring transitions—just smooth, cinematic sequences that flow like they were shot in one continuous take.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![AI Video](https://img.shields.io/badge/AI-Video%20Generation-blue)](https://github.com/Eric-Lautanen/seamless-ai-video-prompts)
