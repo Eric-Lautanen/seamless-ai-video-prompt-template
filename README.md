@@ -3,6 +3,7 @@
 **Create perfect single-take AI video sequences with frame-perfect continuity**
 
 Generate professional AI videos where every clip flows seamlessly into the next. No jarring jumps, no position shifts, no lighting changes—just smooth, cinematic sequences with synchronized sound.
+Note:  Regenerate clips for accuracy when needed.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![AI Video](https://img.shields.io/badge/AI-Video%20Generation-blue)](https://github.com/Eric-Lautanen/seamless-ai-video-prompt-template)
@@ -20,7 +21,7 @@ Paste the filled template into ChatGPT, Claude, Gemini, or Grok and say:
 
 ### 3. Generate Your Video
 Use the detailed prompts with the **Last Frame Method**:
-- Generate Clip 1 as text-to-video
+- Generate Clip 1 as text-to-video or text-image then video prompt clip 1 prompt
 - Export last frame from your video editor (NOT screenshot!)
 - Generate Clip 2 as image-to-video using that frame
 - Repeat for all clips
@@ -315,7 +316,7 @@ Simply copy an example, modify it for your needs, and paste into your AI!
 **Why it's critical:** AI video generators have randomness. The Last Frame Method eliminates this by showing each clip exactly where to start.
 
 ### Workflow:
-1. **Generate Clip 1** → Text-to-video with your prompt
+1. **Generate Clip 1** → Text-to-video or text-to-image(seed) with your prompt
 2. **Export last frame** → Use video editor's export function (NOT screenshot)
    - DaVinci Resolve: Right-click timeline → Grab Still → Export PNG
    - Premiere: File → Export → Frame
