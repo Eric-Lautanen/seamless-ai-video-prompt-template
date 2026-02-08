@@ -1,4 +1,4 @@
-# SEAMLESS AI VIDEO PROMPT GENERATOR
+# SEAMLESS AI VIDEO PROMPT GENERATOR – FLUID CAMERA + SOUND
 
 ═══════════════════════════════════════════════════════════════════════════════
 
@@ -15,7 +15,7 @@ This template includes:
 
 ═══════════════════════════════════════════════════════════════════════════════
 
-## FILL OUT THIS FORM
+## FILL OUT THIS FORM (DEFAULT EXAMPLES FOR ALL TYPES)
 
 CONTENT TYPE(S): [Narrative, Dialogue, Dance, Landscape, Wildlife, Product, Action, VFX, Aerial]
 VIDEO DURATION: [Total seconds, e.g., 24]
@@ -24,12 +24,12 @@ SUBJECT/CONCEPT: [Full video description - scene, subject, action, style. Exampl
 STYLE GUIDELINES: [Photorealistic, Anime, Cyberpunk, Fantasy, Cinematic, etc. Example: "Photorealistic wildlife, soft volumetric lighting, shallow depth of field, ethereal atmosphere"]
 ASPECT RATIO: [16:9, 9:16, 2.35:1, etc.]
 SPECIAL INSTRUCTIONS: [Key moments, transitions, effects. Example: "Emphasize fox movements, smooth camera arcs following action, mist density consistent, highlight sunlight rays"]
-SOUND: [Music, Ambient, Foley. Example: "Music: None Ambient: Forest sounds soft, wind through trees Foley: Fox footsteps on forest floor, leaves rustling Sound Transitions: Maintain continuity, fade-in/out for smooth effect Notes: Sync foley to fox movement"]
+SOUND: [Music, Ambient, Foley. Example: "Music: None\nAmbient: Forest sounds soft, wind through trees\nFoley: Fox footsteps on forest floor, leaves rustling\nSound Transitions: Maintain continuity, fade-in/out for smooth effect\nNotes: Sync foley to fox movement"]
 NEGATIVE PROMPTS: [Optional: flicker, blur, text, morphing, extra limbs, low quality, oversaturation, unnatural physics, etc.]
 
 ═══════════════════════════════════════════════════════════════════════════════
 
-## KEY RULES
+## KEY RULES (Smooth Camera + Sound)
 
 1. Calculate clips: VIDEO DURATION ÷ CLIP LENGTH = Number of clips
 2. Design ONE continuous camera move for the sequence, then segment
