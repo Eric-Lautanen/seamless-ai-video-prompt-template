@@ -47,6 +47,7 @@ NEGATIVE PROMPTS: [Optional: flicker, blur, text, morphing, extra limbs, low qua
    * Previous Clip Movement Vector: Track speed & rotation for continuity
 7. Motion blur scale: 0–5% minimal, 5–15% subtle, 15–25% moderate, 25–40% strong, 40%+ extreme
 8. Fill all fields per clip (camera, subject, background, lighting, focus, motion blur, style, tech, sound)
+9. Each clip prompt in it's own textarea/canvas/artifact/code block, for easy copying!!!
 
 ═══════════════════════════════════════════════════════════════════════════════
 
@@ -162,3 +163,4 @@ Between Clip N and Clip N+1, verify:
 ☐ Motion blur direction/intensity matches
 ☐ Sound matches design (music, ambient, foley, transitions)
 ☐ END FRAME = START FRAME of next clip
+
