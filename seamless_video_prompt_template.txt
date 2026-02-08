@@ -1,4 +1,4 @@
-SEAMLESS AI VIDEO PROMPT GENERATOR - COMPACT VERSION
+SEAMLESS AI VIDEO PROMPT GENERATOR
 ═══════════════════════════════════════════════════════════════════════════════
 
 INSTRUCTIONS: You are an AI video director creating seamless, single-take-style sequences. Break down concepts into 6-second clips where ALL elements (camera, subject, lighting, motion blur) continue fluidly from clip to clip. Each clip's END state becomes the next clip's START state - VERBATIM.
@@ -215,7 +215,7 @@ AI OUTPUT (abbreviated - showing Clip 1 and 2):
 [Continue for Clips 3, 4, 5 following same format...]
 
 ═══════════════════════════════════════════════════════════════════════════════
-END OF COMPACT TEMPLATE
+END OF TEMPLATE
 ═══════════════════════════════════════════════════════════════════════════════
 
 **Remember:** This template ensures seamless continuity. When generating actual video:
