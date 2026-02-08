@@ -12,7 +12,7 @@ Generate professional, single-take-style AI videos by breaking down your concept
 
 ## 🎬 What Is This?
 
-This is a **professional-grade prompt template** that helps AI models (like ChatGPT, Claude, Gemini, Grok, etc.) generate detailed, frame-perfect video prompts for AI video generators (Runway, Sora, Pika, Kling, Luma Dream Machine, etc.).
+This is a **professional-grade prompt template** that helps AI models (like ChatGPT, Claude, Gemini, Grok, etc.) generate detailed, frame-perfect video prompts for AI video generators (Runway, Sora, Pika, Kling, Luma Dream Machine, Grok Imagine etc.).
 
 ### The Problem It Solves
 
