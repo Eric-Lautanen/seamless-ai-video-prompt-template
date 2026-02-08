@@ -32,6 +32,11 @@ KEY RULES:
 OUTPUT FORMAT (USE FOR EACH CLIP):
 ═══════════════════════════════════════════════════════════════════════════════
 
+**IMPORTANT:** If your platform supports it, output each clip in a separate container/artifact/canvas for easy copying:
+- Claude: Use separate Artifacts
+- ChatGPT: Use Canvas or code blocks
+- Other platforms: Use clear separators between clips
+
 **Clip X of Y:**
 
 **START FRAME (Clip 2+ only):** [EXACT copy of previous clip's END FRAME - verbatim, no shortcuts]
