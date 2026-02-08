@@ -41,7 +41,6 @@ NEGATIVE PROMPTS: [Optional: flicker, blur, text, morphing, extra limbs, low qua
 4. Smooth transitions: Blend all camera movement changes over 1–2 sec using easing curves
 5. Use exact measurements: No approximations (~15% → 15%, ~3 ft → 3 ft)
 6. Camera Motion Smoothness:
-
    * Transition Smoothing: Specify easing per movement change (linear, ease-in/out, sinusoidal)
    * Max Acceleration: ≤ 2 ft/sec² (linear)
    * Max Rotational Acceleration: ≤ 5°/sec²
@@ -101,7 +100,7 @@ Motion Blur:
 
 Sound:
 
-* Music: [None / Track / Volume %]
+* Music: [None / Track / Volume %](apply to all clips)
 * Ambient: [None / Specify / Volume %]
 * Foley: [Yes / Specify, e.g., footsteps, dress swish, object interactions]
 * Sound Transitions: [Crossfade, fade-in/out, continuity with previous clip]
