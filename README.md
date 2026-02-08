@@ -1,5 +1,9 @@
 # Seamless AI Video Prompt Generator
+
+
 **THE EXAMPLES SUCK.  I'LL FIX EM UP EVENTUALLY**
+
+
 **Create perfect single-take AI video sequences with frame-perfect continuity**
 
 Generate professional AI videos where every clip flows seamlessly into the next. No jarring jumps, no position shifts, no lighting changes—just smooth, cinematic sequences.
