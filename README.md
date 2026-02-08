@@ -62,7 +62,7 @@ Total length in seconds. Will be divided into 6-second clips.
 ---
 
 ### 3. **CLIP LENGTH**
-Fixed at **6 seconds** (optimal for most AI video generators).
+Adjustable **6 seconds** (optimal for most AI video generators).
 
 ---
 
@@ -274,6 +274,7 @@ The AI calculates this automatically based on movement speeds.
 - ✅ Kling AI
 - ✅ Haiper AI
 - ✅ Stability AI Video
+- ✅ Grok Imagine
 
 **Text-Only (Template still helps):**
 - ✅ Sora/Sora 2
