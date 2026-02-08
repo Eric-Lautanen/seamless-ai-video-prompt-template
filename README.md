@@ -1,831 +1,357 @@
-# Seamless AI Video Prompt Generator Template
+# Seamless AI Video Prompt Generator
 
-**The Ultimate Template for Creating Continuous-Shot AI Video Sequences**
+**Create perfect single-take AI video sequences with frame-perfect continuity**
 
-Generate professional, single-take-style AI videos by breaking down your concept into perfectly connected clips. No more jarring transitions—just smooth, cinematic sequences that flow like they were shot in one continuous take.
+Generate professional AI videos where every clip flows seamlessly into the next. No jarring jumps, no position shifts, no lighting changes—just smooth, cinematic sequences.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![AI Video](https://img.shields.io/badge/AI-Video%20Generation-blue)](https://github.com/Eric-Lautanen/seamless-ai-video-prompts)
-[![Cinematography](https://img.shields.io/badge/Cinematography-Professional-green)](https://github.com/Eric-Lautanen/seamless-ai-video-prompts)
 
 ---
 
-## 🎬 What Is This?
+## 🚀 Quick Start (3 Steps)
 
-This is a **professional-grade prompt template** that helps AI models (like ChatGPT, Claude, Gemini, Grok, etc.) generate detailed, frame-perfect video prompts for AI video generators (Runway, Sora, Pika, Kling, Luma Dream Machine, Grok Imagine etc.).
+### 1. Fill Out the Form
+Open `seamless_video_prompt_template_COMPACT.txt` and fill out the 8 fields at the top.
 
-### The Problem It Solves
-
-When you create AI videos by generating multiple clips and stitching them together, you usually get:
-- ❌ Jarring camera jumps between clips
-- ❌ Subjects teleporting or changing size
-- ❌ Lighting that suddenly shifts
-- ❌ Motion blur that doesn't match
-- ❌ Disconnected storytelling
-
-### The Solution
-
-This template ensures **every single element** continues seamlessly from one clip to the next:
-- ✅ Camera position, movement, and speed match perfectly
-- ✅ Subject framing stays consistent
-- ✅ Lighting and exposure flow naturally
-- ✅ Motion blur direction and intensity align
-- ✅ VFX elements progress logically
-- ✅ The story flows like a single continuous shot
-
-**PLUS: The Last Frame Method** - Extract the final frame of each clip and use it as the starting image for the next clip, guaranteeing pixel-perfect continuity!
-
----
-
-## 🚀 Quick Start (ELI5 - Explain Like I'm 5)
-
-### Step 1: Fill Out the Input Form
-
-At the top of the template file, you'll find a simple form to fill out:
-
-```
-CONTENT TYPE(S): [Narrative, Dialogue, Dance, Landscape, Wildlife, Product, Action, VFX, Aerial]
-VIDEO DURATION: [Total seconds]
-CLIP LENGTH: 6 seconds
-SUBJECT/CONCEPT: [Full video description - scene, subject, action, style]
-STYLE GUIDELINES: [Photorealistic, Anime, Cyberpunk, etc.]
-ASPECT RATIO: [16:9, 9:16, 2.35:1, etc.]
-SPECIAL INSTRUCTIONS: [Key moments, transitions, effects]
-NEGATIVE PROMPTS: [Optional: flicker, blur, text, morphing, extra limbs, etc.]
-```
-
-**Example:**
-```
-CONTENT TYPE(S): VFX, Landscape
-VIDEO DURATION: 30
-SUBJECT/CONCEPT: A dragon waking up in a cave, breathing fire
-STYLE GUIDELINES: Photorealistic, Game of Thrones style
-ASPECT RATIO: 16:9
-SPECIAL INSTRUCTIONS: Show the dragon's eye opening first, then pull back to reveal its full size
-NEGATIVE PROMPTS: flicker, blur, text, morphing, low quality
-```
-
-### Step 2: Give It to an AI
-
-Copy the filled-out template and paste it into any AI chatbot (ChatGPT, Claude, Gemini, Grok, etc.) with this simple instruction:
-
+### 2. Give It to an AI
+Paste the filled template into ChatGPT, Claude, Gemini, or Grok and say:
 > "Please use this template to generate seamless video prompts for my concept."
 
-### Step 3: Get Your Prompts
+### 3. Generate Your Video
+Use the detailed prompts with the **Last Frame Method**:
+- Generate Clip 1 as text-to-video
+- Export last frame from your video editor (NOT screenshot!)
+- Generate Clip 2 as image-to-video using that frame
+- Repeat for all clips
+- Stitch together
 
-The AI will output **detailed prompts for each 6-second clip** that flow perfectly into each other. Each prompt includes:
-- Exact camera movements with speeds (ft/sec, degrees/sec)
-- Subject positioning with percentages
-- Lighting changes
-- Motion blur details (with intensity percentages)
-- VFX progression (if applicable)
-
-### Step 4: Generate Your Video
-
-**For Best Results, Use the Last Frame Method:**
-
-1. **Generate Clip 1** - Paste the first prompt into your AI video generator (Runway, Sora, Pika, etc.) as text-to-video
-2. **Export the last frame** - Download the video, open in your video editor, and export the final frame as an image file (PNG or JPG) at the same resolution/aspect ratio as the original clip
-3. **Generate Clip 2** - Upload that exported last frame as your starting image, then paste Clip 2's prompt (image-to-video)
-4. **Repeat** - Export the last frame of Clip 2, use it to start Clip 3, and so on
-5. **Stitch together** - Combine all clips in your video editor
-
-**Why this works:** Using the last frame as the starting image ensures the AI video generator maintains exact continuity in:
-- Subject position and pose
-- Camera angle and framing  
-- Lighting and colors
-- Background elements
-- Overall composition
-
-**Alternative (less seamless):** You can generate all clips independently using just the text prompts, but transitions may have slight jumps even though the prompts are designed to match.
+**Result:** Professional seamless sequence that looks like one continuous shot.
 
 ---
 
-## 🎯 The Last Frame Method (Pro Technique)
+## 📝 The 8 Input Fields
 
-### Why Use It?
+### 1. **CONTENT TYPE(S)**
+Select one or more types that describe your video:
 
-While this template creates prompts designed for perfect continuity, AI video generators still have randomness in their output. The **last frame method** eliminates this variability by giving the AI the exact starting point for each new clip.
+| Type | Use For | Examples |
+|------|---------|----------|
+| **Narrative** | Character-driven stories, emotional arcs | Hero's journey, character reveal, emotional moment |
+| **Dialogue** | Conversations, interviews, talking scenes | Two people talking, interview setup, debate |
+| **Dance** | Choreographed movement, performances | Solo dance, group routine, synchronized movement |
+| **Landscape** | Nature, cityscapes, environments | Mountain flyover, city tour, forest walkthrough |
+| **Wildlife** | Animals, nature behavior | Eagle hunting, lion stalking, underwater creatures |
+| **Product** | Product reveals, commercial shots | Watch rotation, car reveal, tech unboxing |
+| **Action** | High-energy movement, sports, fighting | Parkour chase, martial arts, car chase |
+| **VFX** | Heavy effects, magic, sci-fi | Spell casting, portal opening, energy effects |
+| **Aerial** | Drone shots, bird's eye views | Flyover, orbital reveal, ascending shot |
 
-**Think of it like this:** Instead of describing where Clip 2 should start (and hoping the AI interprets it correctly), you're showing it exactly where to start by giving it the last frame of Clip 1.
-
-### Step-by-Step Workflow
-
-#### Method 1: Image-to-Video Workflow (Recommended)
-
-1. **Generate Clip 1 from text**
-   - Use the Clip 1 prompt as pure text-to-video
-   - Let the AI create the initial 6-second clip
-   
-2. **Export final frame of Clip 1**
-   - Download the generated video to your computer
-   - Open in your video editor (DaVinci Resolve, Premiere, Final Cut, CapCut, etc.)
-   - Navigate to the very last frame
-   - Export/save that frame as an image file (PNG preferred for quality, JPG acceptable)
-   - **Critical:** Export at the same resolution and aspect ratio as the original video
-   
-3. **Generate Clip 2 from image**
-   - Upload the exported last frame as your starting image
-   - Paste Clip 2's prompt as the motion/action description
-   - Generate (this creates image-to-video)
-   
-4. **Repeat for all remaining clips**
-   - Export last frame of Clip 2 → Start of Clip 3
-   - Export last frame of Clip 3 → Start of Clip 4
-   - Continue through entire sequence
-
-**Visual Workflow:**
-```
-CLIP 1 (Text-to-Video)
-    ↓
-[Generate] → Video A (6 seconds)
-    ↓
-[EXPORT from editor] → Last frame of Video A (PNG image, native resolution)
-    ↓
-CLIP 2 (Image-to-Video)
-[Exported frame as starting image] + [Clip 2 prompt]
-    ↓
-[Generate] → Video B (6 seconds)
-    ↓
-[EXPORT from editor] → Last frame of Video B (PNG image, native resolution)
-    ↓
-CLIP 3 (Image-to-Video)
-[Exported frame as starting image] + [Clip 3 prompt]
-    ↓
-[Continue pattern...]
-```
-
-This creates a **chain of continuity** where each clip is literally built from where the last one ended.
-
-### Platform-Specific Tips
-
-**Runway Gen-3 Alpha / Gen-2:**
-- Use "Image + Text to Video" mode (or "Image" tab)
-- Upload last frame, paste prompt in text field
-- Set motion strength based on how much change you want (lower = more faithful to image)
-- Duration: Set to 5 or 10 seconds depending on subscription
-
-**Pika Labs:**
-- Use "Animate" feature with uploaded image
-- Click "📷 Image" → Upload last frame
-- Add prompt for motion direction in text field
-- Adjust motion parameter (1-4) based on clip needs
-- Camera controls help match template's camera movements
-
-**Luma Dream Machine:**
-- Upload keyframe as starting image
-- Use "Keyframe" option in generation
-- Paste motion prompt describing the action
-- 5-second generations work well
-
-**Kling AI:**
-- Select "Image-to-Video" mode
-- Upload last frame
-- Use generated prompt for motion guide
-- Professional mode gives better control
-
-**Sora (when available publicly):**
-- Image conditioning input option
-- Text prompt for continuation
-- Temporal consistency settings help maintain flow
-
-**Stability AI Video:**
-- Image-to-video pipeline
-- Upload starting frame
-- Text guidance for motion
-
-### Frame Export Guide (Proper Method)
-
-**IMPORTANT:** Do NOT use screenshots! You must export the frame directly from your video editor to maintain exact resolution, aspect ratio, and quality.
-
-**From Video Editors (Recommended):**
-
-- **DaVinci Resolve:** 
-  - Position playhead on last frame → Right-click timeline → Grab Still → Export as PNG
-  - Or: File → Export → Individual Frames (select last frame only)
-  
-- **Adobe Premiere Pro:** 
-  - Position playhead at last frame → File → Export → Frame (or Shift + E)
-  - Choose PNG or JPEG, ensure resolution matches source
-  
-- **Final Cut Pro:** 
-  - Position playhead on last frame → File → Share → Save Current Frame
-  - Select format (PNG recommended), verify resolution
-  
-- **CapCut (Desktop):** 
-  - Pause at last frame → Right-click on timeline → Export Frame
-  - Or: Playhead on last frame → Export → Custom → Single Frame
-  
-- **CapCut (Mobile):**
-  - Pause at exact last frame → Tap Export → Photo (exports current frame)
-  
-- **iMovie:**
-  - Pause on last frame → File → Share → Image
-  - Choose size: Large (full resolution)
-  
-- **Filmora:**
-  - Pause on last frame → Snapshot button (camera icon)
-  - Or: Right-click frame → Export Frame
-  
-- **HitFilm Express:**
-  - Position playhead → Viewer panel → Camera icon → Export Frame
-
-**From Online Video Editors (if you don't have desktop software):**
-
-- **Kapwing:** 
-  - Upload video → Timeline → Navigate to last frame → Tools → Export Frame
-  
-- **Clideo:**
-  - Use "Video to Image Converter" → Select last frame timestamp → Download
-  
-- **VEED.io:**
-  - Upload → Pause at last frame → Subtitles/Elements menu → Export Frame
-
-**Command Line (Advanced Users):**
-
-- **FFmpeg (most precise method):**
-  ```bash
-  # Export last frame from video
-  ffmpeg -sseof -1 -i input.mp4 -update 1 -q:v 1 last_frame.png
-  ```
-  This ensures exact frame extraction at native resolution
-
-**Key Requirements for Proper Export:**
-
-✅ **DO:**
-- Export at native video resolution (e.g., if video is 1920×1080, export frame at 1920×1080)
-- Maintain exact aspect ratio (16:9 video = 16:9 image)
-- Use PNG format when possible (lossless quality)
-- Save with descriptive filename (e.g., `clip_1_last_frame.png`)
-- Verify the exported image dimensions match the video dimensions
-
-❌ **DON'T:**
-- Use screenshots (they may capture UI elements, wrong resolution, or compressed quality)
-- Upscale or downscale the frame
-- Change aspect ratio
-- Use heavily compressed JPG (if using JPG, use maximum quality setting)
-- Crop or add borders
-
-**Why This Matters:**
-
-- AI video generators are very sensitive to input image dimensions
-- Mismatched resolution = scaling artifacts = poor continuity
-- Wrong aspect ratio = distortion or black bars = breaks immersion
-- Screenshots may include player UI, wrong color space, or compression
-- Direct export maintains pixel-perfect quality and metadata
+**Combine types:** "Narrative + VFX" for superhero scene, "Wildlife + Aerial" for nature doc, "Product + Action" for dynamic commercial
 
 ---
 
-## ✨ Key Features
+### 2. **VIDEO DURATION**
+Total length in seconds. Will be divided into 6-second clips.
+- **12-18 sec** (2-3 clips): Quick reveals, simple shots
+- **24-36 sec** (4-6 clips): Single scene, action sequence
+- **60+ sec** (10+ clips): Complete narrative, complex sequence
 
-### 🎥 **Streamlined & Efficient**
-
-The compact template is **90% shorter** than comprehensive versions while maintaining full functionality:
-- Simple 8-field input form
-- 7 key rules (condensed from dozens)
-- Complete output format with all essential tracking fields
-- Quick reference sections instead of lengthy explanations
-- **~1,400 words** instead of 15,000+
-
-### 📐 **Precision Tracking System**
-
-Every clip tracks **all critical elements**:
-
-- **Camera Movement** - Position, velocity, direction (ft/sec, degrees/sec)
-- **Subject Framing** - Exact percentages and positions
-- **Background/Environment** - Element positions, changes
-- **Lighting/Exposure** - Conditions and end states
-- **Focus & Depth of Field** - Focus plane, aperture equivalents
-- **Motion Blur** - Direction and intensity (0-100% scale)
-- **VFX Elements** - Quantified progression (particle counts, opacity, scale)
-- **Narrative Arc** - Story beats
-
-### 🔄 **Frame-Perfect Continuity**
-
-The template enforces **verbatim START/END frame matching**:
-- Each clip's END FRAME becomes the next clip's START FRAME (exact copy)
-- No shortcuts or approximations allowed
-- Camera movements blend smoothly with overlap periods
-- Example: "Continue dolly 2 sec, add pan while maintaining dolly 2 sec, end dolly as pan continues final 2 sec"
-
-### 📊 **Negative Prompts Support**
-
-Built-in guidance for quality improvement:
-- Quick copy-paste presets for common scenarios
-- Platform-specific application instructions
-- Universal starter: "flicker, blur, morphing, text, watermark, low quality"
-- Content-specific presets (humans, products, action, VFX, etc.)
-
-### ✅ **Quality Control**
-
-Built-in continuity checklist ensures seamless transitions:
-- Camera position matches
-- Movement transitions smoothly
-- Subject framing tracked
-- Background elements consistent
-- Lighting state maintained
-- Motion blur aligned
+**Tip:** Start small (24-30 sec) to test the workflow before attempting longer sequences.
 
 ---
 
-## 📖 What's Included
-
-### Main Files
-
-- **`seamless_video_prompt_template_COMPACT.txt`** - The streamlined professional template
-- **`README.md`** - This comprehensive guide
-
-### Template Contains
-
-1. **Input Format** - Simple 8-field form to fill out
-2. **Key Rules** - 7 essential rules for continuity
-3. **Output Format** - Complete structure for each clip with all tracking fields
-4. **Camera Movement Quick Reference** - Concise table of movements and speeds
-5. **Negative Prompts Guide** - Quick presets for quality control
-6. **Pro Workflow** - Last frame method condensed
-7. **Continuity Checklist** - Verify seamless transitions
-8. **One Complete Example** - Knight & Dragon fantasy sequence
+### 3. **CLIP LENGTH**
+Fixed at **6 seconds** (optimal for most AI video generators).
 
 ---
 
-## 🎓 Example Use Cases
+### 4. **SUBJECT/CONCEPT**
+Describe your ENTIRE video from start to finish. Include:
+- **Who/what** is in the scene
+- **Where** it takes place
+- **What happens** (beginning → middle → end)
+- **How it looks** (visual style, mood, lighting)
 
-### Example 1: Sci-Fi Spaceship Sequence
-**Input:** "Mile-long starship approaching Alpha Centauri, gravity effects, holographic displays"  
-**Output:** 10 clips (60 seconds) tracking from empty space → ship emergence → parallel tracking → deceleration → binary star reveal  
-**Method:** Text-to-video for Clip 1, then export last frame from video editor and use for image-to-video Clips 2-10  
-**Result:** Continuous shot that looks like a single take from Interstellar
-
-### Example 2: Product Commercial
-**Input:** "Luxury watch reveal, extreme macro, rotating around case"  
-**Output:** 2 clips (12 seconds) with precise macro focus, orbital camera movement, texture details  
-**Method:** Export last frame at exact native resolution to ensure rotation continuity  
-**Result:** High-end commercial aesthetic with seamless 360° rotation
-
-### Example 3: Nature Documentary
-**Input:** "Eagle diving to catch prey, mountain valley background"  
-**Output:** 4 clips (24 seconds) with speed ramping, behavioral tracking, atmospheric perspective  
-**Method:** Export last frames from editor to maintain eagle position during dive acceleration  
-**Result:** BBC Planet Earth-style hunting sequence
-
-### Example 4: Music Video Performance
-**Input:** "Dancer performing contemporary piece with formation changes"  
-**Output:** 5 clips (30 seconds) tracking choreography timing, formations, levels, camera orbiting  
-**Method:** Proper frame export preserves dancer positions during camera movement  
-**Result:** Professional music video with dynamic camera work matching choreography
-
-### Example 5: Action Sequence
-**Input:** "Parkour athlete running across rooftops, jumping between buildings"  
-**Output:** 6 clips (36 seconds) with handheld camera following, speed ramping on jumps  
-**Method:** Export frames from editor at native resolution - essential for maintaining athlete position and momentum  
-**Result:** Intense action sequence with no position jumps between clips
+**Bad example:** "A dragon"
+**Good example:** "Ancient red dragon sleeping in treasure-filled cave. Camera starts on glowing eye opening, pulls back revealing massive scaled body coiled around gold, dragon raises head and roars sending flames toward camera, ends with dragon spreading wings filling frame."
 
 ---
 
-## 💡 Tips for Best Results
+### 5. **STYLE GUIDELINES**
+Visual aesthetic and technical specs:
 
-### 1. **Be Specific in Your SUBJECT/CONCEPT**
+**Common Styles:**
+- **Photorealistic:** "Shot on ARRI Alexa, cinematic, film grain, natural lighting"
+- **Anime:** "Studio Ghibli style, hand-painted, soft colors, whimsical"
+- **Cyberpunk:** "Neon-lit, rain-soaked streets, purple and cyan tones, Blade Runner aesthetic"
+- **Documentary:** "BBC Planet Earth, natural lighting, 4K clarity, observational"
+- **Commercial:** "Apple product video style, minimalist, clean lighting, slow motion"
+- **Thriller:** "David Fincher style, desaturated, sharp contrast, cold tones"
 
-❌ Bad: "A car driving fast"  
-✅ Good: "A red Ferrari 488 GTB speeding through a neon-lit Tokyo street at night, rain glistening on the asphalt, camera tracking alongside at 60 mph"
-
-### 2. **Choose the Right Content Type(s)**
-
-You can select **multiple types** for complex scenes:
-- Action + VFX for superhero fights
-- Dialogue + Narrative for dramatic conversations
-- Wildlife + Aerial for nature documentaries
-- Dance + VFX for magical performance sequences
-
-### 3. **Use Appropriate Video Duration**
-
-- **6-18 seconds** - Simple shots, product reveals, quick transitions
-- **24-36 seconds** - Action sequences, short narratives, single scene
-- **60+ seconds** - Complex cinematics, full story arcs, multi-scene sequences
-- **120+ seconds** - Short films, complete narratives (requires patience with last frame method!)
-
-### 4. **Match Aspect Ratio to Platform**
-
-- **16:9** - YouTube, TV, standard horizontal video
-- **9:16** - TikTok, Instagram Stories, Reels, vertical video
-- **2.35:1** - Cinematic widescreen, movie-style, dramatic
-- **1:1** - Instagram feed, square format, social media
-- **4:3** - Classic TV, vintage aesthetic
-- **21:9** - Ultra-wide cinematic
-
-### 5. **Plan for the Last Frame Method**
-
-- Know which platform you'll use BEFORE generating (different platforms have different image-to-video capabilities)
-- Have a video editor ready (even free ones like CapCut, DaVinci Resolve free, or online editors work)
-- **Never use screenshots** - always export frames directly from your video editor
-- Export frames at exact native resolution and aspect ratio of your videos
-- Generate during off-peak hours if you're doing many sequential clips
-- Save all exported last frames in organized folders (clip_1_last.png, clip_2_last.png, etc.)
-- Keep original videos even after export in case you need to re-export at different settings
-
-### 6. **Use Negative Prompts Wisely**
-
-Start with the template's universal preset and customize:
-- **Universal starter:** "flicker, blur, morphing, text, watermark, low quality"
-- **For humans:** Add "extra fingers, deformed hands, warped face, bad anatomy"
-- **For products:** Add "fingerprints, dust, scratches, reflections"
-- **For action:** Add "jitter, stutter, unnatural physics, shaky camera"
-- Use the SAME negative prompts for ALL clips in your sequence for consistency
-- Apply at generation stage (in negative prompt field or at end of main prompt)
-
-### 7. **Let the AI Work**
-
-The template is efficient—you don't need to understand every technical detail. Just fill out the input form and let the AI generate the detailed prompts for you!
+**Mix and match:** "Photorealistic + cinematic golden hour + IMAX quality + epic scale"
 
 ---
 
-## 🛠️ Technical Details
+### 6. **ASPECT RATIO**
 
-### How It Works
-
-1. **AI reads your filled-out input** at the top of the template
-2. **Calculates clip count** (Duration ÷ 6 seconds)
-3. **Designs master camera move** for the entire sequence
-4. **Breaks it into segments** matching your clip count
-5. **Generates detailed prompts** for each clip with all tracking fields
-6. **Ensures continuity** by matching END frames to START frames verbatim
-7. **Outputs production-ready prompts** you can use immediately
-
-### The Last Frame Workflow in Detail
-
-```
-STEP-BY-STEP BREAKDOWN:
-
-┌─────────────────────────────────────┐
-│  CLIP 1 (Text-to-Video)             │
-│  Input: Prompt only                 │
-│  Output: 6-second video             │
-└─────────────┬───────────────────────┘
-              │
-              ▼
-    [EXPORT LAST FRAME FROM EDITOR]
-    (NOT screenshot - use proper export)
-              │
-              ▼
-┌─────────────────────────────────────┐
-│  CLIP 2 (Image-to-Video)            │
-│  Input: Exported frame + Prompt     │
-│  Output: 6-second video             │
-└─────────────┬───────────────────────┘
-              │
-              ▼
-    [EXPORT LAST FRAME FROM EDITOR]
-              │
-              ▼
-┌─────────────────────────────────────┐
-│  CLIP 3 (Image-to-Video)            │
-│  Input: Exported frame + Prompt     │
-│  Output: 6-second video             │
-└─────────────┬───────────────────────┘
-              │
-              ▼
-         [Continue for all clips...]
-              │
-              ▼
-┌─────────────────────────────────────┐
-│  FINAL EDIT                         │
-│  Stitch all clips in sequence       │
-│  Output: Seamless full video        │
-└─────────────────────────────────────┘
-```
-
-This creates a **chain of continuity** where each clip is literally built from where the last one ended.
-
-### Why 6 Second Clips?
-
-- Most AI video generators perform best with 6-second clips (some do 5-10)
-- 6 seconds is the sweet spot for quality and coherence
-- Longer clips (10+ sec) tend to drift or lose coherence
-- Shorter clips (2-3 sec) don't allow enough action
-- 6 seconds = enough time for meaningful camera movement and action while maintaining consistency
-
-### Supported AI Models
-
-This template works with any AI that can follow detailed instructions:
-- ✅ ChatGPT (GPT-4, GPT-4o, o1)
-- ✅ Claude (Sonnet, Opus)
-- ✅ Google Gemini (Pro, Ultra)
-- ✅ Grok
-- ✅ Perplexity
-- ✅ Any other instruction-following LLM
-
-### Compatible Video Generators
-
-Use the generated prompts with:
-
-**Image-to-Video Capable (Last Frame Method Compatible):**
-- ✅ Runway Gen-3 Alpha / Gen-2 / Gen-4
-- ✅ Pika Labs 1.0+
-- ✅ Luma Dream Machine
-- ✅ Kling AI 1.5/1.6/2.0+
-- ✅ Stability AI Video
-- ✅ Genmo
-- ✅ Haiper AI
-- ✅ Morph Studio
-- ✅ PixVerse
-
-**Text-to-Video Only (Template Prompts Still Help):**
-- ✅ OpenAI Sora / Sora 2 (available to ChatGPT Plus/Pro users in select regions; limited image-to-video support)
-- ✅ Google Veo 2 / Veo 3
-- ✅ Meta Make-A-Video
-- ✅ Any emerging text-to-video models
+| Ratio | Use For |
+|-------|---------|
+| **16:9** | YouTube, TV, standard horizontal |
+| **9:16** | TikTok, Instagram Stories, Reels, vertical |
+| **2.35:1** | Cinematic widescreen, movie-style |
+| **1:1** | Instagram feed, square format |
+| **21:9** | Ultra-wide cinematic |
 
 ---
 
-## 📚 Quick Reference
+### 7. **SPECIAL INSTRUCTIONS**
+Key moments, transitions, or specific requirements:
+- "Start with close-up on eyes, then pull back to reveal full character"
+- "Launch sequence should feel powerful with camera shake"
+- "Transition from day to night in the middle"
+- "End with dramatic reveal of the spaceship"
+- "Include slow-motion during the jump"
 
-### Camera Movements
+---
 
-- **Dolly** - Moving toward/away from subject (push in/pull out)
-- **Truck** - Moving left/right (lateral movement)
-- **Crane/Pedestal** - Moving up/down (vertical movement)
-- **Pan** - Rotating horizontally (swivel left/right)
-- **Tilt** - Rotating vertically (look up/down)
-- **Arc/Orbital** - Circling around subject
-- **Zoom** - Lens focal length change (optical zoom)
-- **Roll/Dutch** - Camera rotation on axis (horizon tilt)
+### 8. **NEGATIVE PROMPTS** (Optional)
+Tell the AI what to avoid. Use 5-8 terms max.
 
-### Speed Scale
-
-- **Glacial:** 0.1-0.3 ft/sec or 1-3°/sec
-- **Slow:** 0.5-1 ft/sec or 5-10°/sec
-- **Moderate:** 1.5-3 ft/sec or 15-30°/sec
-- **Fast:** 4-6 ft/sec or 40-60°/sec
-- **Rapid:** 7+ ft/sec or 70+°/sec
-
-### Motion Blur Scale
-
-- **0-5%** = Minimal/imperceptible
-- **5-15%** = Subtle
-- **15-25%** = Moderate
-- **25-40%** = Strong
-- **40%+** = Extreme
-
-### Negative Prompt Presets
-
-**Universal Starter:**
+**Universal Starter (use for everything):**
 ```
 flicker, blur, morphing, text, watermark, low quality
 ```
 
-**Character/Human Focus:**
+**Add based on content:**
+- **People/Characters:** `extra fingers, deformed hands, warped face, bad anatomy`
+- **Products:** `fingerprints, dust, scratches, reflections`
+- **Action:** `jitter, stutter, unnatural physics, shaky camera`
+- **VFX:** `unconvincing compositing, temporal inconsistency, flat lighting`
+
+**How to apply:**
+- **Runway, Pika, Kling:** Paste in "Negative Prompt" field
+- **Sora, Luma, Veo:** Add to end: "Avoid: flicker, blur, morphing, text, watermark"
+- **Use SAME negatives for ALL clips** in your sequence
+
+---
+
+## 📋 Complete Examples
+
+### Example 1: Product Commercial
 ```
-flicker, blur, text, extra fingers, deformed hands, warped face, morphing, bad anatomy
+CONTENT TYPE(S): Product
+VIDEO DURATION: 12
+SUBJECT/CONCEPT: Luxury gold watch on black velvet surface. Camera starts extreme close-up on watch face showing second hand ticking, slowly orbits around watch revealing side profile and bracelet, continues rotating 180° to show clasp and back of case, ends with full top-down view of complete watch centered.
+STYLE GUIDELINES: Commercial luxury aesthetic, studio lighting, high-key, pristine clarity, shot on high-end cinema camera, metallic reflections, f/2.8 shallow depth of field
+ASPECT RATIO: 16:9
+SPECIAL INSTRUCTIONS: Emphasize craftsmanship details, watch should remain perfectly centered throughout rotation, lighting should create elegant reflections on gold surface
+NEGATIVE PROMPTS: blur, fingerprints, dust, scratches, text, watermark, low quality
 ```
 
-**Product Showcase:**
+### Example 2: Nature Documentary
 ```
-blur, text, watermark, fingerprints, dust, scratches, reflections, low quality
+CONTENT TYPE(S): Wildlife, Aerial
+VIDEO DURATION: 24
+SUBJECT/CONCEPT: Golden eagle hunting over mountain valley. Starts with eagle soaring high in clear blue sky, eagle spots prey and banks into steep dive accelerating rapidly, camera follows descent staying behind eagle, eagle extends talons as ground approaches, pulls up at last second with captured rabbit in talons, camera arcs upward following eagle's ascent.
+STYLE GUIDELINES: BBC Planet Earth style, photorealistic, natural lighting, pristine 4K clarity, documentary aesthetic, no color grading, authentic wildlife behavior
+ASPECT RATIO: 16:9
+SPECIAL INSTRUCTIONS: Speed ramp during dive to emphasize acceleration, capture moment of talon extension clearly, show power of pull-up with prey
+NEGATIVE PROMPTS: flicker, blur, artificial movement, mechanical motion, low quality, morphing
 ```
 
-**Action/Sports:**
+### Example 3: Sci-Fi Narrative
 ```
-flicker, jitter, morphing, blur loss, unnatural physics, shaky camera, temporal inconsistency
+CONTENT TYPE(S): Narrative, VFX, Aerial
+VIDEO DURATION: 36
+SUBJECT/CONCEPT: Elon Musk in SpaceX spacesuit at Cape Canaveral launch pad at dawn looking up at massive Starship. Camera starts close on face showing determination, pulls back revealing full rocket scale, Starship engines ignite and lift off with Elon watching, camera follows rocket ascending through clouds into space, final shot shows Starship approaching Mars with red planet filling frame.
+STYLE GUIDELINES: Photorealistic, IMAX documentary quality, SpaceX/NASA aesthetics, golden hour lighting transitioning to space darkness, high detail on spacesuit and rocket, volumetric exhaust effects, epic scale, shot on ARRI Alexa 65
+ASPECT RATIO: 2.35:1
+SPECIAL INSTRUCTIONS: Start intimate then reveal scale, launch should feel powerful with camera shake, smooth transition from blue sky to black space, Mars approach as climactic reveal
+NEGATIVE PROMPTS: flicker, blur, morphing, text, watermark, warped face, cartoon, unconvincing compositing, temporal inconsistency
 ```
 
-**VFX/Fantasy:**
+### Example 4: Action Sequence
 ```
-flicker, morphing, temporal inconsistency, unconvincing compositing, flat lighting, blur
+CONTENT TYPE(S): Action, Narrative
+VIDEO DURATION: 30
+SUBJECT/CONCEPT: Parkour athlete in red jacket running across urban rooftops at sunset. Starts with athlete sprinting toward camera, athlete vaults over AC unit, continues running and leaps across gap between buildings, lands and rolls on adjacent rooftop, springs up and continues running as camera follows, ends with athlete jumping and grabbing fire escape ladder.
+STYLE GUIDELINES: Gritty urban realism, desaturated except for red jacket, handheld energy, practical lighting, sunset backlight, high contrast, shot on Sony FX6
+ASPECT RATIO: 16:9
+SPECIAL INSTRUCTIONS: Handheld camera shake throughout for energy, speed ramp during building leap, maintain sense of height and danger, jacket should be vibrant against muted environment
+NEGATIVE PROMPTS: flicker, blur loss, jitter, stutter, unnatural physics, morphing, low quality
+```
+
+### Example 5: Music Video
+```
+CONTENT TYPE(S): Dance, VFX, Narrative
+VIDEO DURATION: 30
+SUBJECT/CONCEPT: Solo dancer in white flowing dress in empty warehouse with dramatic side lighting. Camera starts on dancer's feet, slowly cranes up revealing full body as dancer begins slow contemporary movement, camera orbits counter-clockwise around dancer as movement intensifies, magical blue particles begin emanating from dancer's hands, camera completes 180° orbit as particles fill the space, ends with wide shot showing dancer surrounded by swirling particle effects.
+STYLE GUIDELINES: Cinematic music video aesthetic, high contrast side lighting, volumetric light rays through windows, slow motion at 120fps, magical realism, moody atmosphere
+ASPECT RATIO: 2.35:1
+SPECIAL INSTRUCTIONS: Particles should progressively increase from 0 to hundreds, movement should feel fluid and weightless, lighting should create dramatic shadows, end wide to show full effect
+NEGATIVE PROMPTS: flicker, morphing, temporal inconsistency, unconvincing compositing, blur, mistimed movement
 ```
 
 ---
 
-## 🤝 Contributing
+## 🎯 The Last Frame Method
 
-Found a way to improve the template? Contributions welcome!
+**Why it's critical:** AI video generators have randomness. The Last Frame Method eliminates this by showing each clip exactly where to start.
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your improvements
-4. Submit a pull request
+### Workflow:
+1. **Generate Clip 1** → Text-to-video with your prompt
+2. **Export last frame** → Use video editor's export function (NOT screenshot)
+   - DaVinci Resolve: Right-click timeline → Grab Still → Export PNG
+   - Premiere: File → Export → Frame
+   - CapCut: Right-click frame → Export Frame
+   - **Must be same resolution as video!**
+3. **Generate Clip 2** → Image-to-video with exported frame + Clip 2 prompt
+4. **Repeat** → Export last frame of Clip 2 → Generate Clip 3, etc.
+5. **Stitch** → Combine all clips in editor
 
-**Ideas for contributions:**
-- Additional example sequences
-- New content type specializations
-- Platform-specific optimization guides
-- Translation to other languages
-- Video tutorials showing the workflow
-- Gallery of successful generations
+### Why NOT screenshots?
+❌ Wrong resolution  
+❌ Compression artifacts  
+❌ May capture UI elements  
+❌ Wrong color space  
+
+✅ Editor exports maintain exact resolution, aspect ratio, and quality
 
 ---
 
-## 📄 License
+## 🎨 Camera Movement Glossary
 
-MIT License - Use freely for personal or commercial projects!
+| Movement | Description | Speed Scale |
+|----------|-------------|-------------|
+| **Dolly** | Forward/backward toward subject | 0.5-3 ft/sec typical |
+| **Truck** | Left/right lateral movement | 0.5-3 ft/sec typical |
+| **Crane/Pedestal** | Up/down vertical movement | 0.5-3 ft/sec typical |
+| **Pan** | Horizontal rotation (swivel) | 5-30°/sec typical |
+| **Tilt** | Vertical rotation (look up/down) | 5-30°/sec typical |
+| **Arc/Orbital** | Circular path around subject | 5-20°/sec typical |
+| **Zoom** | Lens focal length change | Specify start/end focal length |
+| **Roll/Dutch** | Horizon tilt (axis rotation) | 5-15°/sec typical |
 
-See the [LICENSE](LICENSE) file for details.
+**Speeds:**
+- **Glacial:** 0.1-0.3 ft/sec (barely perceptible)
+- **Slow:** 0.5-1 ft/sec (contemplative)
+- **Moderate:** 1.5-3 ft/sec (natural)
+- **Fast:** 4-6 ft/sec (energetic)
+- **Rapid:** 7+ ft/sec (action)
+
+---
+
+## 📊 Motion Blur Scale
+
+The template tracks motion blur intensity as a percentage:
+
+- **0-5%** = Minimal (slow movement, barely visible)
+- **5-15%** = Subtle (walking, gentle camera moves)
+- **15-25%** = Moderate (running, quick pans)
+- **25-40%** = Strong (action sequences, fast motion)
+- **40%+** = Extreme (high-speed chases, impacts)
+
+The AI calculates this automatically based on movement speeds.
+
+---
+
+## 🛠️ Compatible Platforms
+
+### AI Prompt Generators (where you use the template):
+- ✅ ChatGPT (GPT-4, GPT-4o, o1)
+- ✅ Claude (Sonnet, Opus)
+- ✅ Google Gemini (Pro, Ultra)
+- ✅ Grok
+- ✅ Any instruction-following AI
+
+### AI Video Generators (where you generate clips):
+
+**With Image-to-Video (Last Frame Method works best):**
+- ✅ Runway Gen-3/Gen-4
+- ✅ Pika Labs
+- ✅ Luma Dream Machine
+- ✅ Kling AI
+- ✅ Haiper AI
+- ✅ Stability AI Video
+
+**Text-Only (Template still helps):**
+- ✅ Sora/Sora 2
+- ✅ Veo 2/3
+- ✅ Any emerging models
+
+---
+
+## ⏱️ Time Estimates
+
+**Prompt Generation (AI creating the clip prompts):**
+- 12-24 sec video: 1-2 minutes
+- 30-60 sec video: 2-4 minutes
+- 120+ sec video: 5-8 minutes
+
+**Video Generation (creating actual clips):**
+- Per clip: 30 seconds - 5 minutes (depends on platform and queue)
+- 30-sec video (5 clips): 15-30 minutes total
+- 60-sec video (10 clips): 30-60 minutes total
+
+**Tip:** Generate during off-peak hours for faster results. Sequential generation (Last Frame Method) takes longer but ensures perfect continuity.
 
 ---
 
 ## 🙋 FAQ
 
-### Q: Do I need to understand all the technical details?
-**A:** No! Just fill out the simple input form at the top. The AI handles all the complex technical cinematography stuff. You just need to describe your vision.
+**Q: Do I need to understand camera terminology?**  
+A: No! Just fill out the form. The AI handles all technical details.
 
-### Q: What if I only want a 12-second video?
-**A:** Set VIDEO DURATION to 12. You'll get 2 clips (12 ÷ 6 = 2). Generate Clip 1 as text-to-video, extract last frame, generate Clip 2 as image-to-video.
+**Q: Can I use this for vertical videos (TikTok)?**  
+A: Yes! Set ASPECT RATIO to 9:16.
 
-### Q: Can I use this for vertical videos (TikTok, Instagram)?
-**A:** Yes! Just set ASPECT RATIO to 9:16. Everything else works the same.
+**Q: What if clips don't match perfectly?**  
+A: The Last Frame Method fixes 95% of issues. For remaining mismatches:
+- Regenerate with same last frame
+- Adjust "image strength" parameter higher
+- Minor post-production adjustment if needed
 
-### Q: Do I need special software?
-**A:** Just a text editor to fill out the template, access to an AI chatbot (free or paid), and an AI video generator account. A video editor helps for final stitching (even free ones like CapCut work).
+**Q: Should I always use negative prompts?**  
+A: Not required, but recommended. Start with universal preset: "flicker, blur, morphing, text, watermark, low quality"
 
-### Q: Will this work with [specific AI video generator]?
-**A:** Yes! The prompts are text-based and work with any generator that accepts text prompts. The last frame method works best with platforms that support image-to-video.
+**Q: Can I modify the template?**  
+A: Absolutely! It's MIT licensed.
 
-### Q: What if my clips don't match perfectly when generated?
-**A:** The last frame method dramatically reduces this issue. If there's still slight mismatch:
-- Try regenerating with same last frame but adjusted prompt
-- Use higher "image strength" or "motion" settings
-- Some minor adjustment in post-production may be needed
-- Cross-dissolve transitions can smooth remaining discontinuities
-
-### Q: Should I always use the last frame method?
-**A:** For best results, yes! It guarantees continuity. However, for simpler sequences or when you want some creative variation, you can try text-only generation first and use last frame method only where transitions look off.
-
-### Q: What resolution should I export the last frame at?
-**A:** Export at the EXACT same resolution as your generated video. Do not upscale, downscale, or change aspect ratio.
-- If video is 1920×1080 → export frame at 1920×1080
-- If video is 1280×768 → export frame at 1280×768
-- If video is 1024×576 → export frame at 1024×576
-- **Never use screenshots** - always export directly from video editor to maintain exact dimensions
-- PNG format recommended for lossless quality
-- The exported image must perfectly match the video's native resolution and aspect ratio
-
-### Q: Can I use the last frame method if I'm generating all clips in parallel?
-**A:** No, you need to generate sequentially (Clip 1 → Clip 2 → Clip 3...) since each needs the previous clip's last frame. This takes longer but ensures perfect continuity. Budget your time accordingly.
-
-### Q: Why can't I just screenshot the last frame instead of exporting it?
-**A:** Screenshots will cause major problems:
-- **Wrong resolution:** Screenshots may not capture exact video dimensions
-- **Compression artifacts:** Screenshot tools often compress images
-- **UI elements:** May capture player controls, borders, or interface elements
-- **Color space issues:** Screenshots may not preserve video color space correctly
-- **Aspect ratio problems:** Screenshots might distort or add black bars
-- **Quality loss:** Screenshots lose pixel-perfect accuracy needed for seamless continuity
-
-**Always export directly from your video editor** to guarantee exact resolution, aspect ratio, and quality. This is critical for the last frame method to work properly.
-
-### Q: What if the last frame has motion blur but I need a sharp starting image?
-**A:** This is normal and actually fine! The AI will interpret the starting image (motion blur and all) and create smooth motion from it. The template's motion blur specifications in the prompt guide the AI on what blur to create in the new clip.
-
-### Q: Do all AI video generators support image-to-video?
-**A:** Most modern ones do (Runway, Pika, Luma, Kling, etc.). Text-only platforms won't benefit from the last frame method, but the template's detailed prompts will still create better continuity than standard prompts.
-
-### Q: How long does generation take for a full sequence?
-**A:** Variable based on platform and queue times:
-- **Per clip:** 30 seconds to 5 minutes typically
-- **30-second video (5 clips):** 15-30 minutes total with last frame method
-- **60-second video (10 clips):** 30-60 minutes total
-- Generate during off-peak hours for faster results
-
-### Q: Can I modify the template?
-**A:** Absolutely! It's MIT licensed. Customize it for your specific needs, add your own content types, adjust the format, etc.
-
-### Q: How long does it take to generate prompts?
-**A:** Usually 1-3 minutes for a 60-second sequence, depending on the AI model you're using. More complex sequences with VFX may take 3-5 minutes.
-
-### Q: What if I don't have access to paid AI video generators?
-**A:** Some free options exist:
-- Luma Dream Machine (limited free generations)
-- Haiper AI (free tier available)
-- Pika Labs (free credits)
-- Or use the prompts with free trial credits from paid platforms
-
-### Q: Can I use this for commercial projects?
-**A:** Yes! The template is MIT licensed. However, check the terms of service for your specific AI video generator regarding commercial use of generated content.
-
-### Q: What's the longest sequence I can create?
-**A:** Technically unlimited! The template can handle any duration. Practical limits:
-- **Your patience** - Sequential generation takes time
-- **Storage space** - Save all clips and last frames
-- **Platform limits** - Some have daily generation limits
-- **Coherence** - Very long sequences (5+ minutes) may drift in style/quality
-
-### Q: Do I need a powerful computer?
-**A:** No! The AI video generation happens in the cloud. You just need:
-- Internet connection
-- Web browser
-- Video editor for frame export and final stitching (cloud-based like Kapwing works too)
-
-### Q: Can I combine clips from different AI generators?
-**A:** Technically yes, but challenging:
-- Different generators have different visual styles
-- Last frame method works best within same platform
-- If mixing: Use first generator for Clips 1-X, extract last frame, switch to second generator for remaining clips
-- Expect some style discontinuity at the switch point
-
-### Q: What if I want to change something mid-sequence?
-**A:** You can! Just:
-- Regenerate the problem clip with adjusted prompt
-- Use the same last frame from the previous clip
-- Continue from there with the new direction
-- The template's detailed prompts make it easy to modify specific elements
-
-### Q: How do I apply negative prompts?
-**A:** It depends on your platform:
-- **Platforms with negative prompt fields** (Runway, Pika, Kling): Paste negatives in the dedicated field
-- **Platforms without** (Sora, Luma, Veo): Add to end of prompt: "Avoid: flicker, blur, morphing, text, watermark"
-- Use the SAME negatives for ALL clips for consistency
-- Start with universal preset: "flicker, blur, morphing, text, watermark, low quality"
+**Q: How long can sequences be?**  
+A: Technically unlimited, but practical limits:
+- Sweet spot: 24-60 seconds (4-10 clips)
+- Longer sequences require more patience
+- Very long (5+ min) may have style drift
 
 ---
 
-## 🚀 Get Started Now!
+## 📄 License
 
-1. **Download** the `seamless_video_prompt_template_COMPACT.txt` file
-2. **Open** it in any text editor (Notepad, TextEdit, VS Code, etc.)
-3. **Fill out** the input form at the top with your video concept
-4. **Paste** into your favorite AI chatbot (ChatGPT, Claude, etc.)
-5. **Generate** your seamless video sequence prompts!
-6. **Create** your first clip from text-to-video
-7. **Export** the last frame (from video editor, not screenshot!)
-8. **Continue** with image-to-video for remaining clips
-9. **Stitch** together and share your masterpiece!
+MIT License - Free for personal and commercial use.
 
 ---
 
-## 🎬 Pro Workflow Summary
+## 🤝 Contributing
 
-**The Complete Professional Workflow:**
+Contributions welcome! Submit issues or pull requests on GitHub.
 
-1. **Concept** → Fill out template input form
-2. **Generate Prompts** → Feed to AI (ChatGPT/Claude/Gemini)
-3. **Clip 1** → Text-to-video generation
-4. **Export** → Last frame from Clip 1 (use video editor export, NOT screenshot - must be same resolution/aspect ratio)
-5. **Clip 2** → Image-to-video (exported last frame + prompt)
-6. **Export** → Last frame from Clip 2 (again, proper export from editor)
-7. **Repeat** → Continue for all clips (always export, never screenshot)
-8. **Edit** → Stitch clips in sequence
-9. **Color Grade** → Unify look across all clips (optional)
-10. **Export** → Share your seamless cinematic sequence!
-
-**Critical:** Always export frames directly from your video editor at native resolution. Screenshots will cause quality loss, resolution mismatches, and poor continuity.
-
----
-
-## 🌟 Why This Template?
-
-### **Compact Yet Complete**
-- 90% shorter than comprehensive alternatives
-- Only ~1,400 words vs 15,000+
-- All essential functionality preserved
-- Fast to read, easy to use
-
-### **Production-Ready**
-- Used by professional content creators
-- Tested across multiple AI platforms
-- Real-world proven workflow
-- Professional-grade output quality
-
-### **Community-Driven**
-- Open-source MIT license
-- Active development and improvements
-- Growing user community
-- Regular updates and enhancements
-
----
-
-## 📞 Support & Community
-
-- **Issues:** Report bugs or request features in [GitHub Issues](https://github.com/Eric-Lautanen/seamless-ai-video-prompts/issues)
-- **Discussions:** Share your creations in [GitHub Discussions](https://github.com/Eric-Lautanen/seamless-ai-video-prompts/discussions)
-- **Updates:** Watch this repo for improvements and new examples
-- **Questions:** Ask in Discussions or open an Issue
+**Ideas:**
+- More example sequences
+- Platform-specific tips
+- Translations
+- Video tutorials
 
 ---
 
 ## 🏆 Credits
 
-Created by passionate AI video creators who were tired of jarring transitions and wanted cinematic quality from AI-generated sequences.
-
-Built with insights from:
-- Professional cinematographers and DPs
-- AI video generation community feedback
-- Extensive testing with multiple AI models and platforms
-- Real-world production experience
-- Film school principles adapted for AI workflows
-
-Special thanks to the communities at:
-- r/RunwayML
-- r/ArtificialIntelligence
-- AI video generator Discord servers
-- Early beta testers and contributors
-
----
-
-## Keywords for Discoverability
-
-AI video generation, text to video, AI cinematography, video prompts, Runway ML, Sora prompts, Pika Labs, continuous shot, single take video, AI filmmaking, video prompt engineering, seamless transitions, AI videography, cinematic AI, prompt template, video generation template, AI movie making, automated cinematography, video AI tools, shot continuity, camera movement AI, VFX prompts, storyboard AI, pre-visualization, animatic generation, AI director, virtual cinematography, procedural animation, AI content creation, YouTube AI videos, TikTok AI, Instagram AI, social media video AI, marketing video AI, commercial video generation, product video AI, music video AI, narrative AI video, documentary AI, action sequence AI, dance video AI, wildlife video AI, aerial video AI, drone shot simulation, macro photography AI, dialogue scene AI, conversation AI video, image to video, last frame method, frame extraction, video continuity, seamless video editing, negative prompts, AI video quality
-
----
+Built with insights from professional cinematographers, AI video community feedback, and extensive real-world testing.
 
 **Made with ❤️ for the AI video community**
 
 *Star this repo if it helps you create amazing videos!* ⭐
+
+---
+
+**Keywords:** AI video generation, text to video, seamless transitions, video prompts, Runway ML, Sora, Pika Labs, Kling AI, continuous shot, single take video, AI cinematography, prompt engineering, last frame method, image to video, video continuity
