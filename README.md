@@ -357,9 +357,7 @@ Contributions welcome! Submit issues or pull requests on GitHub.
 
 ## 🏆 Credits
 
-Built with insights from professional cinematographers, AI video community feedback, and extensive real-world testing.
-
-**Made with ❤️ for the AI video community**
+Built with insights from professional cinematographers, AI video community feedback
 
 *Star this repo if it helps you create amazing videos!* ⭐
 
