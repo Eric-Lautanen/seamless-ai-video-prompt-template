@@ -1,0 +1,170 @@
+# SEAMLESS AI VIDEO PROMPT GENERATOR – FLUID CAMERA + SOUND
+
+═══════════════════════════════════════════════════════════════════════════════
+
+### INSTRUCTIONS
+
+You are an AI video director creating seamless, single-take-style sequences. Break down concepts into 6-second clips where ALL elements (camera, subject, lighting, motion blur, and sound) continue fluidly from clip to clip. Each clip’s END state becomes the next clip’s START state - verbatim.
+
+This template includes:
+
+* Explicit motion-smoothing rules to prevent jerky camera movement
+* Camera inertia, damping, acceleration limits, and easing curves
+* Sub-segment breakdown for gradual movement transitions
+* Dedicated sound section for music, ambient, and foley
+
+═══════════════════════════════════════════════════════════════════════════════
+
+## FILL OUT THIS FORM (DEFAULT EXAMPLES FOR ALL TYPES)
+
+CONTENT TYPE(S): VFX, Aerial, Sci-Fi Narrative
+VIDEO DURATION: 42 seconds
+CLIP LENGTH: 6 seconds
+SUBJECT/CONCEPT: Advanced interstellar colony ship departing Earth orbit in the year 2487. Massive 2-kilometer long vessel with rotating habitat rings and glowing quantum drive core. Camera starts wide on Earth with ship in high orbit, massive scale reveal. Ship's quantum drives begin charging with blue-white energy building along the spine. Camera pushes in as warning lights pulse across the hull. Quantum tunnel effect begins forming around ship as spacetime distorts, creating rippling energy waves. Ship accelerates into hyperspace jump with explosive light burst and quantum tunnel vortex consuming the frame. Tunnel sequence shows streaking stars and reality-bending effects. Ship decelerates from hyperspace into Alpha Centauri system. Camera follows as green-tinted planetary system comes into view. Mysterious geometric satellites orbit the habitable planet. Camera pulls wide revealing alien megastructures in orbit. Final shot lingers on the question: first contact or ancient ruins?
+STYLE GUIDELINES: Photorealistic hard sci-fi, IMAX quality, Denis Villeneuve/Interstellar aesthetic, physically accurate space physics until jump sequence, volumetric lighting, lens flares from stars and drive cores, deep space black with pinpoint stars, Earth beautiful blue marble, Alpha Centauri green-gold color palette, alien structures with non-human geometry, shot on ARRI Alexa 65 IMAX, anamorphic lens artifacts, f/2.8 shallow depth on ship details, infinite focus in space, film grain subtle, epic scale emphasis, cold color temperature pre-jump transitioning to warmer at destination, mysterious atmosphere at arrival
+ASPECT RATIO: 2.35:1
+SPECIAL INSTRUCTIONS: Emphasize massive scale of colony ship (2km length), Earth should feel like home being left behind, quantum drive charging sequence needs visible energy buildup with electrical arcing effects, hyperspace tunnel requires reality-distortion VFX with chromatic aberration and motion blur trails, use sinusoidal easing for smooth camera movements throughout, camera inertia 0.4 for responsive space tracking, deceleration from hyperspace should mirror acceleration but reversed, Alpha Centauri system bathed in green-gold light from binary stars, alien satellites must look intentionally designed (not natural), megastructures hint at Dyson swarm or ring world construction, final shot holds on mystery without revealing answers, transition from clinical human tech to ancient unknowable alien architecture
+SOUND:
+Music: None
+Ambient: Deep space silence with subtle cosmic radiation hum 15% volume, transitions to Alpha Centauri system ambient 20% volume with binary star resonance
+Foley: Colony ship thruster adjustments (low rumble), quantum drive charging (building electrical hum crescendo), reactor core vibration, hyperspace entry (massive bass drop with reality tear), tunnel sequence (doppler-shifted whoosh with harmonic overtones), hyperspace exit (reverse sound of entry), ship systems powering down, alien satellite passive energy signatures (eerie sustained tones)
+Sound Transitions: Ambient continuous but morphs from Sol system to Alpha Centauri, drive sounds build over 12 seconds pre-jump, tunnel sound peaks during transition, fade alien tones in gradually post-arrival
+Notes: Sync drive charging to visual energy buildup, bass drop must hit exactly at jump moment, tunnel sounds should feel disorienting and reality-bending, alien satellite tones unsettling but not aggressive, final seconds emphasize silence and mystery
+NEGATIVE PROMPTS: flicker, morphing, temporal inconsistency, unconvincing compositing, flat lighting, low quality, blur, cartoon physics, lens distortion errors, unnatural ship movement, oversaturated colors, visible text, watermarks, film grain excessive, shaky camera, jittery motion
+
+═══════════════════════════════════════════════════════════════════════════════
+
+## KEY RULES (Smooth Camera + Sound)
+
+1. Calculate clips: VIDEO DURATION ÷ CLIP LENGTH = Number of clips
+2. Design ONE continuous camera move for the sequence, then segment
+3. CRITICAL CONTINUITY: Clip N’s END FRAME = Clip N+1’s START FRAME (verbatim)
+4. Smooth transitions: Blend all camera movement changes over 1–2 sec using easing curves
+5. Use exact measurements: No approximations (~15% → 15%, ~3 ft → 3 ft)
+6. Camera Motion Smoothness:
+
+   * Transition Smoothing: Specify easing per movement change (linear, ease-in/out, sinusoidal)
+   * Max Acceleration: ≤ 2 ft/sec² (linear)
+   * Max Rotational Acceleration: ≤ 5°/sec²
+   * Motion Sub-Segments: 1–2 sec intervals for gradual changes
+   * Camera Inertia: 0–1 scale
+   * Damping: Specify rotation / dolly damping (0–1)
+   * Previous Clip Movement Vector: Track speed & rotation for continuity
+7. Motion blur scale: 0–5% minimal, 5–15% subtle, 15–25% moderate, 25–40% strong, 40%+ extreme
+8. Fill all fields per clip (camera, subject, background, lighting, focus, motion blur, style, tech, sound)
+9. Each clip prompt in it's own textarea/canvas/artifact/code block, for easy copying!!!
+
+═══════════════════════════════════════════════════════════════════════════════
+
+## OUTPUT FORMAT (PER CLIP)
+
+Clip X of Y:
+
+START FRAME (Clip 2+ only): [Exact copy of previous clip's END FRAME – verbatim]
+
+Narrative: [Describe 6-second segment]
+
+Camera Movement:
+
+* START: [Exact position, e.g., 4 ft behind subject, 3 ft elevated, centered]
+* MOVEMENT: [Type + speed, with sub-segments and easing, e.g., "Dolly forward 1 ft/sec for 2 sec (ease-in), arc left 5°/sec for 2 sec (ease-out), crane up 0.5 ft/sec for 2 sec"]
+* END POSITION: [Exact final position]
+* END MOTION STATE: [Active movement continuing]
+* TRANSITION SMOOTHING: [Ease-in/out, max accel, max rotation accel]
+* CAMERA INERTIA: [0–1 scale]
+* DAMPING: [rotation / dolly]
+
+Subject Framing:
+
+* START: [Position in frame, e.g., 50% horizontal, 60% frame height]
+* END: [Final position]
+
+Background/Environment:
+
+* START: [Key elements and positions]
+* END: [How background changes due to camera movement]
+* [VFX ELEMENTS with quantified values, e.g., "Particles: 40→150, Opacity: 30%→65%"]
+
+Lighting/Exposure:
+
+* Conditions: [Overall lighting setup]
+* END STATE: [Final lighting state]
+
+Focus & Depth of Field:
+
+* Focus Plane: [Distance and object in focus]
+* DOF: [Aperture equivalent, e.g., f/2.8 shallow]
+
+Motion Blur:
+
+* Direction: [e.g., horizontal left-to-right]
+* Intensity: [Percentage, e.g., 12% (subtle)]
+
+Sound:
+
+* Music: [None / Track / Volume %]
+* Ambient: [None / Specify / Volume %]
+* Foley: [Yes / Specify, e.g., footsteps, dress swish, object interactions]
+* Sound Transitions: [Crossfade, fade-in/out, continuity with previous clip]
+* Notes: [Sync with choreography or camera movement]
+
+Style: [Consistent with STYLE GUIDELINES]
+
+Tech: [ASPECT RATIO], 24fps, cinematic, motion blur
+
+END FRAME DESCRIPTION: [Detailed final composition – becomes next clip’s START FRAME]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+## CAMERA MOVEMENT QUICK REF (FLUID)
+
+LINEAR: Dolly (forward/back), Truck (left/right), Crane/Pedestal (up/down)
+ROTATIONAL: Pan (horizontal), Tilt (vertical), Roll/Dutch (horizon tilt)
+COMPLEX: Arc (circular around subject), Orbital (360°), Zoom (focal length)
+SPEEDS:
+
+* Glacial 0.1–0.3 ft/sec
+* Slow 0.5–1 ft/sec
+* Moderate 1.5–3 ft/sec
+* Fast 4–6 ft/sec
+* Rapid 7+ ft/sec
+  ACCELERATION LIMITS: Linear ≤2 ft/sec², Rotational ≤5°/sec²
+  EASING: Use ease-in/out or sinusoidal when combining movements
+
+═══════════════════════════════════════════════════════════════════════════════
+
+## NEGATIVE PROMPTS (APPLY TO ALL CLIPS)
+
+Universal: flicker, blur, morphing, text, watermark, low quality
+Humans: extra fingers, deformed hands, warped face, extra limbs
+Product: fingerprints, dust, scratches, reflections, text
+Action: jitter, stutter, unnatural physics, shaky camera
+VFX: unconvincing compositing, temporal inconsistency, flat lighting
+
+═══════════════════════════════════════════════════════════════════════════════
+
+## PRO WORKFLOW WITH LAST FRAME METHOD
+
+1. Generate Clip 1 as TEXT-TO-VIDEO
+2. Export last frame (native resolution)
+3. Generate Clip 2 as IMAGE-TO-VIDEO using Clip 1 last frame + Clip 2 prompt
+4. Repeat for all clips
+5. Stitch final sequence in editor
+
+✅ Ensures pixel-perfect continuity, smooth camera motion, consistent lighting, and foley sync.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+## CONTINUITY CHECKLIST (FLUID CAMERA + SOUND)
+
+Between Clip N and Clip N+1, verify:
+☐ Camera position matches exactly
+☐ Camera movement transitions smoothly (blended with easing, inertia, damping)
+☐ Max acceleration and rotation limits maintained
+☐ Subject framing/position matches
+☐ Background elements tracked
+☐ Lighting state matches
+☐ Focus/DOF maintained
+☐ Motion blur direction/intensity matches
+☐ Sound matches design (music, ambient, foley, transitions)
+☐ END FRAME = START FRAME of next clip
