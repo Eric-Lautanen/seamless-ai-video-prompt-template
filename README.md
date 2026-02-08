@@ -84,9 +84,9 @@ The AI will output **detailed prompts for each 6-second clip** that flow perfect
 **For Best Results, Use the Last Frame Method:**
 
 1. **Generate Clip 1** - Paste the first prompt into your AI video generator (Runway, Sora, Pika, etc.) as text-to-video
-2. **Export the last frame** - Download or screenshot the final frame of Clip 1
-3. **Generate Clip 2** - Upload that last frame as your starting image, then paste Clip 2's prompt (image-to-video)
-4. **Repeat** - Use the last frame of Clip 2 to start Clip 3, and so on
+2. **Export the last frame** - Download the video, open in your video editor, and export the final frame as an image file (PNG or JPG) at the same resolution/aspect ratio as the original clip
+3. **Generate Clip 2** - Upload that exported last frame as your starting image, then paste Clip 2's prompt (image-to-video)
+4. **Repeat** - Export the last frame of Clip 2, use it to start Clip 3, and so on
 5. **Stitch together** - Combine all clips in your video editor
 
 **Why this works:** Using the last frame as the starting image ensures the AI video generator maintains exact continuity in:
@@ -116,19 +116,21 @@ While this template creates prompts designed for perfect continuity, AI video ge
    - Use the Clip 1 prompt as pure text-to-video
    - Let the AI create the initial 6-second clip
    
-2. **Extract final frame of Clip 1**
-   - Most platforms: Download video → Open in video player → Screenshot last frame
-   - Runway: Use the "Extract Frame" feature
-   - Some platforms auto-save key frames
+2. **Export final frame of Clip 1**
+   - Download the generated video to your computer
+   - Open in your video editor (DaVinci Resolve, Premiere, Final Cut, CapCut, etc.)
+   - Navigate to the very last frame
+   - Export/save that frame as an image file (PNG preferred for quality, JPG acceptable)
+   - **Critical:** Export at the same resolution and aspect ratio as the original video
    
 3. **Generate Clip 2 from image**
-   - Upload the last frame as your starting image
+   - Upload the exported last frame as your starting image
    - Paste Clip 2's prompt as the motion/action description
    - Generate (this creates image-to-video)
    
 4. **Repeat for all remaining clips**
-   - Last frame of Clip 2 → Start of Clip 3
-   - Last frame of Clip 3 → Start of Clip 4
+   - Export last frame of Clip 2 → Start of Clip 3
+   - Export last frame of Clip 3 → Start of Clip 4
    - Continue through entire sequence
 
 **Visual Workflow:**
@@ -137,17 +139,17 @@ CLIP 1 (Text-to-Video)
     ↓
 [Generate] → Video A (6 seconds)
     ↓
-[Extract] → Last frame of Video A (image)
+[EXPORT from editor] → Last frame of Video A (PNG image, native resolution)
     ↓
 CLIP 2 (Image-to-Video)
-[Last frame as starting image] + [Clip 2 prompt]
+[Exported frame as starting image] + [Clip 2 prompt]
     ↓
 [Generate] → Video B (6 seconds)
     ↓
-[Extract] → Last frame of Video B (image)
+[EXPORT from editor] → Last frame of Video B (PNG image, native resolution)
     ↓
 CLIP 3 (Image-to-Video)
-[Last frame as starting image] + [Clip 3 prompt]
+[Exported frame as starting image] + [Clip 3 prompt]
     ↓
 [Continue pattern...]
 ```
@@ -201,34 +203,85 @@ Some transitions may need extra attention while others are simple enough:
 - Upload starting frame
 - Text guidance for motion
 
-### Frame Extraction Tips
+### Frame Export Guide (Proper Method)
 
-**From Video Editors:**
-- **DaVinci Resolve:** Right-click timeline frame → Grab Still → Export as PNG
-- **Premiere Pro:** Position playhead at last frame → Export Frame (Shift + E)
-- **Final Cut Pro:** File → Share → Save Current Frame
-- **CapCut:** Pause at last frame → Export → Save Image
-- **iMovie:** Pause → File → Share → Image
+**IMPORTANT:** Do NOT use screenshots! You must export the frame directly from your video editor to maintain exact resolution, aspect ratio, and quality.
 
-**From Video Players:**
-- **VLC Media Player:** Pause at last frame → Video → Take Snapshot (or Shift + S)
-- **QuickTime Player:** Pause → Edit → Copy → Paste into image editor
-- **MPV Player:** Press 's' key to save screenshot of current frame
-- **Windows Media Player:** Pause → Ctrl + I (capture)
+**From Video Editors (Recommended):**
 
-**Quick Screenshot Method:**
-- Pause video at exact last frame
-- Use system screenshot tool:
-  - **Windows:** Win + Shift + S (Snipping Tool)
-  - **Mac:** Cmd + Shift + 4 (crosshair select)
-  - **Linux:** PrtScn or Shift + PrtScn
-- Crop to remove any UI elements, player controls, or borders
-- Save as PNG for best quality (JPG works but may have compression)
+- **DaVinci Resolve:** 
+  - Position playhead on last frame → Right-click timeline → Grab Still → Export as PNG
+  - Or: File → Export → Individual Frames (select last frame only)
+  
+- **Adobe Premiere Pro:** 
+  - Position playhead at last frame → File → Export → Frame (or Shift + E)
+  - Choose PNG or JPEG, ensure resolution matches source
+  
+- **Final Cut Pro:** 
+  - Position playhead on last frame → File → Share → Save Current Frame
+  - Select format (PNG recommended), verify resolution
+  
+- **CapCut (Desktop):** 
+  - Pause at last frame → Right-click on timeline → Export Frame
+  - Or: Playhead on last frame → Export → Custom → Single Frame
+  
+- **CapCut (Mobile):**
+  - Pause at exact last frame → Tap Export → Photo (exports current frame)
+  
+- **iMovie:**
+  - Pause on last frame → File → Share → Image
+  - Choose size: Large (full resolution)
+  
+- **Filmora:**
+  - Pause on last frame → Snapshot button (camera icon)
+  - Or: Right-click frame → Export Frame
+  
+- **HitFilm Express:**
+  - Position playhead → Viewer panel → Camera icon → Export Frame
 
-**Online Tools (if needed):**
-- **ezgif.com/split-video** - Upload video, extract specific frame
-- **kapwing.com** - Timeline-based frame extraction
-- **clideo.com** - Simple video-to-image converter
+**From Online Video Editors (if you don't have desktop software):**
+
+- **Kapwing:** 
+  - Upload video → Timeline → Navigate to last frame → Tools → Export Frame
+  
+- **Clideo:**
+  - Use "Video to Image Converter" → Select last frame timestamp → Download
+  
+- **VEED.io:**
+  - Upload → Pause at last frame → Subtitles/Elements menu → Export Frame
+
+**Command Line (Advanced Users):**
+
+- **FFmpeg (most precise method):**
+  ```bash
+  # Export last frame from video
+  ffmpeg -sseof -1 -i input.mp4 -update 1 -q:v 1 last_frame.png
+  ```
+  This ensures exact frame extraction at native resolution
+
+**Key Requirements for Proper Export:**
+
+✅ **DO:**
+- Export at native video resolution (e.g., if video is 1920×1080, export frame at 1920×1080)
+- Maintain exact aspect ratio (16:9 video = 16:9 image)
+- Use PNG format when possible (lossless quality)
+- Save with descriptive filename (e.g., `clip_1_last_frame.png`)
+- Verify the exported image dimensions match the video dimensions
+
+❌ **DON'T:**
+- Use screenshots (they may capture UI elements, wrong resolution, or compressed quality)
+- Upscale or downscale the frame
+- Change aspect ratio
+- Use heavily compressed JPG (if using JPG, use maximum quality setting)
+- Crop or add borders
+
+**Why This Matters:**
+
+- AI video generators are very sensitive to input image dimensions
+- Mismatched resolution = scaling artifacts = poor continuity
+- Wrong aspect ratio = distortion or black bars = breaks immersion
+- Screenshots may include player UI, wrong color space, or compression
+- Direct export maintains pixel-perfect quality and metadata
 
 ### Troubleshooting Continuity Issues
 
@@ -242,9 +295,10 @@ Some transitions may need extra attention while others are simple enough:
 **Problem:** Subject position doesn't match exactly  
 **Solution:**
 - The template's precise framing percentages help AI understand position
-- **Use last frame method** (forces exact positional match)
+- **Use last frame method with proper export** (not screenshots - export from video editor)
+- Verify exported frame is exact same resolution as source video
 - If there's still drift: Manually adjust in editor with small zoom/pan
-- Check if you uploaded the frame at correct resolution
+- Check platform's "image strength" or "adherence" settings (higher = closer to input image)
 
 **Problem:** Motion blur doesn't carry over  
 **Solution:**
@@ -392,31 +446,31 @@ Built-in verification systems ensure 10/10 output quality:
 ### Example 1: Sci-Fi Spaceship Sequence
 **Input:** "Mile-long starship approaching Alpha Centauri, gravity effects, holographic displays"  
 **Output:** 10 clips (60 seconds) tracking from empty space → ship emergence → parallel tracking → deceleration → binary star reveal  
-**Method:** Text-to-video for Clip 1, then last frame method for Clips 2-10  
+**Method:** Text-to-video for Clip 1, then export last frame from video editor and use for image-to-video Clips 2-10  
 **Result:** Continuous shot that looks like a single take from Interstellar
 
 ### Example 2: Product Commercial
 **Input:** "Luxury watch reveal, extreme macro, rotating around case"  
 **Output:** 2 clips (12 seconds) with precise macro focus, orbital camera movement, texture details  
-**Method:** Last frame method ensures rotation continuity  
+**Method:** Export last frame at exact native resolution to ensure rotation continuity  
 **Result:** High-end commercial aesthetic with seamless 360° rotation
 
 ### Example 3: Nature Documentary
 **Input:** "Eagle diving to catch prey, mountain valley background"  
 **Output:** 4 clips (24 seconds) with speed ramping, behavioral tracking, atmospheric perspective  
-**Method:** Last frame method critical for maintaining eagle position during dive acceleration  
+**Method:** Export last frames from editor to maintain eagle position during dive acceleration  
 **Result:** BBC Planet Earth-style hunting sequence
 
 ### Example 4: Music Video Performance
 **Input:** "Dancer performing contemporary piece with formation changes"  
 **Output:** 5 clips (30 seconds) tracking choreography timing, formations, levels, camera orbiting  
-**Method:** Last frame method preserves dancer positions during camera movement  
+**Method:** Proper frame export preserves dancer positions during camera movement  
 **Result:** Professional music video with dynamic camera work matching choreography
 
 ### Example 5: Action Sequence
 **Input:** "Parkour athlete running across rooftops, jumping between buildings"  
 **Output:** 6 clips (36 seconds) with handheld camera following, speed ramping on jumps  
-**Method:** Last frame method essential for maintaining athlete position and momentum  
+**Method:** Export frames from editor at native resolution - essential for maintaining athlete position and momentum  
 **Result:** Intense action sequence with no position jumps between clips
 
 ---
@@ -455,9 +509,12 @@ You can select **multiple types** for complex scenes:
 ### 5. **Plan for the Last Frame Method**
 
 - Know which platform you'll use BEFORE generating (different platforms have different image-to-video capabilities)
+- Have a video editor ready (even free ones like CapCut, DaVinci Resolve free, or online editors work)
+- **Never use screenshots** - always export frames directly from your video editor
+- Export frames at exact native resolution and aspect ratio of your videos
 - Generate during off-peak hours if you're doing many sequential clips
-- Save all last frames in numbered folders (clip_1_last.png, clip_2_last.png, etc.)
-- Keep original videos even after extraction in case you need to re-extract
+- Save all exported last frames in organized folders (clip_1_last.png, clip_2_last.png, etc.)
+- Keep original videos even after export in case you need to re-export at different settings
 
 ### 6. **Let the AI Work**
 
@@ -489,22 +546,23 @@ STEP-BY-STEP BREAKDOWN:
 └─────────────┬───────────────────────┘
               │
               ▼
-         [EXTRACT LAST FRAME]
+    [EXPORT LAST FRAME FROM EDITOR]
+    (NOT screenshot - use proper export)
               │
               ▼
 ┌─────────────────────────────────────┐
 │  CLIP 2 (Image-to-Video)            │
-│  Input: Last frame + Prompt         │
+│  Input: Exported frame + Prompt     │
 │  Output: 6-second video             │
 └─────────────┬───────────────────────┘
               │
               ▼
-         [EXTRACT LAST FRAME]
+    [EXPORT LAST FRAME FROM EDITOR]
               │
               ▼
 ┌─────────────────────────────────────┐
 │  CLIP 3 (Image-to-Video)            │
-│  Input: Last frame + Prompt         │
+│  Input: Exported frame + Prompt     │
 │  Output: 6-second video             │
 └─────────────┬───────────────────────┘
               │
@@ -746,15 +804,28 @@ See the [LICENSE](LICENSE) file for details.
 ### Q: Should I always use the last frame method?
 **A:** For best results, yes! It guarantees continuity. However, for simpler sequences or when you want some creative variation, you can try text-only generation first and use last frame method only where transitions look off.
 
-### Q: What resolution should I extract the last frame at?
-**A:** Match your AI video generator's input requirements. Usually:
-- Runway: 1280×768 or higher recommended
-- Pika: 1024×576 minimum, higher is better
-- Luma: Native resolution of your generated video
-- Most platforms: Use native resolution (don't upscale or downscale)
+### Q: What resolution should I export the last frame at?
+**A:** Export at the EXACT same resolution as your generated video. Do not upscale, downscale, or change aspect ratio.
+- If video is 1920×1080 → export frame at 1920×1080
+- If video is 1280×768 → export frame at 1280×768
+- If video is 1024×576 → export frame at 1024×576
+- **Never use screenshots** - always export directly from video editor to maintain exact dimensions
+- PNG format recommended for lossless quality
+- The exported image must perfectly match the video's native resolution and aspect ratio
 
 ### Q: Can I use the last frame method if I'm generating all clips in parallel?
 **A:** No, you need to generate sequentially (Clip 1 → Clip 2 → Clip 3...) since each needs the previous clip's last frame. This takes longer but ensures perfect continuity. Budget your time accordingly.
+
+### Q: Why can't I just screenshot the last frame instead of exporting it?
+**A:** Screenshots will cause major problems:
+- **Wrong resolution:** Screenshots may not capture exact video dimensions
+- **Compression artifacts:** Screenshot tools often compress images
+- **UI elements:** May capture player controls, borders, or interface elements
+- **Color space issues:** Screenshots may not preserve video color space correctly
+- **Aspect ratio problems:** Screenshots might distort or add black bars
+- **Quality loss:** Screenshots lose pixel-perfect accuracy needed for seamless continuity
+
+**Always export directly from your video editor** to guarantee exact resolution, aspect ratio, and quality. This is critical for the last frame method to work properly.
 
 ### Q: What if the last frame has motion blur but I need a sharp starting image?
 **A:** This is normal and actually fine! The AI will interpret the starting image (motion blur and all) and create smooth motion from it. The template's motion blur specifications in the prompt guide the AI on what blur to create in the new clip.
@@ -876,13 +947,15 @@ Special thanks to the communities at:
 1. **Concept** → Fill out template input form
 2. **Generate Prompts** → Feed to AI (ChatGPT/Claude/Gemini)
 3. **Clip 1** → Text-to-video generation
-4. **Extract** → Last frame from Clip 1
-5. **Clip 2** → Image-to-video (last frame + prompt)
-6. **Extract** → Last frame from Clip 2
-7. **Repeat** → Continue for all clips
+4. **Export** → Last frame from Clip 1 (use video editor export, NOT screenshot - must be same resolution/aspect ratio)
+5. **Clip 2** → Image-to-video (exported last frame + prompt)
+6. **Export** → Last frame from Clip 2 (again, proper export from editor)
+7. **Repeat** → Continue for all clips (always export, never screenshot)
 8. **Edit** → Stitch clips in sequence
 9. **Color Grade** → Unify look across all clips (optional)
 10. **Export** → Share your seamless cinematic sequence!
+
+**Critical:** Always export frames directly from your video editor at native resolution. Screenshots will cause quality loss, resolution mismatches, and poor continuity.
 
 ---
 
