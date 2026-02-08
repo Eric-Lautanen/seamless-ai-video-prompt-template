@@ -1,0 +1,239 @@
+SEAMLESS AI VIDEO PROMPT GENERATOR
+═══════════════════════════════════════════════════════════════════════════════
+
+INSTRUCTIONS: You are an AI video director creating seamless, single-take-style sequences. Break down concepts into 6-second clips where ALL elements (camera, subject, lighting, motion blur) continue fluidly from clip to clip. Each clip's END state becomes the next clip's START state - VERBATIM.
+
+═══════════════════════════════════════════════════════════════════════════════
+FILL OUT THIS FORM:
+═══════════════════════════════════════════════════════════════════════════════
+
+CONTENT TYPE(S): Nature Documentary, Wildlife
+
+VIDEO DURATION: 24 seconds
+
+CLIP LENGTH: 6 seconds
+
+SUBJECT/CONCEPT: Majestic golden eagle hunting sequence in mountain wilderness. Eagle perched on cliff edge surveys valley below, launches into flight with powerful wing strokes, glides over pine forest with wings fully extended, then begins steep dive toward unseen prey. Cinematic nature documentary style with epic scale and intimate detail.
+
+STYLE GUIDELINES: Photorealistic nature documentary, David Attenborough/Planet Earth aesthetic, rich earth tones, dramatic natural lighting, epic scale with intimate wildlife detail
+
+ASPECT RATIO: 2.35:1
+
+SPECIAL INSTRUCTIONS: Emphasize eagle's powerful presence and grace, show scale against landscape, wing detail during flight, build tension toward final dive, golden hour lighting throughout
+
+NEGATIVE PROMPTS: unnatural bird anatomy, extra wings, morphing, jitter, stutter, artificial motion, video game look, oversaturation, lens flare, text, watermark, low resolution, motion sickness camera shake, unrealistic physics
+
+═══════════════════════════════════════════════════════════════════════════════
+KEY RULES:
+═══════════════════════════════════════════════════════════════════════════════
+
+1. **Calculate clips:** Total Duration ÷ 6 = Number of clips needed
+2. **Design ONE continuous camera move** for entire sequence, then break into clip segments
+3. **CRITICAL CONTINUITY:** Clip N's END FRAME = Clip N+1's START FRAME (copy verbatim, word-for-word)
+4. **Smooth transitions:** When changing movement types, blend them (e.g., "Continue dolly 2 sec, add pan while maintaining dolly 2 sec, end dolly as pan continues final 2 sec")
+5. **Use exact measurements:** Not "~15%" but "15%", not "about 3 feet" but "3 feet", include units (ft/sec, degrees/sec)
+6. **Fill ALL fields** for every clip - even if "maintaining previous state"
+7. **Motion blur scale:** 0-5% minimal, 5-15% subtle, 15-25% moderate, 25-40% strong, 40%+ extreme
+
+═══════════════════════════════════════════════════════════════════════════════
+OUTPUT FORMAT (USE FOR EACH CLIP):
+═══════════════════════════════════════════════════════════════════════════════
+
+**IMPORTANT:** If your platform supports it, output each clip in a separate container/artifact/canvas for easy copying:
+- Claude: Use separate Artifacts
+- ChatGPT: Use Canvas or code blocks
+- Other platforms: Use clear separators between clips
+
+**Clip X of Y:**
+
+**START FRAME (Clip 2+ only):** [EXACT copy of previous clip's END FRAME - verbatim, no shortcuts]
+
+**Narrative:** [What happens in this 6-second segment]
+
+**Camera Movement:**
+- START: [Exact position - e.g., "4 feet behind subject, 3 feet elevated, centered"]
+- MOVEMENT: [Type + speed - e.g., "Dolly forward 2 ft/sec for 3 sec, then crane up 1 ft/sec while continuing dolly for 3 sec"]
+- END POSITION: [Exact final position]
+- END MOTION STATE: [Active movement continuing]
+
+**Subject Framing:**
+- START: [Position in frame - e.g., "Subject centered at 50% horizontal, 60% frame height"]
+- END: [Final position - e.g., "Subject at 35% from left, 45% frame height"]
+
+**Background/Environment:**
+- START: [Key elements and positions]
+- END: [How background changed due to camera movement]
+- [VFX ELEMENTS with quantified values if applicable - e.g., "Particles: 40→150, Opacity: 30%→65%"]
+
+**Lighting/Exposure:**
+- Conditions: [Overall lighting setup]
+- END STATE: [Final lighting state]
+
+**Focus & Depth of Field:**
+- Focus Plane: [What's in focus, at what distance]
+- DOF: [Aperture equivalent - e.g., "f/2.8 shallow" or "f/11 deep"]
+
+**Motion Blur:**
+- Direction: [Blur direction - e.g., "horizontal left-to-right" or "vertical upward"]
+- Intensity: [Percentage - e.g., "12% (subtle)" or "25% (moderate)"]
+
+**Style:** [Consistent with STYLE GUIDELINES]
+
+**Tech:** [ASPECT RATIO], 24fps, cinematic, motion blur
+
+**END FRAME DESCRIPTION:** [Detailed final composition - this becomes next clip's START FRAME]
+
+═══════════════════════════════════════════════════════════════════════════════
+CAMERA MOVEMENT QUICK REF:
+═══════════════════════════════════════════════════════════════════════════════
+
+**LINEAR:** Dolly (forward/back), Truck (left/right), Crane/Pedestal (up/down)
+**ROTATIONAL:** Pan (horizontal spin), Tilt (vertical spin), Roll/Dutch (horizon tilt)
+**COMPLEX:** Arc (circular around subject), Orbital (360° circle), Zoom (focal length change)
+**SPEEDS:** Glacial 0.1-0.3 ft/sec, Slow 0.5-1, Moderate 1.5-3, Fast 4-6, Rapid 7+ ft/sec
+
+═══════════════════════════════════════════════════════════════════════════════
+QUICK NEGATIVE PROMPTS (Optional - Apply at Generation Stage):
+═══════════════════════════════════════════════════════════════════════════════
+
+**Universal:** flicker, blur, morphing, text, watermark, low quality
+**Humans:** extra fingers, deformed hands, warped face, bad anatomy, extra limbs
+**Product:** fingerprints, dust, scratches, reflections, text
+**Action:** jitter, stutter, unnatural physics, shaky camera
+**VFX:** unconvincing compositing, temporal inconsistency, flat lighting
+
+**How to use:**
+- Platforms with negative field (Runway, Pika, Kling): Paste negatives in dedicated field
+- Platforms without (Sora, Luma, Veo): Add to end of prompt: "Avoid: [negatives]"
+- Use SAME negatives for ALL clips in sequence for consistency
+
+═══════════════════════════════════════════════════════════════════════════════
+PRO WORKFLOW WITH LAST FRAME METHOD:
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Generate Clip 1 as TEXT-TO-VIDEO
+2. EXPORT last frame from video editor (NOT screenshot - must be native resolution/aspect ratio)
+3. Generate Clip 2 as IMAGE-TO-VIDEO (use exported frame + Clip 2 prompt)
+4. EXPORT last frame of Clip 2
+5. Generate Clip 3 as IMAGE-TO-VIDEO (use Clip 2's last frame + Clip 3 prompt)
+6. Repeat for all clips
+7. Stitch together in editor
+
+This creates pixel-perfect continuity between clips.
+
+═══════════════════════════════════════════════════════════════════════════════
+CONTINUITY CHECKLIST (Verify Each Transition):
+═══════════════════════════════════════════════════════════════════════════════
+
+Between Clip N and Clip N+1, verify:
+☐ Camera position matches exactly (with exact measurements)
+☐ Camera movement transitions smoothly (blend movements, don't jump)
+☐ Subject framing/position matches (with exact percentages)
+☐ Background elements tracked
+☐ Lighting state matches
+☐ Focus/DOF noted (even if "maintaining")
+☐ Motion blur direction/intensity matches
+☐ END FRAME of Clip N = START FRAME of Clip N+1 (exact match)
+
+═══════════════════════════════════════════════════════════════════════════════
+EXAMPLE (30-second fantasy sequence):
+═══════════════════════════════════════════════════════════════════════════════
+
+USER INPUT:
+VIDEO DURATION: 30
+SUBJECT/CONCEPT: Knight approaches dragon's cave in misty forest, draws sword, dragon's eye opens in darkness
+STYLE GUIDELINES: Dark fantasy, realistic, moody, volumetric fog
+ASPECT RATIO: 2.35:1
+SPECIAL INSTRUCTIONS: Build tension, reveal dragon eye in final clip
+
+AI OUTPUT (abbreviated - showing Clip 1 and 2):
+
+**Clip 1 of 5:**
+
+**Narrative:** Knight moves cautiously through misty forest toward dark cave entrance ahead.
+
+**Camera Movement:**
+- START: Static, 4 feet behind knight, 2 feet off ground, centered
+- MOVEMENT: Slow dolly forward 1.5 ft/sec for 3 sec, then begin counter-clockwise arc at 8°/sec for final 3 sec
+- END POSITION: 2.5 feet behind knight, 30° to his right, 2 feet off ground
+- END MOTION STATE: Arc continuing counter-clockwise at 8°/sec
+
+**Subject Framing:**
+- START: Knight centered at 50%, full body, 65% frame height
+- END: Knight at 45% from left, three-quarter back view, 60% frame height
+
+**Background/Environment:**
+- START: Forest trees in background, cave mouth barely visible through fog upper right
+- END: Cave mouth more prominent at 70% horizontal, trees filling left 40% of frame
+
+**Lighting/Exposure:**
+- Conditions: Misty forest, dim daylight shafts through canopy, high contrast
+- END STATE: Knight backlit, cave mouth as dark void upper right, balanced exposure
+
+**Focus & Depth of Field:**
+- Focus Plane: Knight at 4 feet (maintaining as camera moves)
+- DOF: f/4 moderate shallow, knight sharp, background soft beyond 15 feet
+
+**Motion Blur:**
+- Direction: Minimal forward blur on foreground vegetation
+- Intensity: 8% (minimal)
+
+**Style:** Dark fantasy, volumetric fog with god rays, desaturated greens/grays
+
+**Tech:** 2.35:1, 24fps, cinematic, motion blur
+
+**END FRAME DESCRIPTION:** Camera 2.5 feet behind knight at 30° right, arcing counter-clockwise at 8°/sec. Knight in three-quarter back view at 45% from left, 60% frame height. Cave mouth visible at 70% horizontal as dark void. Forward motion blur 8% on vegetation.
+
+───────────────────────────────────────────────────────────────────────────────
+
+**Clip 2 of 5:**
+
+**START FRAME:** Camera 2.5 feet behind knight at 30° right, arcing counter-clockwise at 8°/sec. Knight in three-quarter back view at 45% from left, 60% frame height. Cave mouth visible at 70% horizontal as dark void. Forward motion blur 8% on vegetation.
+
+**Narrative:** Knight slows near cave entrance, hand moves to sword hilt. Deep rumbling breath echoes from within.
+
+**Camera Movement:**
+- START: 2.5 feet behind knight, 30° to right, 2 feet off ground, arcing counter-clockwise at 8°/sec
+- MOVEMENT: Continue arc 8°/sec for 2 sec (reaching 90° profile), introduce dolly forward 0.5 ft/sec while maintaining arc for 1 sec, reduce arc to 0°/sec while dolly accelerates to 1 ft/sec for final 3 sec
+- END POSITION: Level with knight's shoulder, 1 foot to his right, 3 feet off ground, cave centered
+- END MOTION STATE: Dolly forward 1 ft/sec toward cave (arc transitioned out)
+
+**Subject Framing:**
+- START: Knight at 45% from left, three-quarter back, 60% frame height
+- END: Knight profile left third at 20% from left, 25% frame height, cave centered at 50%, 50% frame width
+
+**Background/Environment:**
+- START: Cave upper right at 70%, trees left background
+- END: Cave centered, knight silhouetted left edge, entrance rim-lit
+
+**Lighting/Exposure:**
+- Conditions: Knight transitioning from backlit to side-lit as camera arcs
+- END STATE: Knight silhouette left edge, cave centered, slightly underexposed with rim lighting
+
+**Focus & Depth of Field:**
+- Focus Plane: Knight at 1 foot (pulling focus as camera closes distance)
+- DOF: f/4 moderate shallow, knight profile sharp, cave entrance acceptable sharpness
+
+**Motion Blur:**
+- Direction: Horizontal right-to-left from arc transition to forward
+- Intensity: 12% (subtle)
+
+**Style:** Dark fantasy, increased contrast, cave detail emerging
+
+**Tech:** 2.35:1, 24fps, cinematic, motion blur
+
+**END FRAME DESCRIPTION:** Camera level with knight's shoulder, 1 foot to right, moving forward 1 ft/sec. Knight profile left third at 20% from left, 25% frame height. Cave centered at 50%, 50% frame width, rim-lit. Horizontal right-to-left motion blur 12%.
+
+[Continue for Clips 3, 4, 5 following same format...]
+
+═══════════════════════════════════════════════════════════════════════════════
+END OF TEMPLATE
+═══════════════════════════════════════════════════════════════════════════════
+
+**Remember:** This template ensures seamless continuity. When generating actual video:
+- Use negative prompts consistently across all clips
+- Export last frames from editor (not screenshots) at native resolution
+- Use image-to-video for Clips 2+ with exported frames
+- Stitch final sequence in editor
+
+Good luck creating cinematic AI videos!
