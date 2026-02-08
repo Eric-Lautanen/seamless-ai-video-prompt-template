@@ -192,7 +192,17 @@ ASPECT RATIO: 2.35:1
 SPECIAL INSTRUCTIONS: Particles should progressively increase from 0 to hundreds, movement should feel fluid and weightless, lighting should create dramatic shadows, end wide to show full effect
 NEGATIVE PROMPTS: flicker, morphing, temporal inconsistency, unconvincing compositing, blur, mistimed movement
 ```
+## 📋 Ready-to-Use Examples
 
+Check out the `/examples` folder for pre-filled templates you can copy and modify:
+
+- **[product-commercial-watch.txt](examples/product-commercial-watch.txt)** - Luxury watch reveal with orbital camera
+- **[nature-documentary-eagle.txt](examples/nature-documentary-eagle.txt)** - Golden eagle hunting sequence
+- **[sci-fi-narrative-elon-mars.txt](examples/sci-fi-narrative-elon-mars.txt)** - SpaceX Starship launch to Mars
+- **[action-sequence-parkour.txt](examples/action-sequence-parkour.txt)** - Urban rooftop parkour chase
+- **[music-video-dancer.txt](examples/music-video-dancer.txt)** - Contemporary dance with VFX particles
+
+Simply copy an example, modify it for your needs, and paste into your AI!
 ---
 
 ## 🎯 The Last Frame Method
