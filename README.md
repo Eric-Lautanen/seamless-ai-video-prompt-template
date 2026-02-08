@@ -46,7 +46,7 @@ At the top of the template file, you'll find a simple form to fill out:
 ```
 CONTENT TYPE(S): [What kind of video? Action? Dialogue? Nature? Sci-fi?]
 VIDEO DURATION: [How long? e.g., 60 seconds]
-CLIP LENGTH: [ e.g., 6 seconds ]
+CLIP LENGTH: [e.g., 6 seconds - this is what AI video generators work best with]
 SUBJECT/CONCEPT: [Describe your entire video idea in detail]
 STYLE GUIDELINES: [What should it look like? Photorealistic? Anime? Cinematic?]
 ASPECT RATIO: [16:9 for YouTube, 2.35:1 for movies, etc.]
@@ -520,6 +520,16 @@ You can select **multiple types** for complex scenes:
 
 The template is comprehensive—you don't need to understand every technical detail. Just fill out the input form and let the AI generate the detailed prompts for you!
 
+### 7. **Consider Negative Prompts (Advanced)**
+
+For even better results, many AI video generators support **negative prompts** - instructions about what to avoid:
+- Common negative prompts: "blurry, low quality, distorted, watermark, shaky camera, morphing objects"
+- Platform-specific: Some platforms have dedicated negative prompt fields (Runway, Pika, Kling)
+- Use sparingly: Focus on common AI mistakes rather than long lists
+- Examples: "no extra limbs, no flickering, no compression artifacts, no text overlay"
+
+While the template handles the positive prompting excellently, if your platform supports negative prompts, adding a few key exclusions can help avoid common AI generation issues.
+
 ---
 
 ## 🛠️ Technical Details
@@ -579,13 +589,13 @@ STEP-BY-STEP BREAKDOWN:
 
 This creates a **chain of continuity** where each clip is literally built from where the last one ended.
 
-### Why 6-Second Clips?
+### Why 4-6 Second Clips?
 
-- Most AI video generators perform best with 4-10 second clips
-- 6 seconds is the sweet spot for quality and coherence
+- Most AI video generators perform best with 4-6 second clips
+- 4-6 seconds is the sweet spot for quality and coherence
 - Longer clips (10+ sec) tend to drift or lose coherence
 - Shorter clips (2-3 sec) don't allow enough action
-- 6 seconds = enough time for meaningful camera movement and action
+- 4-6 seconds = enough time for meaningful camera movement and action while maintaining consistency
 
 ### Supported AI Models
 
@@ -612,8 +622,8 @@ Use the generated prompts with:
 - ✅ Morph Studio
 
 **Text-to-Video Only (Template Prompts Still Help):**
-- ✅ OpenAI Sora (when publicly available)
-- ✅ Google Veo
+- ✅ OpenAI Sora / Sora 2 (available to ChatGPT Plus/Pro users in select regions; limited image-to-video support)
+- ✅ Google Veo 3.1
 - ✅ Meta Make-A-Video
 - ✅ Any emerging text-to-video models
 
@@ -883,6 +893,13 @@ See the [LICENSE](LICENSE) file for details.
 - Use the same last frame from the previous clip
 - Continue from there with the new direction
 - The template's detailed prompts make it easy to modify specific elements
+
+### Q: Do I need to use negative prompts?
+**A:** Not required, but they can help! Negative prompts tell the AI what to avoid (like "blurry, low quality, distorted"). Many platforms support them:
+- **Runway, Pika, Kling** - Have dedicated negative prompt fields
+- **Common negative prompts**: "blurry, low quality, watermark, shaky camera, flickering, morphing, distorted"
+- **Keep it simple**: 3-5 specific exclusions work better than long lists
+- The template's positive prompts are comprehensive, so negative prompts are optional but can reduce unwanted artifacts
 
 ---
 
