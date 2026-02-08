@@ -5,7 +5,7 @@
 Generate professional AI videos where every clip flows seamlessly into the next. No jarring jumps, no position shifts, no lighting changes—just smooth, cinematic sequences with synchronized sound.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![AI Video](https://img.shields.io/badge/AI-Video%20Generation-blue)](https://github.com/Eric-Lautanen/seamless-ai-video-prompts)
+[![AI Video](https://img.shields.io/badge/AI-Video%20Generation-blue)](https://github.com/Eric-Lautanen/seamless-ai-video-prompt-template)
 
 ---
 
