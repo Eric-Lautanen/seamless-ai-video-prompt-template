@@ -80,6 +80,15 @@ Paste the filled template into ChatGPT, Claude, Gemini, or Grok and say:
 
 **Result:** A professional sequence with fluid motion, intentional transitions, and continuous sound.
 
+**Pro Tips for Bulletproof Continuity**
+
+- Always describe the *exact same* outfit, hair, scar, freckles—word-for-word. AI forgets if you paraphrase.
+- If the face drifts after clip 3? Regenerate just that one using the last good frame. Don’t chain garbage.
+- Test with 12 seconds first. If it breaks early, the whole thing will.
+- Use 24fps, not 30. Feels more cinematic, less TikTok.
+- Sound? Add it last. Most generators still choke if you bake audio in.
+- Seed 0? Skip it. Some tools treat zero as “random”—always start at 1.
+- 
 ---
 
 ## 🎬 Continuity Modes (Both Versions)
