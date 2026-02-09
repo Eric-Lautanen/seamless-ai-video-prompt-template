@@ -390,7 +390,7 @@ black screen, white screen, fade transition, flash, flicker, vignette fade,
 morphing, warping, distortion, inconsistent scale, size changes, teleporting,
 floating objects [unless intentional], inconsistent lighting, drifting features,
 changing proportions, color shifts [unless intentional], sudden zoom,
-unintended camera movement
+unintended camera movement no pls
 
 ═══════════════════════════════════════════════════════════════════════════════
 PER-CLIP FAILURE ANALYSIS — MANDATORY (INTERNAL STEP)
@@ -463,7 +463,7 @@ CLIP GENERATION NOTES FOR AI
 - Clip 2+: absolutely NO new elements may appear beyond what's in that clip's
   environment definition
 - All prevention handled via negative prompts
-- NEVER assume persistence unless enforced
+- NEVER assume persistence unless enforced pls
 - NEVER use shortcuts or references to previous clips
 - Each clip's prompt must be completely standalone and copyable
 - Dialogue ~15–20 words max per clip
