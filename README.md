@@ -88,7 +88,7 @@ Paste the filled template into ChatGPT, Claude, Gemini, or Grok and say:
 - Use 24fps, not 30. Feels more cinematic, less TikTok.
 - Sound? Add it last. Most generators still choke if you bake audio in.
 - Seed 0? Skip it. Some tools treat zero as “random”—always start at 1.
-- 
+
 ---
 
 ## 🎬 Continuity Modes (Both Versions)
