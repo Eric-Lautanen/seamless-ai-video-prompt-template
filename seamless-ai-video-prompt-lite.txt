@@ -142,13 +142,10 @@ Clip X of Y:
 ═══════════════════════════════════════════════════════════════════════════════
 [STYLE — full text],
 [ENVIRONMENT (LOCKED) — full word-for-word text],
-[SUBJECTS (LOCKED) — ALL global subject descriptions copied word-for-word],
 
-[SUBJECTS (LOCKED) — ONLY subjects marked PRESENT for this clip,
-copied word-for-word from their global descriptions],
-
-[SUBJECTS (LOCKED) — ONLY subjects that exist in this clip,
-copied word-for-word from their global descriptions],
+[SUBJECTS — ONLY subjects that exist in this clip,
+each subject copied word-for-word from its locked description,
+no global declarations, no duplicates],
 
 [Camera movement specification — MUST SPECIFY exact movement OR state "remains static"],
 [Aspect ratio — MUST write explicitly],
