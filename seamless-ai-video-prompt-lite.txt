@@ -4,13 +4,11 @@
 QUICK INPUT FORM
 
 CONTENT TYPE:
-A super advanced spaceship leaves earth orbit, jumps to light speed and arrives at Alpha Centauri.  There are already satellites there?  What?  We're not alone?
-
+[genre, style, details. The more details the better to realize your vision.  example:  A woman dances in a warehouse.  One continous camera movement circling around her as she dances.]
 DURATION:
-42 seconds
-
+[How long do you want the full video to be?  example:  42 seconds]
 CLIP LENGTH:
-6 seconds
+[How long will each clip be? Grok Imagine does 6/10 second clips.  example: 6 seconds]
 
 ═══════════════════════════════════════════════════════════════════════════════
 ═══════════════════════════════════════════════════════════════════════════════
