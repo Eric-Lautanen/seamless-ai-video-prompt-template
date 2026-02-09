@@ -25,6 +25,8 @@ CORE RULES (READ ONCE)
 • Repeat the MAIN SUBJECT DESCRIPTION word-for-word in every clip
 • Audio continuity overrides visual continuity
 • Avoid random cuts or camera resets
+• Each clip prompt must go in its own fenced code block (triple backticks)
+so it’s one clean copy-paste per clip.
 
 If these rules are followed, continuity holds.
 
