@@ -2,6 +2,25 @@
 # QUICK PROMPTS • CONTINUITY LOCK • CINEMATIC RESULTS
 
 ═══════════════════════════════════════════════════════════════════════════════
+AI INSTRUCTIONS — READ FIRST
+
+When a user provides this template with their vision/concept:
+
+IF USER SAYS "prefill the template" or "fill in the template" or "update the template":
+→ Fill in ONLY the QUICK INPUT FORM section with their details
+→ Keep ALL rules, guidelines, and instructions intact
+→ Output the COMPLETE template (all sections) in a text file
+→ DO NOT generate individual clips
+→ DO NOT run/execute the template
+
+IF USER SAYS "run the template" or "generate clips" or "create the prompts":
+→ Read the filled QUICK INPUT FORM
+→ Generate ALL individual clips following the PER-CLIP OUTPUT FORMAT exactly
+→ Output each clip with START FRAME, narrative, camera, sound, END FRAME, COMPLETE PROMPT, and SOUND PROMPT
+→ Follow all CORE RULES strictly
+→ Generate the exact number of clips calculated (TOTAL DURATION ÷ 6)
+
+═══════════════════════════════════════════════════════════════════════════════
 PURPOSE
 
 This is a streamlined version of the Cinematic Edition.
