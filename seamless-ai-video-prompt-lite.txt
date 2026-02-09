@@ -159,22 +159,15 @@ Sound:
 END FRAME DESCRIPTION:
 [All subjects numbered exactly as in MULTIPLE SUBJECTS (LOCKED), fully visible, centered or positioned consistently, unchanged in form, lighting, and scale. Repeat their full descriptions word-for-word.]
 
-COMPLETE PROMPT (COPY THIS):
+COMPLETE PROMPT (COPY THIS — ONE BLOCK):
 ```
 [Full positive prompt with all details including: "Camera holds static for first 2 seconds, then [describe movement]"]
+
+Sound design: Music: [specify track/style or "None"] / [%], Ambient: [continuous background sounds or "None"] / [%], Foley: [specific sound effects for this clip with timing] / [%], Dialogue: [exact lines with character names, or "None"], Sound Transitions: [how sound connects to previous/next clip]
 
 Negative prompt: [Full negative prompt]
 
 Seed: [locked seed number]
-```
-
-SOUND PROMPT (COPY THIS):
-```
-Music: [specify track/style or "None"] / [%]
-Ambient: [continuous background sounds] / [%]
-Foley: [specific sound effects for this clip with timing] / [%]
-Dialogue: [exact lines with character names, or "None"]
-Sound Transitions: [how sound connects to previous/next clip]
 ```
 
 ═══════════════════════════════════════════════════════════════════════════════
