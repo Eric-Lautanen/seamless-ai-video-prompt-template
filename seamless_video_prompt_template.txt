@@ -156,11 +156,31 @@ IMPORTANT:
 - Camera MUST NOT reframe to reveal undisclosed areas
 - Subjects not listed in a clip do not exist in any form in that clip
 
+CRITICAL - WHAT TO INCLUDE IN SUBJECT DESCRIPTIONS:
+✓ Physical attributes: age, height, build, body type
+✓ Facial features: face shape, eyes, nose, mouth, skin tone
+✓ Hair: color, length, style, texture
+✓ Clothing: exact garments, colors, materials, fit
+✓ Accessories: jewelry, glasses, watches, props held or worn
+✓ Distinguishing marks: scars, tattoos, birthmarks (if visible)
+✓ Default standing/sitting form (e.g., "standing upright" or "seated")
+
+CRITICAL - WHAT TO EXCLUDE FROM SUBJECT DESCRIPTIONS:
+✗ NO actions or verbs: "gesturing", "leaning", "moving", "speaking"
+✗ NO posture descriptions: "relaxed", "tense", "hunched", "confident"
+✗ NO behavioral traits: "expressive", "animated", "calm", "nervous"
+✗ NO facial expressions: "smiling", "frowning", "worried look"
+✗ NO movement patterns: "frequent hand gestures", "pacing"
+✗ NO temporal or conditional language: "when anxious", "while speaking"
+✗ NO personality descriptors: "friendly", "serious", "playful"
+
+ALL excluded elements belong in the Narrative or Special Notes sections of each clip.
+
 Subject 1 — GLOBAL DESCRIPTION (LOCKED):
-[Full immutable description: age or scale, form, face or surface,
-materials, colors, textures, clothing or components, props,
-default posture, identifying features.
-NO actions. NO positioning. NO temporal language.]
+[Physical form only: age/scale, build, height, face, hair, skin, eyes, 
+clothing items with colors and materials, accessories, distinguishing marks.
+Example: "Male, late 20s, athletic build, 5'10" height, short dark brown hair, 
+light stubble, hazel eyes, wearing navy t-shirt and jeans, silver watch on left wrist."]
 
 Subject 2 — GLOBAL DESCRIPTION (LOCKED):
 [Same rules as Subject 1]
@@ -653,6 +673,13 @@ CLIP GENERATION NOTES FOR AI
 - No implied off-screen presence
 - Environment text must be complete for each clip, even if identical to previous clips
 - VFX state must evolve numerically from previous clip's end state
+
+SUBJECT DESCRIPTION ENFORCEMENT:
+- When copying subject descriptions into each clip, verify they contain ZERO action words
+- If user's uploaded template contains actions/behaviors in subject descriptions, 
+  SILENTLY move those elements to the Narrative section
+- Subject descriptions = physical inventory only
+- Behaviors/actions/postures = Narrative/Special Notes only
 
 FINAL FRAME REQUIREMENTS:
 - Every clip must end with a fully visible, properly lit frame
