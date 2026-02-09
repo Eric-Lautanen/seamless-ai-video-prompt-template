@@ -46,6 +46,13 @@ NUMBER OF CLIPS:
 MAIN SUBJECT (LOCKED):
 [Exact description — repeat verbatim every clip]
 
+MULTIPLE SUBJECTS (LOCKED):
+[Numbered list — e.g.
+1. Woman One: [full description]
+2. Man One: [full description]
+3. Child One: [full description]
+...repeat these exact descriptions word-for-word in every clip]
+
 LOCKED SEED (if using):
 [Any number between 1 and 999999 — same number every clip]
 
@@ -120,7 +127,7 @@ Sound:
 [What continues or changes]
 
 END FRAME DESCRIPTION:
-[MAIN SUBJECT centered, fully visible, unchanged — verbatim]
+[All subjects numbered exactly as in MULTIPLE SUBJECTS (LOCKED), fully visible, centered or positioned consistently, unchanged in form, lighting, and scale. Repeat their full descriptions word-for-word.]
 
 ═══════════════════════════════════════════════════════════════════════════════
 FAST WORKFLOW (LAST FRAME METHOD)
