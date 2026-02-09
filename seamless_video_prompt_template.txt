@@ -495,30 +495,15 @@ Notes:
 [Sync rules, emotional emphasis]
 
 ═══════════════════════════════════════════════════════════════════════════════
-NEGATIVE PROMPTS — BASE CONSTRAINT LIST (LOCKED)
+NEGATIVE PROMPT RULES — CLIP-SPECIFIC ONLY
 
-MUST INCLUDE AT MINIMUM:
-fade to black, fade to white, fading out, dimming, darkening, ending in darkness,
-black screen, white screen, fade transition, flash, flicker, vignette fade,
-morphing, warping, distortion, inconsistent scale, size changes, teleporting,
-floating objects [unless intentional], inconsistent lighting, drifting features,
-changing proportions, color shifts [unless intentional], sudden zoom,
-unintended camera movement
+MAXIMUM: 10 negative prompts per clip
+SCOPE: Only address risks specific to THIS clip
 
-Universal:
-blur, text, watermark, low quality
-
-Humans:
-extra fingers, deformed hands, warped face, extra limbs
-
-Action:
-jitter, stutter, shaky camera [unless handheld specified], unnatural physics
-
-Product:
-dust, scratches, fingerprints, reflections [unless intentional], text
-
-VFX:
-temporal inconsistency, flat lighting, poor compositing
+NO GLOBAL NEGATIVES:
+- Do not carry forward negative prompts from previous clips
+- Do not create a reusable base list
+- Each clip gets a fresh analysis
 
 ═══════════════════════════════════════════════════════════════════════════════
 PER-CLIP FAILURE ANALYSIS — MANDATORY (INTERNAL STEP)
@@ -526,23 +511,25 @@ PER-CLIP FAILURE ANALYSIS — MANDATORY (INTERNAL STEP)
 Before writing EACH clip prompt, the AI MUST:
 
 1. Examine the inherited start-frame image (or declared environment for that clip)
-2. Identify all ways the model could:
-   - Add new elements not in the clip's environment definition
-   - Remove existing elements that should persist
-   - Change geometry, scale, or layout unintentionally
-   - Introduce new lighting sources not declared
-   - Reveal unseen areas beyond the clip's environment scope
-   - Drift subject identity or proportions from locked descriptions
-   - Break VFX continuity (if VFX-heavy mode)
-   - Violate camera physics or movement constraints
-3. Convert EACH risk into an explicit negative prompt item
-4. Append those items to the clip's negative prompt
-5. Fully rewrite the complete negative prompt including:
-   - Base Constraint List (verbatim)
-   - PLUS clip-specific prevention terms
+2. Identify the TOP 10 risks specific to THIS clip:
+   - Elements that might appear but shouldn't (based on this clip's environment)
+   - Elements that might disappear but should persist
+   - Geometry, scale, or layout changes unique to this clip's composition
+   - Lighting inconsistencies specific to this clip's scene state
+   - Areas that might be revealed beyond this clip's environment scope
+   - Identity drift risks specific to this clip's subject positioning/actions
+   - VFX continuity breaks specific to this clip's effect state
+   - Camera physics violations specific to this clip's movement
+   - Spatial continuity violations (180-degree rule, eyeline, screen direction)
+   - Transition artifacts specific to this clip boundary
+3. Convert the TOP 10 risks into explicit negative prompt items
+4. Write these 10 items as the complete negative prompt for this clip
+5. Maximum 10 items — prioritize the most likely failures
 
 This analysis is NOT output separately.
-Its results MUST appear ONLY in the clip's negative prompt.
+Its results appear ONLY in the clip's negative prompt section.
+
+CRITICAL: Each clip's negative prompt is INDEPENDENT and LIMITED TO 10 ITEMS.
 
 ═══════════════════════════════════════════════════════════════════════════════
 OUTPUT FORMAT (PER CLIP)
@@ -637,9 +624,9 @@ Foley: [exact sounds with timing] / [%]
 Dialogue: [Subject name: "exact line" (start-end)] OR None
 Transitions: [exact connection]
 
-Negative Prompt (FULL — NO REFERENCES):
-[Base constraint list + clip-specific negatives derived from failure analysis,
-all written out in full, comma separated]
+Negative Prompt (10 items maximum, THIS CLIP ONLY):
+[10 specific negative prompts addressing this clip's unique failure risks,
+comma separated, no carryover from previous clips]
 
 Seed:
 [Exact 6-digit seed]
@@ -664,9 +651,11 @@ CLIP GENERATION NOTES FOR AI
   OR establishes elements per its specific environment definition (in EVOLVING/PER-CLIP modes)
 - Clip 2+: absolutely NO new elements may appear beyond what's in that clip's
   environment definition
-- All prevention handled via negative prompts
+- All prevention handled via negative prompts (max 10 per clip)
 - NEVER assume persistence unless enforced
 - NEVER use shortcuts or references to previous clips
+- NEVER reuse negative prompts from previous clips
+- Each clip gets fresh failure analysis → fresh negative prompts
 - Each clip's prompt must be completely standalone and copyable
 - Dialogue ~15–20 words max per clip
 - Multi-subject conversations: dialogue must span 80%+ of clip duration
@@ -705,6 +694,7 @@ Between Clip N and Clip N+1:
 ☐ VFX state evolved, not reset
 ☐ END FRAME = NEXT START FRAME (or justified cut)
 ☐ No new elements introduced beyond environment definition
+☐ Negative prompts analyzed fresh (10 max, clip-specific only)
 ☐ Subject descriptions maintained word-for-word
 ☐ Seed consistent across all clips
 ☐ No fades to black/white
