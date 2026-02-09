@@ -1,4 +1,5 @@
-# SEAMLESS AI VIDEO PROMPT GENERATOR — LITE EDITION
+# SEAMLESS AI VIDEO PROMPT GENERATOR — STREAMLINED EDITION
+# MINIMAL OUTPUT • MAXIMUM EFFICIENCY • SAME QUALITY
 
 ═══════════════════════════════════════════════════════════════════════════════
 AI INSTRUCTIONS
@@ -6,6 +7,17 @@ AI INSTRUCTIONS
 USER UPLOADS TEMPLATE WITH VISION → Prefill QUICK INPUT FORM, output complete template file, DO NOT run
 USER SAYS "run"/"generate"/"create clips" OR UPLOADS PREFILLED TEMPLATE → Generate all clips immediately
 USER SAYS "prefill"/"fill"/"update" → Fill input form only, output complete template file, DO NOT run
+
+CRITICAL OUTPUT RULES - NO EXCEPTIONS:
+• NEVER use "same as above", "see previous", "as before", "[same]", "ditto", or ANY shortcut text
+• EVERY clip must contain COMPLETE FULL TEXT of environment description copied WORD-FOR-WORD
+• EVERY clip must contain COMPLETE FULL TEXT of all character descriptions copied WORD-FOR-WORD
+• EVERY clip must contain COMPLETE FULL negative prompt copied WORD-FOR-WORD
+• Zero abbreviations, zero shortcuts, zero laziness
+• If environment is 200 words, you write 200 words EVERY SINGLE CLIP
+• If character descriptions are 150 words, you write 150 words EVERY SINGLE CLIP
+• Copy-paste the locked descriptions verbatim - this is MANDATORY for AI video tool consistency
+• Failure to output complete text = broken continuity = unusable output
 
 ═══════════════════════════════════════════════════════════════════════════════
 CORE RULES
@@ -70,11 +82,11 @@ Clip X of Y:
 📋 COPY THIS PROMPT → PASTE INTO VIDEO AI TOOL
 ═══════════════════════════════════════════════════════════════════════════════
 ```
-[Style], [ENVIRONMENT (LOCKED) complete word-for-word], [MULTIPLE SUBJECTS (LOCKED) all subjects complete word-for-word with current actions/positions for this clip], Camera holds static 1 second then [movement if any over remaining 5 seconds], [aspect ratio], [special notes relevant to this clip]
+[Style], [ENVIRONMENT (LOCKED) complete word-for-word - NEVER abbreviate, NEVER say "same as above", write the FULL text every time], [MULTIPLE SUBJECTS (LOCKED) all subjects complete word-for-word with current actions/positions for this clip - NEVER abbreviate, write FULL descriptions every time], Camera holds static 1 second then [movement if any over remaining 5 seconds], [aspect ratio], [special notes relevant to this clip]
 
 Sound design: Music: [spec or None] / [%], Ambient: [spec or None] / [%], Foley: [this clip's specific sounds with timing] / [%], Dialogue: [exact lines with character names or None], Transitions: [connection to prev/next]
 
-Negative prompt: [full negative from input form]
+Negative prompt: [full negative from input form - COMPLETE TEXT every time, NEVER abbreviate]
 
 Seed: [seed number]
 ```
@@ -87,8 +99,10 @@ END FRAME FOR NEXT CLIP:
 CLIP GENERATION NOTES FOR AI:
 • Clip 1: No START FRAME needed
 • Clip 2+: Use previous clip's END FRAME as visual reference for continuity
-• Environment description identical every clip
-• Subject descriptions identical every clip (only actions/positions change)
+• Environment description identical every clip - MUST BE COPIED WORD-FOR-WORD IN FULL, NO SHORTCUTS
+• Subject descriptions identical every clip - MUST BE COPIED WORD-FOR-WORD IN FULL, NO SHORTCUTS
+• Negative prompt identical every clip - MUST BE COPIED WORD-FOR-WORD IN FULL, NO SHORTCUTS
+• NEVER write "same as above" or "as before" or use any abbreviation - always full complete text
 • If CONTINUOUS mode: seamless flow
 • If CUTS mode: new framing but maintain character consistency
 • Dialogue timing: ~15-20 words max per 6-second clip for natural delivery
