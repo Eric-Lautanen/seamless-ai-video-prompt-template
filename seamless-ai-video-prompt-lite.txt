@@ -11,11 +11,18 @@ CRITICAL OUTPUT RULES - NO EXCEPTIONS:
 • EVERY clip must contain COMPLETE FULL TEXT of environment description copied WORD-FOR-WORD
 • EVERY clip must contain COMPLETE FULL TEXT of all character descriptions copied WORD-FOR-WORD
 • EVERY clip must contain COMPLETE FULL negative prompt copied WORD-FOR-WORD
-• Zero abbreviations, zero shortcuts, zero laziness
+• EVERY clip must contain COMPLETE camera movement specification (exact degrees/distance OR "remains static")
+• EVERY clip must contain COMPLETE sound design with ALL 5 components: Music/%, Ambient/%, Foley with timing/%, Dialogue with character names, Transitions
+• EVERY clip must contain exact seed number
+• EVERY clip must contain aspect ratio
+• EVERY clip must contain style description
+• EVERY clip must contain special notes for that specific clip
+• Zero abbreviations, zero shortcuts, zero laziness, ZERO BLANK FIELDS
 • If environment is 200 words, you write 200 words EVERY SINGLE CLIP
 • If character descriptions are 150 words, you write 150 words EVERY SINGLE CLIP
 • Copy-paste the locked descriptions verbatim - this is MANDATORY for AI video tool consistency
 • Failure to output complete text = broken continuity = unusable output
+• Leaving ANY field blank or abbreviated = FAILURE
 
 ═══════════════════════════════════════════════════════════════════════════════
 CORE RULES
@@ -80,17 +87,19 @@ Clip X of Y:
 📋 COPY THIS PROMPT → PASTE INTO VIDEO AI TOOL
 ═══════════════════════════════════════════════════════════════════════════════
 ```
-[Style], [ENVIRONMENT (LOCKED) complete word-for-word - NEVER abbreviate, NEVER say "same as above", write the FULL text every time], [MULTIPLE SUBJECTS (LOCKED) all subjects complete word-for-word with current actions/positions for this clip - NEVER abbreviate, write FULL descriptions every time], Camera holds static 1 second then [movement if any over remaining 5 seconds], [aspect ratio], [special notes relevant to this clip]
+[Style - write out COMPLETE style description], [ENVIRONMENT (LOCKED) complete word-for-word - NEVER abbreviate, NEVER say "same as above", write the FULL 200+ word environment text every single time], [MULTIPLE SUBJECTS (LOCKED) all subjects complete word-for-word with current actions/positions for this clip - NEVER abbreviate, write FULL 150+ word character descriptions every single time for ALL characters], Camera holds static 1 second then [MUST SPECIFY: exact camera movement with degrees/distance over remaining 5 seconds OR state "remains static" - NEVER leave blank], [aspect ratio - MUST WRITE: 16:9 or 2.35:1 etc], [special notes relevant to this clip - MUST WRITE: specific behaviors, eye movements, micro-expressions happening in THIS clip]
 
-Sound design: Music: [spec or None] / [%], Ambient: [spec or None] / [%], Foley: [this clip's specific sounds with timing] / [%], Dialogue: [exact lines with character names or None], Transitions: [connection to prev/next]
+Sound design: Music: [MUST SPECIFY: exact track name/style OR "None"] / [MUST SPECIFY: percentage like 0% or 30%], Ambient: [MUST SPECIFY: exact ambient sounds OR "None"] / [MUST SPECIFY: percentage], Foley: [MUST SPECIFY: complete list of this clip's specific foley sounds with exact timing like "keyboard clicks 0:01-0:06, mouse click 0:03, chair creak 0:04-0:05" - NEVER just say "foley sounds"] / [MUST SPECIFY: percentage like 100%], Dialogue: [MUST SPECIFY: exact character lines with character names "MARCUS: 'text here'" OR write "None" - NEVER leave blank], Transitions: [MUST SPECIFY: how sound connects to previous/next clip like "seamless continuation of keyboard clicks" - NEVER leave blank]
 
-Negative prompt: [full negative from input form - COMPLETE TEXT every time, NEVER abbreviate]
+Negative prompt: [MUST WRITE: full complete negative prompt from input form copying EVERY SINGLE WORD - 50+ words - NEVER abbreviate, NEVER say "same as clip 1"]
 
-Seed: [seed number]
+Seed: [MUST WRITE: the exact 6-digit seed number - NEVER leave blank, NEVER say "same"]
 ```
 
 END FRAME FOR NEXT CLIP:
-[All subjects numbered as in MULTIPLE SUBJECTS (LOCKED), exact physical descriptions word-for-word, current final positions/states]
+[MUST WRITE: All subjects numbered 1, 2, 3 as in MULTIPLE SUBJECTS (LOCKED), exact physical descriptions word-for-word copying FULL text, current final positions/states - NEVER abbreviate]
+
+CRITICAL: Every single field above marked "MUST SPECIFY" or "MUST WRITE" is MANDATORY and MUST be filled completely in EVERY clip. Zero blank fields allowed. Zero shortcuts allowed.
 
 ═══════════════════════════════════════════════════════════════════════════════
 
