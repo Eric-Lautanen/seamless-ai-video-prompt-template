@@ -18,6 +18,7 @@ GLOBAL INSTRUCTIONS
 • Audio continuity is prioritized over visual continuity
 • Exact measurements only (no approximations)
 • Maintain cinematic realism, inertia, and physics
+• Each clip prompt must be placed in its own textarea/code block/artifact for easy copying
 
 ═══════════════════════════════════════════════════════════════════════════════
 FILL OUT THIS FORM
