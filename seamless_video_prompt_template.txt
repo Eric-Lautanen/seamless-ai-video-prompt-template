@@ -38,6 +38,13 @@ NUMBER OF CLIPS:
 SUBJECT / CONCEPT:
 [Full cinematic description of scene, action, tone, style]
 
+MULTIPLE SUBJECTS (LOCKED):
+[Numbered list — e.g.
+1. Woman One: [full description including appearance, clothing, characteristics]
+2. Man One: [full description including appearance, clothing, characteristics]
+3. Child One: [full description including appearance, clothing, characteristics]
+...repeat these exact descriptions word-for-word in every clip]
+
 STYLE GUIDELINES:
 [Photorealistic, Cinematic, Anime, Cyberpunk, Fantasy, etc.]
 
@@ -94,7 +101,7 @@ Product:
 dust, scratches, fingerprints, reflections, text
 
 VFX:
-temporal inconsistency, flat lighting, poor compositing
+temporal inconsistancy, flat lighting, poor compositing
 
 ═══════════════════════════════════════════════════════════════════════════════
 CAMERA MOTION RULES (GLOBAL)
@@ -245,7 +252,7 @@ Tech:
 
 ════════════════════════════════════════════
 END FRAME DESCRIPTION:
-[Detailed final composition — becomes next clip’s START FRAME]
+[All subjects numbered exactly as in MULTIPLE SUBJECTS (LOCKED), fully visible, centered or positioned consistently, unchanged in form, lighting, and scale. Repeat their full descriptions word-for-word.]
 
 END FRAME ROLE (if cut follows):
 [Occlusion / Motion blur peak / Luminance spike / Action apex]
