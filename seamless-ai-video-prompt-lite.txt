@@ -1,6 +1,7 @@
 # SEAMLESS AI VIDEO PROMPT GENERATOR — STREAMLINED EDITION
 # MINIMAL OUTPUT • MAXIMUM EFFICIENCY • SAME QUALITY
 ═══════════════════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════════════════
 QUICK INPUT FORM
 
 CONTENT TYPE:
@@ -9,7 +10,6 @@ DURATION:
 [How long do you want the full video to be?  example:  42 seconds]
 CLIP LENGTH:
 [How long will each clip be? example: 5 seconds]
-
 ═══════════════════════════════════════════════════════════════════════════════
 ═══════════════════════════════════════════════════════════════════════════════
 AI INSTRUCTIONS
