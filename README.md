@@ -22,6 +22,7 @@ Note: Regenerate clips when needed for pixel-accurate continuity.
 
 ### 1. Fill Out the Template
 Open `seamless_video_prompt_template.txt` and complete the fields at the top.
+
 Ask an AI to fill out the template form based on your vision.
 
 ### 2. Give It to an AI
