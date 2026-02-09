@@ -46,6 +46,9 @@ NUMBER OF CLIPS:
 MAIN SUBJECT (LOCKED):
 [Exact description — repeat verbatim every clip]
 
+LOCKED SEED (if using):
+[Any number between 1 and 999999 — same number every clip]
+
 SCENE / CONCEPT:
 [What happens from start to end]
 
@@ -138,6 +141,7 @@ WHEN TO USE THIS VERSION
 • Shorts
 • Rapid iteration
 • Client previews
+• When tokens are low and you still need 12–30 seconds of usable footage
 
 For full productions, use the Cinematic Edition.
 
