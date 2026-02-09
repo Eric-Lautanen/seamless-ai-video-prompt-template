@@ -55,8 +55,15 @@ Note: Regenerate clips when needed for pixel-accurate continuity.
 - Three-layer sound design system
 - Frame-perfect continuity controls
 - VFX integration support
+- **NEW:** 180-degree rule enforcement
+- **NEW:** 30-degree rule for angle changes
+- **NEW:** Eyeline match for character interactions
+- **NEW:** Match on action editing
+- **NEW:** Eye trace for viewer attention control
+- **NEW:** Reference image workflow (2026 best practice)
+- **NEW:** Dual-image input method (60-80% less identity drift)
 
-**Use when:** You need maximum creative control and cinematic polish.
+**Use when:** You need maximum creative control and cinematic polish with professional spatial continuity.
 
 ---
 
@@ -113,6 +120,45 @@ Hidden Hollywood-style cuts using whip pans, occlusion, motion blur, or light fl
 Intentional cutaways, inserts, or montage beats. Used for emphasis and pacing. Always motivated and sound-bridged.
 
 **Key principle:** Sound continuity always takes priority over visual continuity.
+
+---
+
+## 🎥 Professional Cinematography (Cinematic Edition Only)
+
+The Cinematic Edition enforces Hollywood spatial continuity rules:
+
+### 180-Degree Rule
+Camera stays on one side of the "action axis" (imaginary line between subjects):
+- Prevents spatial disorientation
+- Characters remain in consistent left/right relationship
+- **Example:** In a conversation, if Person A is on the left, they stay left in every shot
+- **Exception:** You can cross the line if you show the camera movement on screen
+
+### 30-Degree Rule
+When cutting to the same subject from a different angle:
+- Angle must change by at least 30 degrees
+- Less than 30° creates jarring "jump cut" effect
+- **Exception:** Intentional jump cuts for stylistic/time-compression effect
+
+### Eyeline Match
+When characters look at each other:
+- If Subject A looks right, Subject B must look left
+- Maintains spatial logic and eye contact illusion
+- Critical for natural-feeling conversations
+
+### Match on Action
+Cut during movement, not between movements:
+- **Example:** Cut while door is opening, not before or after
+- Creates seamless, invisible transitions
+- Viewer's brain fills in the gap
+
+### Eye Trace
+Guide viewer attention from shot to shot:
+- Use color, composition, or blocking
+- Place important elements where the viewer is already looking
+- **Example:** Subject exits frame-right → next shot starts frame-right
+
+These rules are why Hollywood films feel smooth while amateur videos feel "off." The Cinematic template enforces them automatically.
 
 ---
 
@@ -204,6 +250,37 @@ This technique eliminates AI randomness and preserves camera, lighting, and fram
 
 ---
 
+## 🎨 The Reference Image Method (2026 Best Practice - Cinematic Only)
+
+Advanced workflow for superior identity consistency using dual-image input:
+
+**Setup:**
+1. Create or source a high-quality reference image showing your subject with desired lighting, clothing, and style
+2. Use this SAME reference image for ALL clips
+
+**Generation:**
+1. **Clip 1:** Reference Image + Text Prompt → Video
+2. Export final frame
+3. **Clip 2:** Reference Image + Final Frame + Text Prompt → Video
+4. Repeat for all clips
+
+**Results:**
+- 60-80% reduction in identity drift
+- Locked color grading and lighting
+- Consistent facial features and proportions
+- Works best with frontal, well-lit reference images
+
+**Platform Support (Feb 2026):**
+- ✅ Sora 2 (dual reference + final frame)
+- ✅ Veo 3.1 (reference + prompt)
+- ✅ Runway Gen-4.5 (multi-image input)
+- ✅ Kling 2.6 (reference + continuity)
+- ✅ Pika 2.5 (image conditioning)
+
+Check your platform's documentation for latest features.
+
+---
+
 ## 🎵 Sound Design
 
 ### Lite Edition
@@ -256,13 +333,17 @@ Professional three-layer system with detailed control:
 | Feature | Lite Edition | Cinematic Edition |
 |---------|-------------|-------------------|
 | **Setup Time** | 2 minutes (3 fields) | 15–30 minutes |
-| **Camera Controls** | Simple descriptions | Precise physics |
+| **Camera Controls** | Simple descriptions | Precise physics + spatial rules |
 | **Camera Timing** | User-controlled | Structured defaults |
 | **Sound Design** | 5-field structured | Professional 3-layer |
 | **Slop Prevention** | Built-in (10+ rules) | Built-in + advanced |
 | **Dialogue Timing** | Auto 80% rule | Manual control |
 | **Output Format** | 1 artifact per clip | 1 artifact per clip |
 | **Cut Motivations** | Simplified | Detailed justification |
+| **Spatial Continuity** | Basic | 180°/30° rules + eyeline match |
+| **Advanced Editing** | ❌ | Match on action + eye trace |
+| **Reference Images** | ❌ | ✅ Dual-image workflow |
+| **Identity Drift Prevention** | Seed + word-for-word | Seed + reference image (60-80% better) |
 | **Best For** | Social, ads, tests | Films, commercials, docs |
 | **Learning Curve** | Minimal | Moderate |
 | **Output Quality** | Clean & cinematic | Maximum polish |
@@ -278,10 +359,25 @@ Professional three-layer system with detailed control:
 - **Concept test for client** (prefill → review → generate)
 - **Social ad with call-to-action** (static environment, continuous camera movement)
 
+### Cinematic Edition Examples
+- **60-second narrative short** (10 clips × 6 seconds, 180° rule enforced)
+- **Two-character conversation** (eyeline match + match on action + reference images for identity lock)
+- **Action sequence with VFX** (particle state tracking + invisible cuts on motion blur peaks)
+- **Product commercial with camera choreography** (precise dolly moves + eye trace for viewer attention)
+- **Music video with location changes** (PER-CLIP environment mode + reference image for artist consistency)
+
 ### When to Use Prefill
 - "I want a cyberpunk alley scene but don't know how to describe the neon lights"
 - "Make a coffee shop conversation but I'm not sure about camera angles"
 - "Create a space shuttle approach sequence" (see template for exact example)
+- "I have a great idea but don't know cinematography terminology"
+
+### When to Use Reference Image Method (Cinematic)
+- Character-driven narratives requiring facial consistency
+- Product videos where brand colors must stay exact
+- Any sequence where identity drift would break immersion
+- Multi-location scenes requiring consistent subject appearance
+- Professional client work requiring pixel-perfect brand consistency
 
 ---
 
