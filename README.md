@@ -21,10 +21,8 @@ Note: Regenerate clips when needed for pixel-accurate continuity.
 ## 🚀 Quick Start (3 Steps)
 
 ### 1. Fill Out the Template
-Open `seamless_video_prompt_template.txt`  
-and complete the fields at the top.  
-Ask an AI to fill out the template form  
-based on your vision.
+Open seamless_video_prompt_template.txt and complete the fields at the top.  
+Ask an AI to fill out the template form based on your vision.
 
 ### 2. Give It to an AI
 Paste the filled template into ChatGPT, Claude, Gemini, or Grok and say:
