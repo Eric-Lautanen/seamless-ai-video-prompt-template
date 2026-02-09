@@ -225,18 +225,7 @@ SCENE COMPOSITION LOCK — CRITICAL
 ═══════════════════════════════════════════════════════════════════════════════
 NEGATIVE PROMPT — BASE CONSTRAINT LIST (LOCKED)
 
-This list MUST be copied verbatim into EVERY clip’s negative prompt.
-
-flicker, blur, morphing, text, watermark, low quality, extra fingers,
-warped face, jitter, shaky camera, unnatural physics,
-temporal inconsistency, lens flare, dramatic lighting,
-colored contacts, makeup glow, CGI sheen, over-saturation,
-face morph, costume change, hair color shift,
-warping walls, melting objects, morphing furniture,
-changing room layout, shifting props, disappearing objects,
-size inconsistency, perspective distortion, floating objects,
-stretching monitors, bending desks, color shift backgrounds,
-moving walls, geometry warping
+Create a curated list of negative prompts per clip, comma seperated
 
 ═══════════════════════════════════════════════════════════════════════════════
 PER-CLIP FAILURE ANALYSIS — MANDATORY (INTERNAL STEP)
@@ -292,8 +281,7 @@ Dialogue: [Subject name: "exact line"] OR None
 Transitions: [exact connection]
 
 Negative prompt (FULL — NO REFERENCES):
-[Base negative prompt list copied word-for-word
-PLUS clip-specific negatives derived from failure analysis]
+[clip-specific negatives derived from failure analysis]
 
 Seed:
 [Exact 6-digit seed]
