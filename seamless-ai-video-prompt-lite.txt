@@ -53,12 +53,14 @@ CORE RULES
 - Clip 2+ START FRAME = final rendered frame of previous clip (used as image input)
 - Continuity is enforced exclusively through start-frame image inheritance
 
-SUBJECTS (LOCKED — DECLARATION ONLY)
+SUBJECTS (LOCKED — CLIP-VISIBLE ONLY)
 
 IMPORTANT:
-- SUBJECTS are globally declared entities for continuity locking.
-- Subject descriptions are immutable and must never change once declared.
-- A subject is considered PRESENT in a clip if and only if its full description appears in that clip’s prompt.
+- Subject descriptions define ONLY what is allowed to appear within the camera frame.
+- Any body parts, clothing, or features NOT explicitly described here MUST NOT appear visually.
+- Subject descriptions are immutable once declared, but do NOT imply full-body visibility.
+- The camera MUST NOT reframe, zoom, pan, or tilt to reveal undisclosed body parts.
+- Canonical subject identity exists implicitly and does not require visual completeness.
 - Subjects not listed in a clip do not exist in any form in that clip.
 
 Subject 1 — GLOBAL DESCRIPTION (LOCKED):
@@ -174,7 +176,6 @@ CLIP GENERATION NOTES FOR AI
 - Negative prompt identical every clip — copy word-for-word
 - NEVER use shortcuts
 - Dialogue ~15–20 words max per clip
-- Subjects never acknowledge camera
 - No implied off-screen presence
 
 ═══════════════════════════════════════════════════════════════════════════════
