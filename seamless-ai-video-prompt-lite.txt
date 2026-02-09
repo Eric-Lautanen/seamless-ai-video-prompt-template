@@ -52,11 +52,16 @@ MULTIPLE SUBJECTS (LOCKED):
 [Numbered list — e.g.
 1. Woman One: [full description]
 2. Man One: [full description]
-3. Child One: [full description]
 ...repeat these exact descriptions word-for-word in every clip]
 
 LOCKED SEED (if using):
 [Any number between 1 and 999999 — same number every clip]
+
+SOUND SETTINGS:
+Music: [None / Description / Volume %]
+Ambient: [Environment / Volume %]
+Foley: [Key sounds]
+Sound Transitions: [Continuous / Crossfade / J-cut / L-cut]
 
 SCENE / CONCEPT:
 [What happens from start to end]
@@ -83,17 +88,11 @@ CUT MOTIVATION:
 ═══════════════════════════════════════════════════════════════════════════════
 SOUND (OPTIONAL BUT RECOMMENDED)
 
-Music:
-[None / Description / Volume %]
+Music: Ambient: Foley: Sound Transitions: ───────────────────────────────
+SOUND IN PROMPT RULE (MANDATORY)
 
-Ambient:
-[Environment / Volume %]
-
-Foley:
-[Key sounds]
-
-Sound Transitions:
-[Continuous / Crossfade / J-cut / L-cut]
+In every clip’s final prompt, include:
+“Sound design: — no music, no ambient, no dialogue unless specified”
 
 ═══════════════════════════════════════════════════════════════════════════════
 NEGATIVE PROMPTS (USE SAME FOR ALL CLIPS)
