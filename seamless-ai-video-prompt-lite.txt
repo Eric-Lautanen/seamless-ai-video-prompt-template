@@ -4,7 +4,7 @@
 QUICK INPUT FORM
 
 CONTENT TYPE:
-Description of what you want the AI to generate.
+A super advanced spaceship leaves earth orbit, jumps to light speed and arrives at Alpha Centauri.  There are already satellites there?  What?  We're not alone?
 
 DURATION:
 42 seconds
@@ -36,7 +36,7 @@ CRITICAL OUTPUT RULES - NO EXCEPTIONS:
 • If subject descriptions are 150 words, you write 150 words EVERY SINGLE CLIP
 • Copy-paste the locked descriptions verbatim - this is MANDATORY for AI video tool consistency
 • Failure to output complete text = broken continuity = unusable output
-• Each clip must output exactly one copyable block containing only the full prompt. If it cannot be copied in one action, the output is invalid.
+• Each clip must output exactly one copyable block containing only the full prompt. If it cannot be copied in one action, the output is invalid. In it's own fenced code block!
 • Leaving ANY field blank or abbreviated = FAILURE
 
 NOTE FOR AI:
