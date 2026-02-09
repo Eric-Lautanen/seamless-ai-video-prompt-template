@@ -47,12 +47,42 @@ CORE RULES (READ ONCE)
   - Centered
   - Unchanged
 • Repeat the MAIN SUBJECT DESCRIPTION word-for-word in every clip
+• Repeat the ENVIRONMENT DESCRIPTION word-for-word in every clip
 • Audio continuity overrides visual continuity
 • Avoid random cuts or camera resets
 • Each clip prompt must go in its own fenced code block (triple backticks)
 so it's one clean copy-paste per clip.
 
 If these rules are followed, continuity holds.
+
+═══════════════════════════════════════════════════════════════════════════════
+ENVIRONMENT CONSISTENCY RULES
+
+To prevent room warping, object morphing, monitor melting, or background changes:
+
+• LOCK YOUR ENVIRONMENT: Describe the physical space in detail once, then copy word-for-word in EVERY clip
+• Include in environment description:
+  - Room dimensions and layout
+  - Wall colors and textures
+  - Floor type and color
+  - Furniture placement (desks, chairs, specific positions)
+  - Props and their exact locations (monitors, coffee cups, papers)
+  - Lighting sources and their positions (overhead lights, monitor glow, windows)
+  - Background elements (other people, equipment, decorations)
+  
+• In EVERY clip prompt, include the FULL environment description BEFORE character descriptions
+• Static objects must maintain exact same:
+  - Position in frame
+  - Size and scale
+  - Color and material
+  - Orientation and angle
+  
+• Add to negative prompt: "warping walls, melting objects, morphing furniture, changing room layout, shifting props, disappearing objects, size inconsistency, perspective distortion"
+
+Example environment lock:
+"Modern trading office, 20x15 foot room, white walls with gray acoustic panels, dark gray low-pile carpet, three black standing desks in L-formation center frame, black ergonomic office chairs, six 27-inch monitors mounted on dual arms showing trading charts, white ceramic coffee cup right side of center desk, crushed Red Bull can left desk, digital clock on back wall showing 2:47 PM, blurred background showing 4-5 other traders at desks 15 feet behind main subjects."
+
+Copy this EXACT description in clips 1-7 = environment stays locked.
 
 ═══════════════════════════════════════════════════════════════════════════════
 QUICK INPUT FORM
@@ -76,6 +106,9 @@ MULTIPLE SUBJECTS (LOCKED):
 1. [Subject One: full physical description, clothing, props]
 2. [Subject Two: full physical description, clothing, props]
 [Copy these descriptions word-for-word in every clip's END FRAME]
+
+ENVIRONMENT (LOCKED):
+[Detailed description of physical space - room dimensions, walls, floor, furniture placement, props and exact locations, lighting sources, background elements. Copy word-for-word in EVERY clip prompt to prevent warping/morphing]
 
 LOCKED SEED (if using):
 [6-digit number - use same for all clips]
@@ -143,6 +176,9 @@ flicker, blur, morphing, text, watermark, low quality
 Add as needed:
 extra fingers, warped face, jitter, shaky camera, unnatural physics, temporal inconsistency, lens flare, dramatic lighting, colored contacts, makeup glow, CGI sheen, over-saturation, face morph, costume change, hair color shift
 
+Environment stability (CRITICAL):
+warping walls, melting objects, morphing furniture, changing room layout, shifting props, disappearing objects, size inconsistency, perspective distortion, floating objects, stretching monitors, bending desks, color shift in backgrounds, moving walls, geometry warping
+
 ═══════════════════════════════════════════════════════════════════════════════
 PER-CLIP OUTPUT FORMAT
 
@@ -177,18 +213,22 @@ END FRAME DESCRIPTION:
 
 COMPLETE PROMPT (COPY THIS — ONE BLOCK):
 ```
-[Full positive prompt with: style/aesthetic, environment/setting, COMPLETE WORD-FOR-WORD character descriptions from MULTIPLE SUBJECTS (LOCKED) section including all physical details, clothing, positioning for EVERY character, camera movement "Camera holds static for first 1 second, then [describe movement]", aspect ratio, lighting details, any special notes]
+[Full positive prompt with: style/aesthetic, COMPLETE WORD-FOR-WORD environment description from ENVIRONMENT (LOCKED) section including room layout, furniture, props, lighting, COMPLETE WORD-FOR-WORD character descriptions from MULTIPLE SUBJECTS (LOCKED) section including all physical details, clothing, positioning for EVERY character, camera movement "Camera holds static for first 1 second, then [describe movement]", aspect ratio, lighting details, any special notes]
 
 Sound design: Music: [specify track/style or "None"] / [%], Ambient: [continuous background sounds or "None"] / [%], Foley: [specific sound effects for this clip with timing] / [%], Dialogue: [exact lines with character names, or "None"], Sound Transitions: [how sound connects to previous/next clip]
 
-Negative prompt: [Full negative prompt]
+Negative prompt: [Full negative prompt including environment stability terms]
 
 Seed: [locked seed number]
 ```
 
 ═══════════════════════════════════════════════════════════════════════════════
 
-CRITICAL: The COMPLETE PROMPT must include the FULL character descriptions (age, face, hair, eyes, scars, clothing, positioning, etc.) copied WORD-FOR-WORD from MULTIPLE SUBJECTS (LOCKED) for EVERY character in EVERY clip. AI video tools treat each clip as fresh input and need complete context each time.
+CRITICAL: The COMPLETE PROMPT must include:
+1. FULL environment description from ENVIRONMENT (LOCKED) copied WORD-FOR-WORD first
+2. FULL character descriptions (age, face, hair, eyes, scars, clothing, positioning, etc.) copied WORD-FOR-WORD from MULTIPLE SUBJECTS (LOCKED) for EVERY character
+
+AI video tools treat each clip as fresh input and need complete context each time. Environment lock prevents warping/morphing.
 
 ═══════════════════════════════════════════════════════════════════════════════
 FAST WORKFLOW (LAST FRAME METHOD)
