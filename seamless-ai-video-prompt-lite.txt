@@ -159,9 +159,13 @@ Sound:
 END FRAME DESCRIPTION:
 [All subjects numbered exactly as in MULTIPLE SUBJECTS (LOCKED), fully visible, centered or positioned consistently, unchanged in form, lighting, and scale. Repeat their full descriptions word-for-word.]
 
+═══════════════════════════════════════════════════════════════════════════════
+📋 COPY THIS ENTIRE PROMPT BELOW AND PASTE INTO YOUR AI VIDEO TOOL (e.g., Grok Imagine, Runway, Pika, etc.)
+═══════════════════════════════════════════════════════════════════════════════
+
 COMPLETE PROMPT (COPY THIS — ONE BLOCK):
 ```
-[Full positive prompt with all details including: "Camera holds static for first 2 seconds, then [describe movement]"]
+[Full positive prompt with: style/aesthetic, environment/setting, COMPLETE WORD-FOR-WORD character descriptions from MULTIPLE SUBJECTS (LOCKED) section including all physical details, clothing, positioning for EVERY character, camera movement "Camera holds static for first 2 seconds, then [describe movement]", aspect ratio, lighting details, any special notes]
 
 Sound design: Music: [specify track/style or "None"] / [%], Ambient: [continuous background sounds or "None"] / [%], Foley: [specific sound effects for this clip with timing] / [%], Dialogue: [exact lines with character names, or "None"], Sound Transitions: [how sound connects to previous/next clip]
 
@@ -169,6 +173,10 @@ Negative prompt: [Full negative prompt]
 
 Seed: [locked seed number]
 ```
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CRITICAL: The COMPLETE PROMPT must include the FULL character descriptions (age, face, hair, eyes, scars, clothing, positioning, etc.) copied WORD-FOR-WORD from MULTIPLE SUBJECTS (LOCKED) for EVERY character in EVERY clip. AI video tools treat each clip as fresh input and need complete context each time.
 
 ═══════════════════════════════════════════════════════════════════════════════
 FAST WORKFLOW (LAST FRAME METHOD)
