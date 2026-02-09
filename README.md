@@ -73,20 +73,29 @@ Note: Regenerate clips when needed for pixel-accurate continuity.
 - **Lite Edition:** `seamless-ai-video-prompt-lite.txt`
 - **Cinematic Edition:** `seamless_video_prompt_template.txt`
 
-### 2. Fill the Input Form
-**Lite Edition requires only 3 fields:**
-- **CONTENT TYPE:** Describe your scene (the more detail, the better)
-  - Example: "A woman dances in a warehouse. One continuous camera movement circling around her as she dances."
-- **DURATION:** Total video length
-  - Example: "42 seconds"
-- **CLIP LENGTH:** Individual clip duration (most tools support 6 or 10 seconds)
-  - Example: "6 seconds"
+### 2. Get Your Prompts (Two Workflows)
 
-Then paste the template into ChatGPT, Claude, Gemini, or Grok and say:
-- **"prefill"** — AI fills the template but doesn't generate clips yet (review/edit first)
-- **"run"** or **"generate"** — AI generates all clips immediately
+**Option A: AI Prefill (Recommended for Beginners)**
+1. Upload the template to ChatGPT, Claude, Gemini, or Grok
+2. Describe your vision in plain language:
+   - "I want a woman dancing in a warehouse with the camera slowly circling her"
+   - "Create a cyberpunk alley scene with neon lights and rain"
+   - "Make a coffee shop conversation between two people"
+3. Say **"prefill"**
+4. AI fills out the entire template for you (environment, subjects, camera, sound, etc.)
+5. Review the prefilled template, make any tweaks
+6. Say **"run"** or **"generate"** to create all clip prompts
 
-**Why prefill exists:** Most people struggle to describe their vision technically. Prefill translates "woman walking through neon alley" into complete environment descriptions, locked subject details, camera movement plans, sound design, and negative prompts. Review it, tweak it, then generate.
+**Option B: Manual Fill (For Experienced Users)**
+1. Open the template
+2. Fill out the form sections yourself:
+   - **CONTENT TYPE:** Your scene description
+   - **DURATION:** Total video length (e.g., "42 seconds")
+   - **CLIP LENGTH:** Individual clip duration (e.g., "6 seconds")
+3. Upload the filled template to your AI
+4. Say **"run"** or **"generate"** to create all clip prompts
+
+**Why prefill exists:** Most people struggle to describe their vision technically. Prefill translates "woman walking through neon alley" into complete environment descriptions, locked subject details, camera movement plans, sound design, and negative prompts. It's like having a cinematographer translate your idea into technical specs.
 
 ### 3. Generate Your Video (Last Frame Method)
 - Generate Clip 1 as text-to-video or text-to-image → video
@@ -110,126 +119,161 @@ Then paste the template into ChatGPT, Claude, Gemini, or Grok and say:
 
 ## 🎬 Continuity Modes (Both Versions)
 
+**Think of these as different ways your clips connect:**
+
 ### 1. Continuous
-One uninterrupted camera move. Best for immersive tracking shots.
+The camera never stops moving. Like following someone through a building in one smooth shot. Great for making viewers feel like they're right there.
 
 ### 2. Invisible Cut
-Hidden Hollywood-style cuts using whip pans, occlusion, motion blur, or light flashes. Feels like one shot.
+You hide the cuts so cleverly viewers don't notice. Tricks include:
+- Whip the camera super fast (whip pan)
+- Someone walks in front blocking the view
+- Everything gets really blurry for a moment
+- A bright flash
+
+Feels like one shot, but you actually cut. Hollywood does this all the time.
 
 ### 3. Editorial Cut
-Intentional cutaways, inserts, or montage beats. Used for emphasis and pacing. Always motivated and sound-bridged.
+You DO want people to notice the cut, but for a good reason:
+- Cutting to a close-up to show emotion
+- Showing what someone's looking at
+- Jumping forward in time
 
-**Key principle:** Sound continuity always takes priority over visual continuity.
+Always has a reason and the audio keeps flowing smoothly between cuts.
+
+**Key rule:** Keep the sound flowing between clips even if the picture cuts. Continuous audio makes cuts feel smooth.
 
 ---
 
 ## 🎥 Professional Cinematography (Cinematic Edition Only)
 
-The Cinematic Edition enforces Hollywood spatial continuity rules:
+**Ever notice how Hollywood movies feel "right" but some YouTube videos feel "off"?** It's not the camera quality—it's these invisible rules. The Cinematic Edition enforces them automatically so your videos feel professional:
 
 ### 180-Degree Rule
-Camera stays on one side of the "action axis" (imaginary line between subjects):
-- Prevents spatial disorientation
-- Characters remain in consistent left/right relationship
-- **Example:** In a conversation, if Person A is on the left, they stay left in every shot
-- **Exception:** You can cross the line if you show the camera movement on screen
+**The "don't confuse your viewer" rule.**
+
+Imagine a line between two people talking. The camera must stay on one side of that line:
+- **Why?** If Person A is on the left, they should STAY on the left in every shot
+- **What happens if you break it?** Viewer gets confused about where everyone is
+- **Example:** In a conversation, if you jump to the other side of the line, it looks like the characters switched places
+- **Exception:** You CAN cross the line if you show the camera moving across it on screen
 
 ### 30-Degree Rule
-When cutting to the same subject from a different angle:
-- Angle must change by at least 30 degrees
-- Less than 30° creates jarring "jump cut" effect
-- **Exception:** Intentional jump cuts for stylistic/time-compression effect
+**The "make your cuts smooth" rule.**
+
+When you cut from one angle to another of the same subject:
+- The angle must change by at least 30 degrees
+- **Why?** Less than 30° looks like a glitch, not an intentional cut
+- **Example:** If you're filming someone's face, don't cut to almost the same angle—move the camera noticeably left/right/up/down
+- **Exception:** Jump cuts (intentional glitchy cuts for time compression or style)
 
 ### Eyeline Match
-When characters look at each other:
-- If Subject A looks right, Subject B must look left
-- Maintains spatial logic and eye contact illusion
-- Critical for natural-feeling conversations
+**The "make conversations feel real" rule.**
+
+When two characters look at each other:
+- If Person A looks right → Person B must look left
+- **Why?** Makes it look like they're actually looking at each other, not past each other
+- **This is critical** for dialogue scenes feeling natural
 
 ### Match on Action
-Cut during movement, not between movements:
-- **Example:** Cut while door is opening, not before or after
-- Creates seamless, invisible transitions
-- Viewer's brain fills in the gap
+**The "hide cuts in movement" rule.**
+
+Cut DURING an action, not before or after:
+- **Good:** Cut while the door is opening (mid-swing)
+- **Bad:** Cut before door opens or after it's already open
+- **Why?** Your brain fills in the gap and doesn't notice the cut
+- **Example:** Someone reaches for a cup → cut while hand is moving → next shot shows hand grabbing it
 
 ### Eye Trace
-Guide viewer attention from shot to shot:
-- Use color, composition, or blocking
-- Place important elements where the viewer is already looking
-- **Example:** Subject exits frame-right → next shot starts frame-right
+**The "guide where people look" rule.**
 
-These rules are why Hollywood films feel smooth while amateur videos feel "off." The Cinematic template enforces them automatically.
+Lead the viewer's eyes from shot to shot:
+- If someone exits the right side of the frame → start the next shot on the right side
+- Use color: red jacket in one shot → red sign in the next shot draws the eye
+- **Why?** Viewer's eyes don't have to search for what to look at
+
+**The magic:** These rules are why Hollywood films feel effortless to watch. The Cinematic template follows them automatically—you just describe your scene.
 
 ---
 
 ## 📋 Lite Edition — What Makes It Work
 
-The Lite Edition enforces these rules automatically so you don't have to think about them:
+**The Lite Edition prevents common AI video problems automatically.** You don't have to think about any of this—just describe your idea:
 
-### Continuity Locks
-1. **Same seed for ALL clips** — Auto-generated if you don't provide one (guarantees visual consistency)
-2. **Word-for-word repetition** — Environment and subject descriptions copied exactly every clip
-3. **No new elements after Clip 1** — What's visible in the first clip is ALL that exists (prevents random props appearing)
-4. **Explicit camera instructions** — Every clip states movement or "remains completely static"
+### What It Locks Down
+1. **Same "DNA" for every clip** — Uses the same seed number so your character doesn't morph into a different person
+2. **Exact copy-paste descriptions** — Repeats environment and character details word-for-word so AI doesn't "forget"
+3. **No new stuff appearing randomly** — First clip establishes everything that exists. No magic props appearing later
+4. **Camera always knows what to do** — Every clip states how the camera moves (or "stays still")
 
-### Slop Prevention (Built-in)
-5. **No fades to black/white** — Clips end with visible, well-lit frames (biggest AI slop giveaway)
-6. **No identity drift** — Facial features, clothing, proportions locked across all clips
-7. **No scale changes** — Subject size relative to frame stays consistent
-8. **No lighting drift** — Light sources and color temperature locked (unless you use EVOLVING mode)
-9. **Dialogue timing** — Multi-character conversations fill 80%+ of clip duration (no awkward pauses)
-10. **Full negative prompts** — Every clip gets complete prevention list (no shortcuts like "same as above")
+### Problems It Prevents
+5. **No fading to black between clips** — Biggest "this is AI slop" giveaway. Clips end with visible, lit scenes
+6. **Faces don't change** — Your character's face, hair, clothes stay identical across all clips
+7. **People don't randomly shrink or grow** — Character size stays consistent
+8. **Lighting doesn't flicker around** — Lights stay in the same place with the same color
+9. **No awkward silence in conversations** — When people talk, they actually talk (80% of the clip time)
+10. **Every prompt is complete** — No "same as above" shortcuts that confuse the AI
 
-### Output Quality
-- **One artifact per clip** — Single-click copy, paste directly into your video AI tool
-- **Complete prompts** — No references, no blanks, no abbreviations
-- **Environment flexibility** — Choose STATIC (same setting), EVOLVING (gradual changes), or PER-CLIP (different locations)
+### What You Get
+- **One prompt per clip** — Click, copy, paste into your video AI. That's it.
+- **No blanks or confusing references** — Each prompt is complete and standalone
+- **Flexible locations** — Same room the whole time, gradual changes, or completely different locations per clip
 
-**Camera movement is flexible:** You control timing. Specify static holds, continuous movement, or any combination in your CONTENT TYPE description. The template adapts to your vision.
-
-**No camera math required.** Just follow the template and describe shots simply: "push-in," "orbit left," "continuous right movement," "static."
+**Bottom line:** Describe your scene in plain English. The template handles all the technical stuff that makes videos look professional instead of "AI-generated."
 
 ---
 
 ## 🎥 Cinematic Edition — Camera System
 
-The Cinematic Edition includes precise physics controls:
+**The Cinematic Edition lets you control HOW the camera moves with precision:**
 
-**Camera Physics:**
-- Linear acceleration ≤ 2 ft/sec²
-- Rotational acceleration ≤ 5°/sec²
-- Motion changes blended over 1–2 sec
+**Camera Movement Speed:**
+- Camera speeds up/slows down gradually (like a real camera operator)
+- Max speed limits prevent jarring movement
+- Changes happen smoothly over 1-2 seconds
 
-**Camera Inertia (0–1):**
-- 0 = robotic
-- 0.5 = natural
-- 1 = heavy cinematic
+**Camera Weight/Feel (Inertia 0–1):**
+- **0** = Robotic, instant response (like a drone)
+- **0.5** = Natural, slight delay (like a skilled camera operator)
+- **1** = Heavy, smooth, cinematic (like a professional steadicam)
 
 **Damping:**
-- Rotation damping
-- Dolly damping
+Controls how quickly movement stops:
+- High damping = smooth, controlled stops
+- Low damping = abrupt stops
 
-**Easing:**
-- Linear, Ease-in, Ease-out, Ease-in-out, Sinusoidal
+**Easing (how movement speeds up/slows down):**
+- Linear = constant speed
+- Ease-in = starts slow, speeds up
+- Ease-out = starts fast, slows down
+- Ease-in-out = smooth on both ends
+- Sinusoidal = very smooth, wave-like
+
+**You don't have to understand all this to use it**—the prefill feature sets good defaults. But if you want fine control over camera feel, these options are there.
 
 ---
 
 ## ✂️ Cinematic Cuts (Both Versions)
 
-Cuts are allowed — but never accidental.
+**You CAN cut between clips—but every cut needs a reason.**
 
-**Allowed methods:**
-- Whip pan
-- Full-frame occlusion
-- Motion blur peak
-- Light flash
-- Match cut (shape, motion, framing)
-- Editorial inserts (1–3 sec max)
+**Ways to hide cuts (make them invisible):**
+- **Whip pan** — Camera swings super fast, cut happens during the blur
+- **Someone blocks the camera** — Person/object moves in front, cut while view is blocked
+- **Motion blur peak** — Everything's really blurry from fast movement, cut in the blur
+- **Light flash** — Bright light, cut during the flash
+- **Match cut** — Cut when two shots look similar (same shape, same motion, same framing)
 
-Every cut must specify:
-- Motivation
-- Camera continuity (preserved or reset)
-- Audio bridge
+**Editorial cuts (you WANT people to notice):**
+- **Inserts** — Quick 1-3 second shots showing details (phone screen, clock, etc.)
+- Must have a reason (show emotion, show what someone's looking at, jump forward in time)
+
+**Every cut must have:**
+1. **A reason** — Why are we cutting here?
+2. **Camera plan** — Does camera position continue or reset?
+3. **Sound bridge** — How does audio connect across the cut?
+
+**Remember:** Even when you cut the picture, keep the audio flowing smoothly. That's the secret to making cuts feel natural.
 
 ---
 
@@ -250,55 +294,71 @@ This technique eliminates AI randomness and preserves camera, lighting, and fram
 
 ---
 
-## 🎨 The Reference Image Method (2026 Best Practice - Cinematic Only)
+## 🎨 The Reference Image Method (2026 - Cinematic Only)
 
-Advanced workflow for superior identity consistency using dual-image input:
+**Problem:** AI sometimes "forgets" what your character looks like between clips. Face changes slightly, clothes shift colors, proportions drift.
+
+**Solution:** Give the AI a reference photo to look at for EVERY clip.
+
+**How it works:**
 
 **Setup:**
-1. Create or source a high-quality reference image showing your subject with desired lighting, clothing, and style
-2. Use this SAME reference image for ALL clips
+1. Get one really good photo of your subject (character, product, whatever)
+   - Front-facing, well-lit, high quality
+   - Shows the look you want: lighting, clothing, style
+2. Keep this same photo for the entire video
 
-**Generation:**
-1. **Clip 1:** Reference Image + Text Prompt → Video
-2. Export final frame
-3. **Clip 2:** Reference Image + Final Frame + Text Prompt → Video
-4. Repeat for all clips
+**Making clips:**
+1. **Clip 1:** Feed AI the reference photo + your text description → get video
+2. Save the last frame from Clip 1
+3. **Clip 2:** Feed AI BOTH the reference photo + last frame + text → get video
+4. Keep doing this for all clips
 
-**Results:**
-- 60-80% reduction in identity drift
-- Locked color grading and lighting
-- Consistent facial features and proportions
-- Works best with frontal, well-lit reference images
+**Why this works:**
+- Reference photo keeps your subject looking identical (60-80% better than without it)
+- Last frame keeps the motion smooth
+- AI has two images to guide it instead of just text
 
-**Platform Support (Feb 2026):**
-- ✅ Sora 2 (dual reference + final frame)
-- ✅ Veo 3.1 (reference + prompt)
-- ✅ Runway Gen-4.5 (multi-image input)
-- ✅ Kling 2.6 (reference + continuity)
-- ✅ Pika 2.5 (image conditioning)
+**What you need:**
+- Good reference photo (front-facing, well-lit, 1080p or better)
+- Same photo used for EVERY single clip
+- No action shots—neutral pose works best
 
-Check your platform's documentation for latest features.
+**Tools that support this (as of Feb 2026):**
+- ✅ Sora 2
+- ✅ Veo 3.1
+- ✅ Runway Gen-4.5
+- ✅ Kling 2.6
+- ✅ Pika 2.5
+
+(Check if your tool supports reference images—this feature is rolling out across platforms)
 
 ---
 
 ## 🎵 Sound Design
 
 ### Lite Edition
-Simple structured system:
-- **Music:** (description or None / volume %)
-- **Ambient:** (environment or None / volume %)
-- **Foley:** (specific sounds with timing / volume %)
-- **Dialogue:** (Subject name: "exact line" (0.2s-5.8s) OR None)
-  - Multi-subject conversations automatically fill 80%+ of clip duration
-- **Transitions:** (how sound connects between clips)
+**Simple 5-part system for each clip:**
+
+- **Music:** What's playing or None (with volume %)
+- **Ambient:** Background sounds like traffic, wind, room tone (with volume %)
+- **Foley:** Specific sounds synced to actions—footsteps at 2 seconds, door slam at 4.5 seconds (with volume %)
+- **Dialogue:** Who says what and when
+  - Format: Person A: "Hello there" (0.2s-2.1s)
+  - Conversations automatically fill 80%+ of clip time (no awkward pauses)
+- **Transitions:** How sound connects to the next clip (smooth, crossfade, etc.)
 
 ### Cinematic Edition
-Professional three-layer system with detailed control:
-- Music (track / volume % / sync)
-- Ambient (environment / volume % / transition type)
-- Foley (specific action-synced effects)
-- Sound Transitions (crossfade, J-cut, L-cut, beat sync)
-- Notes (sync rules, emotional emphasis)
+**Professional multi-layer system:**
+
+Same as Lite but with more control:
+- **Music sync** — Sync cuts to beat, control emotional emphasis
+- **Ambient transitions** — Exactly how one environment sound fades into another
+- **Foley precision** — Action-synced effects with frame accuracy
+- **Advanced transitions** — J-cuts (audio starts before video), L-cuts (audio continues after video), beat sync
+- **Notes section** — Special sync rules, emotional cues
+
+**Both versions keep audio flowing smoothly between clips—that's what makes everything feel connected.**
 
 ---
 
