@@ -5,67 +5,140 @@
 QUICK INPUT FORM
 
 CONTENT TYPE:
-[genre, style, details. The more details the better to realize your vision.  example:  A woman dances in a warehouse.  One continous camera movement circling around her as she dances.]
+[Genre, style, narrative intent, visual detail.
+The more detail provided, the more accurate the result.
+Example: A woman dances alone in an industrial warehouse.
+One continuous camera movement slowly circling her at a constant radius.
+No cuts.]
+
 DURATION:
-[How long do you want the full video to be?  example:  42 seconds]
+[Total requested duration of the full video.
+Example: 42 seconds]
+
 CLIP LENGTH:
-[How long will each clip be? example: 5 seconds]
+[Length of each clip.
+Example: 5 seconds]
+
+OPTIONAL DURATION EXTENSION (OFF BY DEFAULT)
+
+If the AI determines the described scene, actions, dialogue,
+camera movement, or continuity constraints cannot realistically
+fit within the specified duration:
+
+- The AI MAY propose a duration extension
+- The original duration remains the baseline reference
+
+EXTENSION RULES:
+- Extension may occur ONLY before clip generation begins
+- Extension must be the MINIMUM required to preserve realism and clarity
+- Extension must be in whole seconds only
+- Extension may NOT exceed 30% of the original duration
+- Clip length remains unchanged unless explicitly justified
+- Once extended, the new duration is LOCKED for all clips
+
+If no extension is required:
+- The original duration MUST be used exactly
+
 ═══════════════════════════════════════════════════════════════════════════════
 ═══════════════════════════════════════════════════════════════════════════════
 AI INSTRUCTIONS
 
-USER UPLOADS TEMPLATE WITH VISION → Prefill QUICK INPUT FORM, output complete template file, DO NOT run
-USER SAYS "run"/"generate"/"create clips" OR UPLOADS PREFILLED TEMPLATE → Generate all clips immediately
-USER SAYS "prefill"/"fill"/"update" → Fill input form only, output complete template file, DO NOT run
+USER UPLOADS TEMPLATE WITH VISION →
+Prefill QUICK INPUT FORM, output complete template file, DO NOT run
 
-CRITICAL OUTPUT RULES - NO EXCEPTIONS:
-- NEVER use "same as above", "see previous", "as before", "[same]", "ditto", or ANY shortcut text
-- EVERY clip must contain COMPLETE FULL TEXT of environment description copied WORD-FOR-WORD
-- EVERY clip must contain COMPLETE FULL negative prompt copied WORD-FOR-WORD
-- EVERY clip must contain COMPLETE camera movement specification (exact degrees/distance OR "remains static")
-- EVERY clip must contain COMPLETE sound design with ALL 5 components: Music/%, Ambient/%, Foley with timing/%, Dialogue with subject names, Transitions
-- EVERY clip must contain exact seed number
-- EVERY clip must contain aspect ratio
-- EVERY clip must contain style description
-- EVERY clip must contain special notes for that specific clip
-- Zero abbreviations, zero shortcuts, zero laziness, ZERO BLANK FIELDS
-- If environment is 200 words, you write 200 words EVERY SINGLE CLIP
-- If subject descriptions are 150 words, you write 150 words EVERY SINGLE CLIP
-- Keep in mind the limitations of AI video generation
-- Copy-paste the locked descriptions verbatim - this is MANDATORY for AI video tool consistency
-- Failure to output complete text = broken continuity = unusable output
-- Each clip must output exactly one copyable block containing only the full prompt. If it cannot be copied in one action, the output is invalid. In it's own fenced code block!
-- Leaving ANY field blank or abbreviated = FAILURE
+USER SAYS "run" / "generate" / "create clips"
+OR uploads a prefilled template →
+Generate all clips immediately
+
+USER SAYS "prefill" / "fill" / "update" →
+Fill input form only, output complete template file, DO NOT run
+
+═══════════════════════════════════════════════════════════════════════════════
+CRITICAL OUTPUT RULES — NO EXCEPTIONS
+
+- NEVER use shortcuts or references:
+  "same as above", "see previous", "as before", "ditto", "[same]"
+- EVERY clip must fully restate all required sections verbatim
+- EVERY clip must contain a COMPLETE negative prompt written in full
+- EVERY clip must include:
+  style, environment, subjects, camera movement, aspect ratio,
+  sound design, special notes, seed
+- ZERO blank fields
+- ZERO abbreviations
+- Copy all LOCKED sections word-for-word
+- If ENVIRONMENT is 200 words, write all 200 words EVERY clip
+- Each clip must output EXACTLY ONE fenced code block
+- If the prompt cannot be copied in one action, output is INVALID
+- Duration may NOT change after clip generation begins
+- No per-clip stretching, padding, or time dilation
 
 NOTE FOR AI:
 This template intentionally repeats information.
 Repetition is required for continuity.
-Do not attempt to optimize, compress, or remove repeated text.
+Do NOT optimize, compress, or remove repetition.
 
 ═══════════════════════════════════════════════════════════════════════════════
-CORE RULES
+CORE CONTINUITY RULES
 
-- Duration ÷ clip length = number of clips
-- Same seed all clips
-- Copy ENVIRONMENT (LOCKED) word-for-word every clip
-- Copy SUBJECTS (LOCKED) word-for-word every clip
-- Each prompt in its own code block for copy-paste
-- Clip 2+ START FRAME = final rendered frame of previous clip (used as image input)
-- Continuity is enforced exclusively through start-frame image inheritance
+- Duration ÷ Clip Length = number of clips
+- Same seed for ALL clips
+- ENVIRONMENT and SUBJECTS copied word-for-word every clip
+- Clip 2+ START FRAME = final rendered frame of previous clip
+- Continuity exists ONLY through start-frame image inheritance
+- No implicit resets, reinterpretations, or rebuilds
 
+═══════════════════════════════════════════════════════════════════════════════
+DURATION FEASIBILITY CHECK — MANDATORY
+
+Before generating clips, the AI MUST:
+
+1. Evaluate whether the following can realistically fit:
+   - Declared scene actions
+   - Camera movement complexity
+   - Dialogue pacing
+   - Subject motion and interactions
+   - Continuity and composition locks
+
+2. If the scene DOES fit:
+   - Use the user-specified duration exactly
+
+3. If the scene DOES NOT fit:
+   - Calculate the MINIMUM viable extended duration
+   - Ensure extension does NOT exceed 30% of original duration
+   - Declare the extension explicitly
+   - Lock the new duration BEFORE clip calculation
+
+═══════════════════════════════════════════════════════════════════════════════
+DURATION RESOLUTION (DECLARED ONCE)
+
+Original requested duration:
+[XX seconds]
+
+Extension applied:
+[None] OR [+X seconds — justification]
+
+Final locked duration:
+[XX seconds]
+
+Final clip count:
+[Y clips]
+
+═══════════════════════════════════════════════════════════════════════════════
 SUBJECTS (LOCKED — CLIP-VISIBLE ONLY)
 
 IMPORTANT:
-- Subject descriptions define ONLY what is allowed to appear within the camera frame.
-- Any body parts, clothing, or features NOT explicitly described here MUST NOT appear visually.
-- Subject descriptions are immutable once declared, but do NOT imply full-body visibility.
-- The camera MUST NOT reframe, zoom, pan, or tilt to reveal undisclosed body parts.
-- Canonical subject identity exists implicitly and does not require visual completeness.
-- Subjects not listed in a clip do not exist in any form in that clip.
+- Subject descriptions define ONLY what may appear within the camera frame
+- Any body parts, clothing, features, or props NOT described MUST NOT appear
+- Subject descriptions are immutable once declared
+- Subject descriptions do NOT imply full-body visibility
+- Camera MUST NOT reframe to reveal undisclosed areas
+- Subjects not listed in a clip do not exist in any form in that clip
 
 Subject 1 — GLOBAL DESCRIPTION (LOCKED):
-[Full immutable description: age or scale, form, face or surface, materials, color, textures, clothing or components, props, default posture, identifying features.
-NO actions. NO clip-specific positioning. NO temporal language.]
+[Full immutable description: age or scale, form, face or surface,
+materials, colors, textures, clothing or components, props,
+default posture, identifying features.
+NO actions. NO positioning. NO temporal language.]
 
 Subject 2 — GLOBAL DESCRIPTION (LOCKED):
 [Same rules as Subject 1]
@@ -75,9 +148,12 @@ Subject 2 — GLOBAL DESCRIPTION (LOCKED):
 ═══════════════════════════════════════════════════════════════════════════════
 ENVIRONMENT (LOCKED)
 
-[Room dimensions, walls, floor, ceiling, exact architecture, furniture, props, exact placement, lighting sources, color temperature, background elements.
-Must describe ONLY what exists. No implied extensions.
-Copy word-for-word every clip prevents warping/morphing.]
+[Exact room dimensions, walls, floor, ceiling, architecture,
+furniture, props, exact placement, lighting sources,
+color temperature, background elements.
+Describe ONLY what exists.
+No implied extensions.
+Copy word-for-word every clip.]
 
 ═══════════════════════════════════════════════════════════════════════════════
 SEED (LOCKED)
@@ -91,22 +167,24 @@ If the user does not explicitly provide a 6-digit seed:
 ═══════════════════════════════════════════════════════════════════════════════
 STYLE (LOCKED)
 
-[Visual aesthetic — lens style, realism level, rendering look, grain, contrast]
+[Visual aesthetic: realism level, lens style, rendering look,
+grain, contrast, motion characteristics]
 
+═══════════════════════════════════════════════════════════════════════════════
 ASPECT RATIO (LOCKED)
 
-If the user specifies an aspect ratio, use it exactly.
-If the user does NOT specify an aspect ratio, default to 16:9.
-This value must be written explicitly in EVERY clip.
+If specified by the user, use exactly.
+If NOT specified, default to 16:9.
+This value MUST be written explicitly in EVERY clip.
 
 ═══════════════════════════════════════════════════════════════════════════════
 SOUND (LOCKED STRUCTURE, VARIABLE CONTENT)
 
 Music:
-[name/style or None] / [%]
+[name or style, or None] / [%]
 
 Ambient:
-[continuous background or None] / [%]
+[continuous background sound or None] / [%]
 
 Foley:
 [specific sounds with timing] / [%]
@@ -117,8 +195,8 @@ Transitions:
 ═══════════════════════════════════════════════════════════════════════════════
 SCENE / CONCEPT (GLOBAL)
 
-[What happens across full sequence.
-Include dialogue breakdown per clip if applicable.]
+[What happens across the full sequence.
+Include dialogue plan per clip if applicable.]
 
 ═══════════════════════════════════════════════════════════════════════════════
 CONTINUITY MODE
@@ -126,12 +204,61 @@ CONTINUITY MODE
 [Continuous / Cuts]
 
 If CUTS:
-[Cut motivation — perspective shift, time jump, etc.]
+[Cut motivation — time jump, perspective shift, etc.]
 
 ═══════════════════════════════════════════════════════════════════════════════
-NEGATIVE PROMPT (LOCKED — ALL CLIPS)
+SCENE COMPOSITION LOCK — CRITICAL
 
-flicker, blur, morphing, text, watermark, low quality, extra fingers, warped face, jitter, shaky camera, unnatural physics, temporal inconsistency, lens flare, dramatic lighting, colored contacts, makeup glow, CGI sheen, over-saturation, face morph, costume change, hair color shift, warping walls, melting objects, morphing furniture, changing room layout, shifting props, disappearing objects, size inconsistency, perspective distortion, floating objects, stretching monitors, bending desks, color shift backgrounds, moving walls, geometry warping
+- Clip 1 defines the COMPLETE and FINAL set of visible elements
+- From Clip 2 onward:
+  - NO new objects, props, furniture, screens, UI, text,
+    lights, particles, reflections, or background elements may appear
+  - NO new subjects may enter
+  - NO objects may disappear unless explicitly animated out earlier
+  - NO new areas may be revealed via camera movement
+- Later clips may ONLY show:
+  - Movement of already-visible elements
+  - State changes of already-visible elements
+  - Lighting changes affecting ONLY existing light sources
+- All violations MUST be prevented via negative prompts
+
+═══════════════════════════════════════════════════════════════════════════════
+NEGATIVE PROMPT — BASE CONSTRAINT LIST (LOCKED)
+
+This list MUST be copied verbatim into EVERY clip’s negative prompt.
+
+flicker, blur, morphing, text, watermark, low quality, extra fingers,
+warped face, jitter, shaky camera, unnatural physics,
+temporal inconsistency, lens flare, dramatic lighting,
+colored contacts, makeup glow, CGI sheen, over-saturation,
+face morph, costume change, hair color shift,
+warping walls, melting objects, morphing furniture,
+changing room layout, shifting props, disappearing objects,
+size inconsistency, perspective distortion, floating objects,
+stretching monitors, bending desks, color shift backgrounds,
+moving walls, geometry warping
+
+═══════════════════════════════════════════════════════════════════════════════
+PER-CLIP FAILURE ANALYSIS — MANDATORY (INTERNAL STEP)
+
+Before writing EACH clip prompt, the AI MUST:
+
+1. Examine the inherited start-frame image
+2. Identify all ways the model could:
+   - Add new elements
+   - Remove existing elements
+   - Change geometry, scale, or layout
+   - Introduce new lighting sources
+   - Reveal unseen areas
+   - Drift subject identity or proportions
+3. Convert EACH risk into an explicit negative prompt item
+4. Append those items to the clip’s negative prompt
+5. Fully rewrite the complete negative prompt including:
+   - Base Constraint List (verbatim)
+   - PLUS clip-specific prevention terms
+
+This analysis is NOT output separately.
+Its results MUST appear ONLY in the clip’s negative prompt.
 
 ═══════════════════════════════════════════════════════════════════════════════
 OUTPUT FORMAT (AI GENERATES THIS)
@@ -143,25 +270,30 @@ Clip X of Y:
 📋 COPY THIS PROMPT → PASTE INTO VIDEO AI TOOL
 ═══════════════════════════════════════════════════════════════════════════════
 [STYLE — full text],
+
 [ENVIRONMENT (LOCKED) — full word-for-word text],
 
-[SUBJECTS — ONLY subjects that exist in this clip,
-each subject copied word-for-word from its locked description,
-no global declarations, no duplicates],
+[SUBJECTS — ONLY subjects present in this clip,
+each copied word-for-word from locked descriptions],
 
-[Camera movement specification — MUST SPECIFY exact movement OR state "remains static"],
-[Aspect ratio — MUST write explicitly],
-[Special notes for THIS clip — behaviors, eye movements, micro-expressions, interactions]
+[Camera movement — MUST specify exact movement
+OR explicitly state "remains static"],
+
+[Aspect ratio — explicit],
+
+[Special notes for THIS clip —
+eye direction, micro-expressions, precise interactions]
 
 Sound design:
-Music: [exact name or None] / [%]
-Ambient: [exact sounds or None] / [%]
+Music: [exact or None] / [%]
+Ambient: [exact or None] / [%]
 Foley: [exact sounds with timing] / [%]
 Dialogue: [Subject name: "exact line"] OR None
 Transitions: [exact connection]
 
-Negative prompt:
-[Full negative prompt copied word-for-word]
+Negative prompt (FULL — NO REFERENCES):
+[Base negative prompt list copied word-for-word
+PLUS clip-specific negatives derived from failure analysis]
 
 Seed:
 [Exact 6-digit seed]
@@ -169,11 +301,10 @@ Seed:
 ═══════════════════════════════════════════════════════════════════════════════
 CLIP GENERATION NOTES FOR AI
 
-- Clip 1: No START FRAME
-- Clip 2+: Use final rendered frame of previous clip as visual reference
-- Environment identical every clip — copy word-for-word
-- Subject descriptions identical every clip — copy word-for-word
-- Negative prompt identical every clip — copy word-for-word
+- Clip 1: establishes ALL visible elements
+- Clip 2+: absolutely NO new elements may appear
+- All prevention handled via negative prompts
+- NEVER assume persistence unless enforced
 - NEVER use shortcuts
 - Dialogue ~15–20 words max per clip
 - No implied off-screen presence
