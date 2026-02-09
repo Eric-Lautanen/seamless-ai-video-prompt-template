@@ -216,6 +216,7 @@ Video generation:
 - Haiper
 - Stability AI
 - Sora / Veo (text-only)
+- Grok Imagine
 
 Audio:
 - Runway
