@@ -1,15 +1,13 @@
-# Seamless AI Video Prompt Generator — Cinematic Edition
+# Seamless AI Video Prompt Generator
 
-Create Hollywood-grade AI video sequences with seamless continuity, invisible cuts, and professional sound design.
+**Two versions. One goal: Cinematic continuity.**
 
-Generate professional AI videos that feel like a single cinematic experience — whether achieved through true continuous shots or expertly motivated, invisible editorial cuts. No jarring jumps, no random resets, no broken audio. Just smooth motion, intentional transitions, and frame-accurate continuity.
+Generate professional AI videos with seamless transitions and frame-accurate continuity. Choose the version that matches your workflow:
 
-This system combines:
-• Fluid camera physics
-• Motivated cinematic cuts
-• Frame-perfect continuity
-• Sound-led transitions
-• Professional editorial grammar
+- **Lite / Fast Edition** — Quick prompts, reliable results, perfect for social content and rapid iteration
+- **Cinematic Edition** — Full Hollywood-grade camera physics, motivated cuts, and professional sound design
+
+No jarring jumps, no random resets, no broken audio. Just smooth motion, intentional transitions, and continuous flow.
 
 Note: Regenerate clips when needed for pixel-accurate continuity.
 
@@ -18,16 +16,59 @@ Note: Regenerate clips when needed for pixel-accurate continuity.
 
 ---
 
+## 🎯 Which Version Should You Use?
+
+### Lite / Fast Edition
+**Best for:**
+- Social media videos (TikTok, Reels, Shorts)
+- Product demos and ads
+- Concept tests and client previews
+- Rapid iteration and quick turnarounds
+- When you need reliable results without deep technical setup
+
+**Features:**
+- Streamlined input form
+- Simplified camera controls (no math required)
+- Same-seed continuity lock
+- Fast prompt generation
+- Clean cinematic output
+
+**Use when:** Speed and reliability matter more than fine-tuned camera physics.
+
+---
+
+### Cinematic Edition
+**Best for:**
+- Full narrative productions
+- High-end commercial work
+- Complex camera choreography
+- Motivated editorial cuts
+- Professional sound design integration
+- Films, documentaries, music videos
+
+**Features:**
+- Precise camera physics (acceleration, inertia, damping)
+- Hollywood-grade cut motivations
+- Three-layer sound design system
+- Frame-perfect continuity controls
+- VFX integration support
+
+**Use when:** You need maximum creative control and cinematic polish.
+
+---
+
 ## 🚀 Quick Start (3 Steps)
 
-### 1. Fill Out the Template
-Open seamless_video_prompt_template.txt and complete the fields at the top.  
-Ask an AI to fill out the template form based on your vision.
+### 1. Choose Your Template
+- **Lite Edition:** `seamless_video_prompt_lite.txt`
+- **Cinematic Edition:** `seamless_video_prompt_template.txt`
+
+Fill out the template fields at the top, or ask an AI to fill it based on your vision.
 
 ### 2. Give It to an AI
 Paste the filled template into ChatGPT, Claude, Gemini, or Grok and say:
 
-“Please use this template to generate cinematic video prompts with seamless continuity.”
+"Please use this template to generate video prompts with seamless continuity."
 
 ### 3. Generate Your Video (Last Frame Method)
 - Generate Clip 1 as text-to-video or text-to-image → video
@@ -36,144 +77,70 @@ Paste the filled template into ChatGPT, Claude, Gemini, or Grok and say:
 - Repeat for all clips
 - Stitch clips together
 
-Result: A professional cinematic sequence with fluid motion, intentional cuts, and continuous sound.
+**Result:** A professional sequence with fluid motion, intentional transitions, and continuous sound.
 
 ---
 
-## 🎬 What Makes This Different
+## 🎬 Continuity Modes (Both Versions)
 
-This is not just a “single-take” system.
+### 1. Continuous
+One uninterrupted camera move. Best for immersive tracking shots.
 
-It supports professional cinematic editing while preserving continuity.
+### 2. Invisible Cut
+Hidden Hollywood-style cuts using whip pans, occlusion, motion blur, or light flashes. Feels like one shot.
 
-### Continuity Modes
+### 3. Editorial Cut
+Intentional cutaways, inserts, or montage beats. Used for emphasis and pacing. Always motivated and sound-bridged.
 
-1. True Continuous  
-   One uninterrupted camera move. Best for immersive tracking shots.
-
-2. Invisible Cut  
-   Hidden Hollywood-style cuts using whip pans, occlusion, motion blur, or light flashes. Feels like one shot.
-
-3. Editorial Cut  
-   Intentional cutaways, inserts, or montage beats. Used for emphasis and pacing. Always motivated and sound-bridged.
-
-Sound continuity always takes priority over visual continuity.
+**Key principle:** Sound continuity always takes priority over visual continuity.
 
 ---
 
-## 📝 Input Fields
+## 📋 Lite Edition — Core Rules
 
-### 1. CONTENT TYPE(S)
-Narrative, Dialogue, Dance, Landscape, Wildlife, Product, Action, VFX, Aerial  
-Combine freely (e.g. Narrative + VFX).
+The Lite Edition follows five simple rules for reliable continuity:
 
----
+1. Break video into 6-second clips
+2. Use the SAME SEED for every clip (if available)
+3. End EVERY clip with the MAIN SUBJECT:
+   - Fully visible
+   - Centered
+   - Unchanged
+4. Repeat the MAIN SUBJECT DESCRIPTION word-for-word in every clip
+5. Audio continuity overrides visual continuity
 
-### 2. VIDEO DURATION
-Total runtime in seconds.
-
-Typical ranges:
-- 12–18 sec: Quick reveals
-- 24–36 sec: Single scene
-- 60+ sec: Full narrative
-
----
-
-### 3. CLIP LENGTH
-Default: 6 seconds (optimal for most AI video models).
+**No camera math required.** Just follow the template and describe shots simply: "push-in," "orbit," "follow," "static."
 
 ---
 
-### 4. SUBJECT / CONCEPT
-Describe the entire sequence from start to finish.
+## 🎥 Cinematic Edition — Camera System
 
-Bad:  
-“A dragon”
+The Cinematic Edition includes precise physics controls:
 
-Good:  
-“Ancient red dragon sleeping in a treasure-filled cave. Camera begins on a glowing eye opening, pulls back revealing massive body coiled in gold, dragon rises and roars, fire blooms toward camera, ending with wings filling the frame.”
-
----
-
-### 5. STYLE GUIDELINES
-Define the visual language.
-
-Examples:
-- Photorealistic, ARRI Alexa, cinematic lighting
-- Cyberpunk, neon rain, Blade Runner tone
-- Documentary, natural light, BBC Planet Earth
-- Commercial, minimalist luxury aesthetic
-
----
-
-### 6. ASPECT RATIO
-16:9 (YouTube), 9:16 (TikTok), 2.35:1 (cinematic), 1:1 (square), 21:9 (ultra-wide)
-
----
-
-### 7. SPECIAL INSTRUCTIONS
-Key moments, transitions, emotional beats, camera inertia preferences, match cuts, invisible transitions.
-
----
-
-### 8. SOUND DESIGN
-
-Three-layer audio system:
-
-Music: Track description / Volume %  
-Ambient: Environment / Volume %  
-Foley: Action-synced effects  
-Sound Transitions: Crossfade, J-cut, L-cut, continuity  
-Notes: Sync and timing instructions
-
-Sound bridges cuts and maintains realism.
-
----
-
-### 9. NEGATIVE PROMPTS
-Use the same negatives for all clips.
-
-Starter:
-flicker, blur, morphing, text, watermark, low quality
-
-Add per content type:
-- Humans: extra fingers, warped face
-- Action: jitter, shaky camera
-- Product: dust, scratches
-- VFX: temporal inconsistency
-
----
-
-## 🎥 Cinematic Camera System
-
-Camera physics:
+**Camera Physics:**
 - Linear acceleration ≤ 2 ft/sec²
 - Rotational acceleration ≤ 5°/sec²
 - Motion changes blended over 1–2 sec
 
-Camera inertia (0–1):
-0 = robotic  
-0.5 = natural  
-1 = heavy cinematic
+**Camera Inertia (0–1):**
+- 0 = robotic
+- 0.5 = natural
+- 1 = heavy cinematic
 
-Damping:
+**Damping:**
 - Rotation damping
 - Dolly damping
 
-Easing:
-- Linear
-- Ease-in
-- Ease-out
-- Ease-in-out
-- Sinusoidal
+**Easing:**
+- Linear, Ease-in, Ease-out, Ease-in-out, Sinusoidal
 
 ---
 
-## ✂️ Cinematic Cuts
+## ✂️ Cinematic Cuts (Both Versions)
 
 Cuts are allowed — but never accidental.
 
-Allowed methods:
+**Allowed methods:**
 - Whip pan
 - Full-frame occlusion
 - Motion blur peak
@@ -190,26 +157,47 @@ Every cut must specify:
 
 ## 🎯 The Last Frame Method
 
-1. Generate Clip 1  
-2. Export final frame from editor (not screenshot)  
-3. Generate Clip 2 using that frame  
-4. Repeat for all clips  
-5. Stitch sequence  
+This technique eliminates AI randomness and preserves camera, lighting, and framing:
+
+1. Generate Clip 1
+2. Export final frame from editor (not screenshot)
+3. Generate Clip 2 using that frame
+4. Repeat for all clips
+5. Stitch sequence
 6. Apply sound design
 
-This eliminates AI randomness and preserves camera, lighting, and framing.
+**Works with both versions.**
+
+---
+
+## 🎵 Sound Design
+
+### Lite Edition
+Simple three-field system:
+- Music (description / volume %)
+- Ambient (environment / volume %)
+- Foley (key sounds)
+- Sound Transitions (continuous / crossfade / J-cut / L-cut)
+
+### Cinematic Edition
+Professional three-layer system with detailed control:
+- Music (track / volume % / sync)
+- Ambient (environment / volume % / transition type)
+- Foley (specific action-synced effects)
+- Sound Transitions (crossfade, J-cut, L-cut, beat sync)
+- Notes (sync rules, emotional emphasis)
 
 ---
 
 ## 🛠️ Compatible Platforms
 
-Prompt generation:
+**Prompt Generation:**
 - ChatGPT
 - Claude
 - Gemini
 - Grok
 
-Video generation:
+**Video Generation:**
 - Runway
 - Pika
 - Luma Dream Machine
@@ -219,11 +207,25 @@ Video generation:
 - Sora / Veo (text-only)
 - Grok Imagine
 
-Audio:
+**Audio:**
 - Runway
 - Kling
 - ElevenLabs
 - Suno
+
+---
+
+## 📊 Version Comparison
+
+| Feature | Lite Edition | Cinematic Edition |
+|---------|-------------|-------------------|
+| **Setup Time** | 5 minutes | 15–30 minutes |
+| **Camera Controls** | Simple descriptions | Precise physics |
+| **Sound Design** | Basic 3-field | Professional 3-layer |
+| **Cut Motivations** | Simplified | Detailed justification |
+| **Best For** | Social, ads, tests | Films, commercials, docs |
+| **Learning Curve** | Minimal | Moderate |
+| **Output Quality** | Clean & cinematic | Maximum polish |
 
 ---
 
@@ -236,7 +238,7 @@ MIT License — free for personal and commercial use.
 ## 🤝 Contributing
 
 Contributions welcome:
-- New examples
+- New examples for both versions
 - Platform-specific presets
 - Action / trailer cut recipes
 - Documentation improvements
@@ -247,4 +249,4 @@ Contributions welcome:
 
 Built using techniques inspired by professional cinematography, film editing, and sound design — adapted for modern AI video generation.
 
-Star the repo if this helps you ship cinematic AI videos ⭐
+**Star the repo if this helps you ship cinematic AI videos** ⭐
