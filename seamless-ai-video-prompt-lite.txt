@@ -19,24 +19,24 @@ USER SAYS "run"/"generate"/"create clips" OR UPLOADS PREFILLED TEMPLATE → Gene
 USER SAYS "prefill"/"fill"/"update" → Fill input form only, output complete template file, DO NOT run
 
 CRITICAL OUTPUT RULES - NO EXCEPTIONS:
-• NEVER use "same as above", "see previous", "as before", "[same]", "ditto", or ANY shortcut text
-• EVERY clip must contain COMPLETE FULL TEXT of environment description copied WORD-FOR-WORD
-• EVERY clip must contain COMPLETE FULL TEXT of all subject descriptions copied WORD-FOR-WORD
-• EVERY clip must contain COMPLETE FULL negative prompt copied WORD-FOR-WORD
-• EVERY clip must contain COMPLETE camera movement specification (exact degrees/distance OR "remains static")
-• EVERY clip must contain COMPLETE sound design with ALL 5 components: Music/%, Ambient/%, Foley with timing/%, Dialogue with subject names, Transitions
-• EVERY clip must contain exact seed number
-• EVERY clip must contain aspect ratio
-• EVERY clip must contain style description
-• EVERY clip must contain special notes for that specific clip
-• Zero abbreviations, zero shortcuts, zero laziness, ZERO BLANK FIELDS
-• If environment is 200 words, you write 200 words EVERY SINGLE CLIP
-• If subject descriptions are 150 words, you write 150 words EVERY SINGLE CLIP
-• Keep in mind the limitations of AI video generation
-• Copy-paste the locked descriptions verbatim - this is MANDATORY for AI video tool consistency
-• Failure to output complete text = broken continuity = unusable output
-• Each clip must output exactly one copyable block containing only the full prompt. If it cannot be copied in one action, the output is invalid. In it's own fenced code block!
-• Leaving ANY field blank or abbreviated = FAILURE
+- NEVER use "same as above", "see previous", "as before", "[same]", "ditto", or ANY shortcut text
+- EVERY clip must contain COMPLETE FULL TEXT of environment description copied WORD-FOR-WORD
+- EVERY clip must contain COMPLETE FULL TEXT of all subject descriptions copied WORD-FOR-WORD
+- EVERY clip must contain COMPLETE FULL negative prompt copied WORD-FOR-WORD
+- EVERY clip must contain COMPLETE camera movement specification (exact degrees/distance OR "remains static")
+- EVERY clip must contain COMPLETE sound design with ALL 5 components: Music/%, Ambient/%, Foley with timing/%, Dialogue with subject names, Transitions
+- EVERY clip must contain exact seed number
+- EVERY clip must contain aspect ratio
+- EVERY clip must contain style description
+- EVERY clip must contain special notes for that specific clip
+- Zero abbreviations, zero shortcuts, zero laziness, ZERO BLANK FIELDS
+- If environment is 200 words, you write 200 words EVERY SINGLE CLIP
+- If subject descriptions are 150 words, you write 150 words EVERY SINGLE CLIP
+- Keep in mind the limitations of AI video generation
+- Copy-paste the locked descriptions verbatim - this is MANDATORY for AI video tool consistency
+- Failure to output complete text = broken continuity = unusable output
+- Each clip must output exactly one copyable block containing only the full prompt. If it cannot be copied in one action, the output is invalid. In it's own fenced code block!
+- Leaving ANY field blank or abbreviated = FAILURE
 
 NOTE FOR AI:
 This template intentionally repeats information.
@@ -46,22 +46,21 @@ Do not attempt to optimize, compress, or remove repeated text.
 ═══════════════════════════════════════════════════════════════════════════════
 CORE RULES
 
-• Duration ÷ 6 = number of clips
-• Same seed all clips
-• Camera static first 1 second, movement seconds 1–6
-• Clip 2+ START FRAME = previous clip END FRAME (export last frame, use as image input)
-• Copy ENVIRONMENT (LOCKED) word-for-word every clip
-• Copy SUBJECTS (LOCKED) word-for-word every clip
-• END FRAME: all subjects marked PRESENT in this clip are visible, centered, unchanged
-• Each prompt in its own code block for copy-paste
+- Duration ÷ clip length = number of clips
+- Same seed all clips
+- Clip 2+ START FRAME = previous clip END FRAME (export last frame, use as image input)
+- Copy ENVIRONMENT (LOCKED) word-for-word every clip
+- Copy SUBJECTS (LOCKED) word-for-word every clip
+- END FRAME: all subjects marked PRESENT in this clip are visible, centered, unchanged
+- Each prompt in its own code block for copy-paste
 
 SUBJECTS (LOCKED — DECLARATION ONLY)
 
 IMPORTANT:
-• SUBJECTS are globally declared entities for continuity locking.
-• DECLARING a subject does NOT mean it is physically present in every clip.
-• Physical presence is controlled PER CLIP.
-• ALL subject descriptions below MUST be copied word-for-word into EVERY clip, regardless of presence.
+- SUBJECTS are globally declared entities for continuity locking.
+- DECLARING a subject does NOT mean it is physically present in every clip.
+- Physical presence is controlled PER CLIP.
+- ALL subject descriptions below MUST be copied word-for-word into EVERY clip, regardless of presence.
 
 Subject 1 — GLOBAL DESCRIPTION (LOCKED):
 [Full immutable description: age or scale, form, face or surface, materials, color, textures, clothing or components, props, default posture, identifying features.
@@ -83,10 +82,10 @@ Copy word-for-word every clip prevents warping/morphing.]
 SEED (LOCKED)
 
 If the user does not explicitly provide a 6-digit seed:
-• Generate ONE random 6-digit integer (000000–999999)
-• Declare it here
-• Use this EXACT seed for ALL clips
-• Never regenerate, modify, or vary it
+- Generate ONE random 6-digit integer (000000–999999)
+- Declare it here
+- Use this EXACT seed for ALL clips
+- Never regenerate, modify, or vary it
 
 ═══════════════════════════════════════════════════════════════════════════════
 STYLE (LOCKED)
@@ -152,7 +151,7 @@ Subject 2: PRESENT / NOT PRESENT
 Only subjects marked PRESENT may appear visually, audibly, or physically in this clip.
 
 
-[Camera holds static 1 second, then MUST SPECIFY exact movement over remaining 5 seconds OR state "remains static"],
+[Camera movement specification — MUST SPECIFY exact movement OR state "remains static"],
 [Aspect ratio — MUST write explicitly],
 [Special notes for THIS clip — behaviors, eye movements, micro-expressions, interactions]
 
@@ -177,15 +176,15 @@ Subjects marked NOT PRESENT must not appear in any form.]
 ═══════════════════════════════════════════════════════════════════════════════
 CLIP GENERATION NOTES FOR AI
 
-• Clip 1: No START FRAME
-• Clip 2+: Use previous clip END FRAME as visual reference
-• Environment identical every clip — copy word-for-word
-• Subject descriptions identical every clip — copy word-for-word
-• Negative prompt identical every clip — copy word-for-word
-• NEVER use shortcuts
-• Dialogue ~15–20 words max per clip
-• Subjects never acknowledge camera
-• No implied off-screen presence
+- Clip 1: No START FRAME
+- Clip 2+: Use previous clip END FRAME as visual reference
+- Environment identical every clip — copy word-for-word
+- Subject descriptions identical every clip — copy word-for-word
+- Negative prompt identical every clip — copy word-for-word
+- NEVER use shortcuts
+- Dialogue ~15–20 words max per clip
+- Subjects never acknowledge camera
+- No implied off-screen presence
 
 ═══════════════════════════════════════════════════════════════════════════════
 END OF TEMPLATE
