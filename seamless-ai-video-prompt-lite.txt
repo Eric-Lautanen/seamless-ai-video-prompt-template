@@ -60,7 +60,8 @@ IMPORTANT:
 - SUBJECTS are globally declared entities for continuity locking.
 - DECLARING a subject does NOT mean it is physically present in every clip.
 - Physical presence is controlled PER CLIP.
-- ALL subject descriptions below MUST be copied word-for-word into EVERY clip, regardless of presence.
+- Subject descriptions are immutable and must never change once declared.
+- ONLY subjects marked PRESENT for a clip are included in that clip’s prompt output.
 
 Subject 1 — GLOBAL DESCRIPTION (LOCKED):
 [Full immutable description: age or scale, form, face or surface, materials, color, textures, clothing or components, props, default posture, identifying features.
