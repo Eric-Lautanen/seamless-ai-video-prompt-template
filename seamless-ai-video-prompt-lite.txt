@@ -4,10 +4,10 @@
 QUICK INPUT FORM
 
 CONTENT TYPE:
-[Genre / style]
+Description of what you want the AI to generate.
 
 DURATION:
-[X seconds — auto-calc clips]
+42 seconds
 
 CLIP LENGTH:
 6 seconds
@@ -36,6 +36,7 @@ CRITICAL OUTPUT RULES - NO EXCEPTIONS:
 • If subject descriptions are 150 words, you write 150 words EVERY SINGLE CLIP
 • Copy-paste the locked descriptions verbatim - this is MANDATORY for AI video tool consistency
 • Failure to output complete text = broken continuity = unusable output
+• Each clip must output exactly one copyable block containing only the full prompt. If it cannot be copied in one action, the output is invalid.
 • Leaving ANY field blank or abbreviated = FAILURE
 
 NOTE FOR AI:
@@ -82,15 +83,22 @@ Copy word-for-word every clip prevents warping/morphing.]
 ═══════════════════════════════════════════════════════════════════════════════
 SEED (LOCKED)
 
-[6-digit number — same for all clips]
+If the user does not explicitly provide a 6-digit seed:
+• Generate ONE random 6-digit integer (000000–999999)
+• Declare it here
+• Use this EXACT seed for ALL clips
+• Never regenerate, modify, or vary it
 
 ═══════════════════════════════════════════════════════════════════════════════
 STYLE (LOCKED)
 
 [Visual aesthetic — lens style, realism level, rendering look, grain, contrast]
 
-ASPECT RATIO (LOCKED):
-[16:9, 2.35:1, 9:16, etc.]
+ASPECT RATIO (LOCKED)
+
+If the user specifies an aspect ratio, use it exactly.
+If the user does NOT specify an aspect ratio, default to 16:9.
+This value must be written explicitly in EVERY clip.
 
 ═══════════════════════════════════════════════════════════════════════════════
 SOUND (LOCKED STRUCTURE, VARIABLE CONTENT)
