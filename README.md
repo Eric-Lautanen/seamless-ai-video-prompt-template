@@ -25,15 +25,16 @@ Note: Regenerate clips when needed for pixel-accurate continuity.
 - Concept tests and client previews
 - Rapid iteration and quick turnarounds
 - When you need reliable results without deep technical setup
-- When tokens are low and you still need 12–30 seconds of usable footage
+- When you want professional-looking output without "AI slop" tells
 
 **Features:**
 - Streamlined input form (just 3 fields to start)
 - Simplified camera controls (no math required)
+- Built-in slop prevention (no fades to black, no morphing faces, no awkward pauses)
 - Same-seed continuity lock
 - Fast prompt generation
-- Clean cinematic output
-- User controls camera timing (no forced delays)
+- One-click copyable prompts per clip
+- Automatic dialogue timing (80% rule for conversations)
 
 **Use when:** Speed and reliability matter more than fine-tuned camera physics.
 
@@ -75,12 +76,14 @@ Note: Regenerate clips when needed for pixel-accurate continuity.
   - Example: "6 seconds"
 
 Then paste the template into ChatGPT, Claude, Gemini, or Grok and say:
-- **"prefill"** — AI fills the template but doesn't generate clips yet
+- **"prefill"** — AI fills the template but doesn't generate clips yet (review/edit first)
 - **"run"** or **"generate"** — AI generates all clips immediately
+
+**Why prefill exists:** Most people struggle to describe their vision technically. Prefill translates "woman walking through neon alley" into complete environment descriptions, locked subject details, camera movement plans, sound design, and negative prompts. Review it, tweak it, then generate.
 
 ### 3. Generate Your Video (Last Frame Method)
 - Generate Clip 1 as text-to-video or text-to-image → video
-- Export the last frame from your editor (NOT a screenshot)
+- Export the last frame from your video editor (NOT a screenshot)
 - Generate Clip 2 as image-to-video using that exported frame
 - Repeat for all clips
 - Stitch clips together
@@ -113,18 +116,28 @@ Intentional cutaways, inserts, or montage beats. Used for emphasis and pacing. A
 
 ---
 
-## 📋 Lite Edition — Core Rules
+## 📋 Lite Edition — What Makes It Work
 
-The Lite Edition follows five simple rules for reliable continuity:
+The Lite Edition enforces these rules automatically so you don't have to think about them:
 
-1. Break video into equal-length clips (user-specified duration)
-2. Use the SAME SEED for every clip (auto-generated if not provided)
-3. End EVERY clip with the MAIN SUBJECT:
-   - Fully visible
-   - Centered
-   - Unchanged
-4. Repeat the MAIN SUBJECT DESCRIPTION word-for-word in every clip
-5. Audio continuity overrides visual continuity
+### Continuity Locks
+1. **Same seed for ALL clips** — Auto-generated if you don't provide one (guarantees visual consistency)
+2. **Word-for-word repetition** — Environment and subject descriptions copied exactly every clip
+3. **No new elements after Clip 1** — What's visible in the first clip is ALL that exists (prevents random props appearing)
+4. **Explicit camera instructions** — Every clip states movement or "remains completely static"
+
+### Slop Prevention (Built-in)
+5. **No fades to black/white** — Clips end with visible, well-lit frames (biggest AI slop giveaway)
+6. **No identity drift** — Facial features, clothing, proportions locked across all clips
+7. **No scale changes** — Subject size relative to frame stays consistent
+8. **No lighting drift** — Light sources and color temperature locked (unless you use EVOLVING mode)
+9. **Dialogue timing** — Multi-character conversations fill 80%+ of clip duration (no awkward pauses)
+10. **Full negative prompts** — Every clip gets complete prevention list (no shortcuts like "same as above")
+
+### Output Quality
+- **One artifact per clip** — Single-click copy, paste directly into your video AI tool
+- **Complete prompts** — No references, no blanks, no abbreviations
+- **Environment flexibility** — Choose STATIC (same setting), EVOLVING (gradual changes), or PER-CLIP (different locations)
 
 **Camera movement is flexible:** You control timing. Specify static holds, continuous movement, or any combination in your CONTENT TYPE description. The template adapts to your vision.
 
@@ -198,7 +211,8 @@ Simple structured system:
 - **Music:** (description or None / volume %)
 - **Ambient:** (environment or None / volume %)
 - **Foley:** (specific sounds with timing / volume %)
-- **Dialogue:** (Subject name: "exact line" OR None)
+- **Dialogue:** (Subject name: "exact line" (0.2s-5.8s) OR None)
+  - Multi-subject conversations automatically fill 80%+ of clip duration
 - **Transitions:** (how sound connects between clips)
 
 ### Cinematic Edition
@@ -245,11 +259,29 @@ Professional three-layer system with detailed control:
 | **Camera Controls** | Simple descriptions | Precise physics |
 | **Camera Timing** | User-controlled | Structured defaults |
 | **Sound Design** | 5-field structured | Professional 3-layer |
+| **Slop Prevention** | Built-in (10+ rules) | Built-in + advanced |
+| **Dialogue Timing** | Auto 80% rule | Manual control |
+| **Output Format** | 1 artifact per clip | 1 artifact per clip |
 | **Cut Motivations** | Simplified | Detailed justification |
 | **Best For** | Social, ads, tests | Films, commercials, docs |
 | **Learning Curve** | Minimal | Moderate |
 | **Output Quality** | Clean & cinematic | Maximum polish |
 | **Token Efficiency** | High | Moderate |
+
+---
+
+## 🎯 Common Use Cases
+
+### Lite Edition Examples
+- **30-second product demo** (5 clips × 6 seconds)
+- **TikTok/Reel with dialogue** (3 clips × 10 seconds, 80% dialogue rule auto-applied)
+- **Concept test for client** (prefill → review → generate)
+- **Social ad with call-to-action** (static environment, continuous camera movement)
+
+### When to Use Prefill
+- "I want a cyberpunk alley scene but don't know how to describe the neon lights"
+- "Make a coffee shop conversation but I'm not sure about camera angles"
+- "Create a space shuttle approach sequence" (see template for exact example)
 
 ---
 
