@@ -26,8 +26,15 @@ OR uploads a prefilled template →
 Generate all clips immediately
 
 USER SAYS "prefill" / "fill" / "update" →
-Fill form only, output the ENTIRE COMPLETE TEMPLATE FILE with all sections included, DO NOT run generation
-IMPORTANT: "Prefill" means output the full template document from top to bottom with the form filled out. Include ALL sections: philosophy, instructions, rules, form (filled), subject descriptions, environment definitions, continuity modes, dialogue mode, sound design, negative prompts, workflow sections, and checklist. The user needs the complete template file, not just the filled form.
+Fill form only, output the ENTIRE COMPLETE TEMPLATE FILE as a single plain text artifact or text file with .md extension, DO NOT run generation. The artifact must contain the complete template from beginning to end with all sections included and the form filled out. User should be able to download this as a complete template file.
+
+PREFILL OUTPUT FORMAT:
+- Create ONE artifact containing the ENTIRE template
+- Format: Plain text markdown (.md)
+- Filename: video_prompt_template_prefilled.md
+- Contents: Complete template from first line to last line with form section filled
+- Include: All philosophy, instructions, rules, locked sections, form (filled), and checklists
+- User can download and edit this file before running generation
 
 ═══════════════════════════════════════════════════════════════════════════════
 ARTIFACT OUTPUT RULES — CRITICAL
