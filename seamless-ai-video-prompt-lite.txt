@@ -1,0 +1,144 @@
+# SEAMLESS AI VIDEO PROMPT GENERATOR — LITE / FAST EDITION
+# QUICK PROMPTS • CONTINUITY LOCK • CINEMATIC RESULTS
+
+═══════════════════════════════════════════════════════════════════════════════
+PURPOSE
+
+This is a streamlined version of the Cinematic Edition.
+It prioritizes:
+• Speed
+• Reliability
+• Continuity
+• Clean cinematic output
+
+Use this when you want fast, repeatable results without deep camera math.
+
+═══════════════════════════════════════════════════════════════════════════════
+CORE RULES (READ ONCE)
+
+• Break video into 6-second clips
+• Use the SAME SEED for every clip (if available)
+• End EVERY clip with the MAIN SUBJECT:
+  - Fully visible
+  - Centered
+  - Unchanged
+• Repeat the MAIN SUBJECT DESCRIPTION word-for-word in every clip
+• Audio continuity overrides visual continuity
+• Avoid random cuts or camera resets
+
+If these rules are followed, continuity holds.
+
+═══════════════════════════════════════════════════════════════════════════════
+QUICK INPUT FORM
+
+CONTENT TYPE:
+[Narrative / Dialogue / Product / Action / VFX / Dance / Landscape / Aerial]
+
+VIDEO DURATION:
+[Total seconds]
+
+CLIP LENGTH:
+[6 seconds]
+
+NUMBER OF CLIPS:
+[VIDEO DURATION ÷ 6]
+
+MAIN SUBJECT (LOCKED):
+[Exact description — repeat verbatim every clip]
+
+SCENE / CONCEPT:
+[What happens from start to end]
+
+STYLE:
+[Photorealistic, cinematic, anime, cyberpunk, etc.]
+
+ASPECT RATIO:
+[16:9 / 9:16 / 2.35:1]
+
+SPECIAL NOTES:
+[Optional — emphasis, mood, reveal]
+
+═══════════════════════════════════════════════════════════════════════════════
+CONTINUITY MODE (CHOOSE ONE)
+
+CONTINUITY MODE:
+[ Continuous | Invisible Cut | Editorial Cut ]
+
+If using cuts:
+CUT MOTIVATION:
+[Motion / Sound / Match / Light / Impact]
+
+═══════════════════════════════════════════════════════════════════════════════
+SOUND (OPTIONAL BUT RECOMMENDED)
+
+Music:
+[None / Description / Volume %]
+
+Ambient:
+[Environment / Volume %]
+
+Foley:
+[Key sounds]
+
+Sound Transitions:
+[Continuous / Crossfade / J-cut / L-cut]
+
+═══════════════════════════════════════════════════════════════════════════════
+NEGATIVE PROMPTS (USE SAME FOR ALL CLIPS)
+
+Starter:
+flicker, blur, morphing, text, watermark, low quality
+
+Add as needed:
+extra fingers, warped face, jitter, shaky camera,
+unnatural physics, temporal inconsistency
+
+═══════════════════════════════════════════════════════════════════════════════
+PER-CLIP OUTPUT FORMAT
+
+Clip X of Y:
+
+START FRAME (Clip 2+):
+[Exact END FRAME from previous clip]
+
+Narrative:
+[What happens in this 6-second clip]
+
+Camera:
+[Simple description — follow, orbit, push-in, static, handheld]
+
+Subject Framing:
+[Subject remains centered and fully visible]
+
+Motion:
+[Slow / Moderate / Fast — smooth]
+
+Sound:
+[What continues or changes]
+
+END FRAME DESCRIPTION:
+[MAIN SUBJECT centered, fully visible, unchanged — verbatim]
+
+═══════════════════════════════════════════════════════════════════════════════
+FAST WORKFLOW (LAST FRAME METHOD)
+
+1. Generate Clip 1
+2. Export last frame from editor (not screenshot)
+3. Generate Clip 2 using that frame
+4. Repeat
+5. Stitch clips
+6. Add or refine sound if needed
+
+═══════════════════════════════════════════════════════════════════════════════
+WHEN TO USE THIS VERSION
+
+• Social videos
+• Ads
+• Concept tests
+• Shorts
+• Rapid iteration
+• Client previews
+
+For full productions, use the Cinematic Edition.
+
+═══════════════════════════════════════════════════════════════════════════════
