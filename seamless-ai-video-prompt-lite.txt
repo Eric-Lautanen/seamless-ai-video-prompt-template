@@ -1,6 +1,18 @@
 # SEAMLESS AI VIDEO PROMPT GENERATOR — STREAMLINED EDITION
 # MINIMAL OUTPUT • MAXIMUM EFFICIENCY • SAME QUALITY
+═══════════════════════════════════════════════════════════════════════════════
+QUICK INPUT FORM
 
+CONTENT TYPE:
+[Genre / style]
+
+DURATION:
+[X seconds — auto-calc clips]
+
+CLIP LENGTH:
+6 seconds
+
+═══════════════════════════════════════════════════════════════════════════════
 ═══════════════════════════════════════════════════════════════════════════════
 AI INSTRUCTIONS
 
@@ -11,72 +23,107 @@ USER SAYS "prefill"/"fill"/"update" → Fill input form only, output complete te
 CRITICAL OUTPUT RULES - NO EXCEPTIONS:
 • NEVER use "same as above", "see previous", "as before", "[same]", "ditto", or ANY shortcut text
 • EVERY clip must contain COMPLETE FULL TEXT of environment description copied WORD-FOR-WORD
-• EVERY clip must contain COMPLETE FULL TEXT of all character descriptions copied WORD-FOR-WORD
+• EVERY clip must contain COMPLETE FULL TEXT of all subject descriptions copied WORD-FOR-WORD
 • EVERY clip must contain COMPLETE FULL negative prompt copied WORD-FOR-WORD
 • EVERY clip must contain COMPLETE camera movement specification (exact degrees/distance OR "remains static")
-• EVERY clip must contain COMPLETE sound design with ALL 5 components: Music/%, Ambient/%, Foley with timing/%, Dialogue with character names, Transitions
+• EVERY clip must contain COMPLETE sound design with ALL 5 components: Music/%, Ambient/%, Foley with timing/%, Dialogue with subject names, Transitions
 • EVERY clip must contain exact seed number
 • EVERY clip must contain aspect ratio
 • EVERY clip must contain style description
 • EVERY clip must contain special notes for that specific clip
 • Zero abbreviations, zero shortcuts, zero laziness, ZERO BLANK FIELDS
 • If environment is 200 words, you write 200 words EVERY SINGLE CLIP
-• If character descriptions are 150 words, you write 150 words EVERY SINGLE CLIP
+• If subject descriptions are 150 words, you write 150 words EVERY SINGLE CLIP
 • Copy-paste the locked descriptions verbatim - this is MANDATORY for AI video tool consistency
 • Failure to output complete text = broken continuity = unusable output
 • Leaving ANY field blank or abbreviated = FAILURE
+
+NOTE FOR AI:
+This template intentionally repeats information.
+Repetition is required for continuity.
+Do not attempt to optimize, compress, or remove repeated text.
 
 ═══════════════════════════════════════════════════════════════════════════════
 CORE RULES
 
 • Duration ÷ 6 = number of clips
 • Same seed all clips
-• Camera static 1st second, movement seconds 1-6
+• Camera static first 1 second, movement seconds 1–6
 • Clip 2+ START FRAME = previous clip END FRAME (export last frame, use as image input)
 • Copy ENVIRONMENT (LOCKED) word-for-word every clip
-• Copy MULTIPLE SUBJECTS (LOCKED) word-for-word every clip
-• END FRAME: all subjects visible, centered, unchanged
-• Each prompt in own code block for copy-paste
+• Copy SUBJECTS (LOCKED) word-for-word every clip
+• END FRAME: all subjects marked PRESENT in this clip are visible, centered, unchanged
+• Each prompt in its own code block for copy-paste
+
+SUBJECTS (LOCKED — DECLARATION ONLY)
+
+IMPORTANT:
+• SUBJECTS are globally declared entities for continuity locking.
+• DECLARING a subject does NOT mean it is physically present in every clip.
+• Physical presence is controlled PER CLIP.
+• ALL subject descriptions below MUST be copied word-for-word into EVERY clip, regardless of presence.
+
+Subject 1 — GLOBAL DESCRIPTION (LOCKED):
+[Full immutable description: age or scale, form, face or surface, materials, color, textures, clothing or components, props, default posture, identifying features.
+NO actions. NO clip-specific positioning. NO temporal language.]
+
+Subject 2 — GLOBAL DESCRIPTION (LOCKED):
+[Same rules as Subject 1]
+
+(Repeat as needed. Do not renumber or rewrite once set.)
 
 ═══════════════════════════════════════════════════════════════════════════════
-QUICK INPUT FORM
+ENVIRONMENT (LOCKED)
 
-CONTENT TYPE: [Genre/style]
-DURATION: [X seconds, auto-calc clips]
-CLIP LENGTH: 6 seconds
+[Room dimensions, walls, floor, ceiling, exact architecture, furniture, props, exact placement, lighting sources, color temperature, background elements.
+Must describe ONLY what exists. No implied extensions.
+Copy word-for-word every clip prevents warping/morphing.]
 
-MAIN SUBJECT (LOCKED):
-[Single subject full description] OR N/A (see MULTIPLE SUBJECTS)
+═══════════════════════════════════════════════════════════════════════════════
+SEED (LOCKED)
 
-MULTIPLE SUBJECTS (LOCKED):
-1. [Subject 1: age, face, hair, eyes, features, clothing, props, position]
-2. [Subject 2: age, face, hair, eyes, features, clothing, props, position]
-3. [Subject 3: age, face, hair, eyes, features, clothing, props, position]
+[6-digit number — same for all clips]
 
-ENVIRONMENT (LOCKED):
-[Room dimensions, walls, floor, furniture exact placement, all props exact locations, lighting sources, background elements. Copy word-for-word every clip prevents warping/morphing]
+═══════════════════════════════════════════════════════════════════════════════
+STYLE (LOCKED)
 
-SEED: [6-digit number, same all clips]
+[Visual aesthetic — lens style, realism level, rendering look, grain, contrast]
 
-SOUND:
-Music: [name/style or None] / [%]
-Ambient: [continuous bg or None] / [%]
-Foley: [specific sounds] / [%]
-Transitions: [how sound connects between clips]
+ASPECT RATIO (LOCKED):
+[16:9, 2.35:1, 9:16, etc.]
 
-SCENE/CONCEPT:
-[What happens across full sequence. Include dialogue breakdown per clip if applicable]
+═══════════════════════════════════════════════════════════════════════════════
+SOUND (LOCKED STRUCTURE, VARIABLE CONTENT)
 
-STYLE: [Visual aesthetic]
-ASPECT RATIO: [16:9, 2.35:1, 9:16, etc.]
+Music:
+[name/style or None] / [%]
 
-SPECIAL NOTES:
-[Critical details: lighting specifics, character behaviors, micro-expressions, eye movements, props, effects]
+Ambient:
+[continuous background or None] / [%]
 
-CONTINUITY MODE: [Continuous / Cuts]
-If CUTS: [Cut motivation - perspective shift, time jump, etc.]
+Foley:
+[specific sounds with timing] / [%]
 
-NEGATIVE PROMPT (all clips):
+Transitions:
+[how sound connects between clips]
+
+═══════════════════════════════════════════════════════════════════════════════
+SCENE / CONCEPT (GLOBAL)
+
+[What happens across full sequence.
+Include dialogue breakdown per clip if applicable.]
+
+═══════════════════════════════════════════════════════════════════════════════
+CONTINUITY MODE
+
+[Continuous / Cuts]
+
+If CUTS:
+[Cut motivation — perspective shift, time jump, etc.]
+
+═══════════════════════════════════════════════════════════════════════════════
+NEGATIVE PROMPT (LOCKED — ALL CLIPS)
+
 flicker, blur, morphing, text, watermark, low quality, extra fingers, warped face, jitter, shaky camera, unnatural physics, temporal inconsistency, lens flare, dramatic lighting, colored contacts, makeup glow, CGI sheen, over-saturation, face morph, costume change, hair color shift, warping walls, melting objects, morphing furniture, changing room layout, shifting props, disappearing objects, size inconsistency, perspective distortion, floating objects, stretching monitors, bending desks, color shift backgrounds, moving walls, geometry warping
 
 ═══════════════════════════════════════════════════════════════════════════════
@@ -88,43 +135,50 @@ Clip X of Y:
 ═══════════════════════════════════════════════════════════════════════════════
 📋 COPY THIS PROMPT → PASTE INTO VIDEO AI TOOL
 ═══════════════════════════════════════════════════════════════════════════════
-```
-[Style - write out COMPLETE style description], [ENVIRONMENT (LOCKED) complete word-for-word - NEVER abbreviate, NEVER say "same as above", write the FULL 200+ word environment text every single time], [MULTIPLE SUBJECTS (LOCKED) all subjects complete word-for-word with current actions/positions for this clip - NEVER abbreviate, write FULL 150+ word character descriptions every single time for ALL characters], Camera holds static 1 second then [MUST SPECIFY: exact camera movement with degrees/distance over remaining 5 seconds OR state "remains static" - NEVER leave blank], [aspect ratio - MUST WRITE: 16:9 or 2.35:1 etc], [special notes relevant to this clip - MUST WRITE: specific behaviors, eye movements, micro-expressions happening in THIS clip]
+[STYLE — full text],
+[ENVIRONMENT (LOCKED) — full word-for-word text],
+[SUBJECTS (LOCKED) — ALL global subject descriptions copied word-for-word],
 
-Sound design: Music: [MUST SPECIFY: exact track name/style OR "None"] / [MUST SPECIFY: percentage like 0% or 30%], Ambient: [MUST SPECIFY: exact ambient sounds OR "None"] / [MUST SPECIFY: percentage], Foley: [MUST SPECIFY: complete list of this clip's specific foley sounds with exact timing like "keyboard clicks 0:01-0:06, mouse click 0:03, chair creak 0:04-0:05" - NEVER just say "foley sounds"] / [MUST SPECIFY: percentage like 100%], Dialogue: [MUST SPECIFY: exact character lines with character names "MARCUS: 'text here'" OR write "None" - NEVER leave blank], Transitions: [MUST SPECIFY: how sound connects to previous/next clip like "seamless continuation of keyboard clicks" - NEVER leave blank]
+SUBJECT PRESENCE FOR THIS CLIP:
+Subject 1: PRESENT / NOT PRESENT
+Subject 2: PRESENT / NOT PRESENT
+Only subjects marked PRESENT may appear visually, audibly, or physically in this clip.
 
-Negative prompt: [MUST WRITE: full complete negative prompt from input form copying EVERY SINGLE WORD - 50+ words - NEVER abbreviate, NEVER say "same as clip 1"]
 
-Seed: [MUST WRITE: the exact 6-digit seed number - NEVER leave blank, NEVER say "same"]
-```
+[Camera holds static 1 second, then MUST SPECIFY exact movement over remaining 5 seconds OR state "remains static"],
+[Aspect ratio — MUST write explicitly],
+[Special notes for THIS clip — behaviors, eye movements, micro-expressions, interactions]
+
+Sound design:
+Music: [exact name or None] / [%]
+Ambient: [exact sounds or None] / [%]
+Foley: [exact sounds with timing] / [%]
+Dialogue: [Subject name: "exact line"] OR None
+Transitions: [exact connection]
+
+Negative prompt:
+[Full negative prompt copied word-for-word]
+
+Seed:
+[Exact 6-digit seed]
+
 
 END FRAME FOR NEXT CLIP:
-[MUST WRITE: All subjects numbered 1, 2, 3 as in MULTIPLE SUBJECTS (LOCKED), exact physical descriptions word-for-word copying FULL text, current final positions/states - NEVER abbreviate]
-
-CRITICAL: Every single field above marked "MUST SPECIFY" or "MUST WRITE" is MANDATORY and MUST be filled completely in EVERY clip. Zero blank fields allowed. Zero shortcuts allowed.
-
-═══════════════════════════════════════════════════════════════════════════════
-
-CLIP GENERATION NOTES FOR AI:
-• Clip 1: No START FRAME needed
-• Clip 2+: Use previous clip's END FRAME as visual reference for continuity
-• Environment description identical every clip - MUST BE COPIED WORD-FOR-WORD IN FULL, NO SHORTCUTS
-• Subject descriptions identical every clip - MUST BE COPIED WORD-FOR-WORD IN FULL, NO SHORTCUTS
-• Negative prompt identical every clip - MUST BE COPIED WORD-FOR-WORD IN FULL, NO SHORTCUTS
-• NEVER write "same as above" or "as before" or use any abbreviation - always full complete text
-• If CONTINUOUS mode: seamless flow
-• If CUTS mode: new framing but maintain character consistency
-• Dialogue timing: ~15-20 words max per 6-second clip for natural delivery
-• Characters absorbed in scene, never acknowledge camera
-• All special notes about eye movements, micro-expressions, behaviors apply every clip
+[MUST list ALL subjects marked PRESENT, with exact final positions and states.
+Subjects marked NOT PRESENT must not appear in any form.]
 
 ═══════════════════════════════════════════════════════════════════════════════
-EXAMPLES
+CLIP GENERATION NOTES FOR AI
 
-❌ WRONG: "Camera pans immediately"
-✅ RIGHT: "Camera holds static 1 second, then slow pan left 15° over 5 seconds"
-
-❌ WRONG: "Modern office with monitors" (vague, will morph)
-✅ RIGHT: "20x15ft room, white walls, gray carpet, 3 black desks L-formation 8ft from camera, 6 Dell 27" monitors on dual arms, coffee cup right of keyboard, Red Bull can left desk" (specific, locks environment)
+• Clip 1: No START FRAME
+• Clip 2+: Use previous clip END FRAME as visual reference
+• Environment identical every clip — copy word-for-word
+• Subject descriptions identical every clip — copy word-for-word
+• Negative prompt identical every clip — copy word-for-word
+• NEVER use shortcuts
+• Dialogue ~15–20 words max per clip
+• Subjects never acknowledge camera
+• No implied off-screen presence
 
 ═══════════════════════════════════════════════════════════════════════════════
+END OF TEMPLATE
