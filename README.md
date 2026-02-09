@@ -25,6 +25,7 @@ Note: Regenerate clips when needed for pixel-accurate continuity.
 - Concept tests and client previews
 - Rapid iteration and quick turnarounds
 - When you need reliable results without deep technical setup
+- When tokens are low and you still need 12–30 seconds of usable footage
 
 **Features:**
 - Streamlined input form
