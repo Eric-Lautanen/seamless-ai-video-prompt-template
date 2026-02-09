@@ -61,7 +61,7 @@ Note: Regenerate clips when needed for pixel-accurate continuity.
 ## 🚀 Quick Start (3 Steps)
 
 ### 1. Choose Your Template
-- **Lite Edition:** `seamless_video_prompt_lite.txt`
+- **Lite Edition:** `seamless-ai-video-prompt-lite.txt`
 - **Cinematic Edition:** `seamless_video_prompt_template.txt`
 
 Fill out the template fields at the top, or ask an AI to fill it based on your vision.
