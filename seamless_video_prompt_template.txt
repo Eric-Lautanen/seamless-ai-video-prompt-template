@@ -76,7 +76,7 @@ CRITICAL OUTPUT RULES — NO EXCEPTIONS
 - ZERO blank fields
 - ZERO abbreviations
 - Copy all LOCKED sections word-for-word
-- Each clip must output EXACTLY ONE fenced code block in its own artifact
+- Each clip prompt must output EXACTLY ONE fenced code block in its own artifact/text file/code block/textarea
 - If the prompt cannot be copied in one action, output is INVALID
 - Duration may NOT change after clip generation begins
 
