@@ -21,9 +21,13 @@ AI INSTRUCTIONS
 USER UPLOADS TEMPLATE WITH VISION →
 Prefill FORM section, output complete template file, DO NOT run
 
-USER SAYS "run" / "generate" / "create clips"
-OR uploads a prefilled template →
-Generate all clips immediately
+USER SAYS "run" / "generate" / "create clips" / "make the clips" / "generate clips" →
+ALWAYS generate all clips immediately as separate artifacts, even if the form is not filled.
+If form is empty, ask user for missing information first, then generate.
+NEVER prefill when user says these trigger words - they mean generate the clip prompts.
+
+USER UPLOADS a prefilled template file →
+Generate all clips immediately as separate artifacts.
 
 USER SAYS "prefill" / "fill" / "update" →
 Fill form only, output the ENTIRE COMPLETE TEMPLATE FILE as a single plain text artifact or text file with .md extension, DO NOT run generation. The artifact must contain the complete template from beginning to end with all sections included and the form filled out. User should be able to download this as a complete template file.
@@ -657,63 +661,6 @@ FINAL FRAME REQUIREMENTS:
 - No "cinematic" fade unless explicitly part of the scene
 - Last frame = next clip's start frame (must be usable)
 - VFX must be in stable, visible state
-
-═══════════════════════════════════════════════════════════════════════════════
-PRO WORKFLOW — LAST FRAME METHOD
-
-1. Generate Clip 1 as TEXT-TO-VIDEO
-2. Export final frame at native resolution from your video editor (NOT a screenshot)
-3. Generate Clip 2 as IMAGE-TO-VIDEO using last frame + Clip 2 prompt
-4. Repeat for all clips
-5. Stitch sequence in editor
-6. Apply final sound design and color grading
-
-CRITICAL: Use the actual exported frame from your editor, not a screenshot.
-This preserves exact color grading, resolution, and compression artifacts
-that help the AI maintain consistency.
-
-═══════════════════════════════════════════════════════════════════════════════
-ADVANCED WORKFLOW — REFERENCE IMAGE METHOD (2026 BEST PRACTICE)
-
-Most advanced AI video models (Sora 2, Veo 3.1, Runway Gen-4.5, Kling 2.6)
-now accept reference images alongside text prompts for superior consistency.
-
-SETUP PHASE:
-1. Create or source a high-quality reference image showing:
-   - Exact subject appearance (face, clothing, proportions)
-   - Desired lighting setup
-   - Color grading/mood
-   - Environment style
-2. Use this SAME reference image for ALL clips in the sequence
-
-GENERATION WORKFLOW:
-1. Clip 1: TEXT + REFERENCE IMAGE → video
-2. Export Clip 1 final frame
-3. Clip 2: TEXT + REFERENCE IMAGE + CLIP 1 FINAL FRAME → video
-   (Dual-image input: reference for consistency, final frame for continuity)
-4. Repeat for all subsequent clips
-
-WHY THIS WORKS:
-- Reference image locks subject identity across all clips
-- Final frame ensures motion continuity
-- Color grading remains consistent
-- Lighting style stays locked
-- Reduces identity drift by 60-80% (based on 2025-2026 testing)
-
-REFERENCE IMAGE REQUIREMENTS:
-- Front-facing, well-lit, high resolution (1080p+)
-- Clear facial features (for character work)
-- Neutral pose (not mid-action)
-- Clean background or environment representative of your scene
-- Same aspect ratio as final video
-
-PLATFORM COMPATIBILITY (as of Feb 2026):
-✅ Sora 2 - Dual reference + final frame support
-✅ Veo 3.1 - Reference image + prompt
-✅ Runway Gen-4.5 - Multi-image input
-✅ Kling 2.6 - Reference + continuity frame
-✅ Pika 2.5 - Image conditioning
-⚠️ Check platform documentation for latest features
 
 ═══════════════════════════════════════════════════════════════════════════════
 CONTINUITY CHECKLIST (MANDATORY)
