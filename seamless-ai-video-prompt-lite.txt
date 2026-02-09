@@ -38,8 +38,8 @@ CORE RULES (READ ONCE)
 • Break video into 6-second clips
 • AI auto-calculates number of clips: TOTAL DURATION ÷ CLIP LENGTH = NUMBER OF CLIPS
 • Use the SAME SEED for every clip (if available)
-• CAMERA MOVEMENT LOCK: No camera movement in the first 2 seconds of ANY clip
-  - First 2 seconds = camera LOCKED (static hold on START FRAME)
+• CAMERA MOVEMENT LOCK: No camera movement in the first 1 second of ANY clip
+  - First 1 second = camera LOCKED (static hold on START FRAME)
   - Seconds 2-6 = camera movement allowed (slow and smooth only)
   - This creates buttery smooth transitions between clips
 • End EVERY clip with the MAIN SUBJECT:
