@@ -40,7 +40,7 @@ CORE RULES (READ ONCE)
 • Use the SAME SEED for every clip (if available)
 • CAMERA MOVEMENT LOCK: No camera movement in the first 1 second of ANY clip
   - First 1 second = camera LOCKED (static hold on START FRAME)
-  - Seconds 2-6 = camera movement allowed (slow and smooth only)
+  - Seconds 1-6 = camera movement allowed (slow and smooth only)
   - This creates buttery smooth transitions between clips
 • End EVERY clip with the MAIN SUBJECT:
   - Fully visible
@@ -104,9 +104,21 @@ CONTINUITY MODE (CHOOSE ONE)
 CONTINUITY MODE:
 [Continuous / Cuts]
 
-If using cuts:
+If using CONTINUOUS:
+- Each clip's START FRAME = previous clip's END FRAME (exact last frame export)
+- Camera locked for first 1 second on that START FRAME
+- Seamless visual flow between all clips
+
+If using CUTS:
 CUT MOTIVATION:
-[Why cuts happen - perspective shift, time jump, emotional beat, etc.]
+[Why cuts happen - perspective shift, time jump, emotional beat, location change, etc.]
+
+CUT HANDLING:
+- Clips with cuts do NOT use previous clip's END FRAME as START FRAME
+- Start fresh with new framing/angle/position
+- Still lock camera for first 1 second to establish the new shot
+- Character descriptions still must be COMPLETE and WORD-FOR-WORD from MULTIPLE SUBJECTS (LOCKED)
+- Maintain character continuity (same clothing, hair, features) unless cut represents time jump
 
 ═══════════════════════════════════════════════════════════════════════════════
 SOUND (OPTIONAL BUT RECOMMENDED)
@@ -143,15 +155,15 @@ Narrative:
 [What happens in this 6-second clip]
 
 Camera:
-[FIRST 2 SECONDS: Static lock on START FRAME]
-[SECONDS 2-6: Simple movement if needed — slow push-in, gentle pan, subtle orbit]
-[Never: fast movements, whip pans, zooms, shakes in first 2 seconds]
+[FIRST 1 SECOND: Static lock on START FRAME]
+[SECONDS 1-6: Simple movement if needed — slow push-in, gentle pan, subtle orbit]
+[Never: fast movements, whip pans, zooms, shakes in first 1 second]
 
 Subject Framing:
 [Subject remains centered and fully visible]
 
 Motion:
-[Slow / Moderate — smooth and minimal in first 2 seconds]
+[Slow / Moderate — smooth and minimal in first 1 second]
 
 Sound:
 [What continues or changes]
@@ -165,7 +177,7 @@ END FRAME DESCRIPTION:
 
 COMPLETE PROMPT (COPY THIS — ONE BLOCK):
 ```
-[Full positive prompt with: style/aesthetic, environment/setting, COMPLETE WORD-FOR-WORD character descriptions from MULTIPLE SUBJECTS (LOCKED) section including all physical details, clothing, positioning for EVERY character, camera movement "Camera holds static for first 2 seconds, then [describe movement]", aspect ratio, lighting details, any special notes]
+[Full positive prompt with: style/aesthetic, environment/setting, COMPLETE WORD-FOR-WORD character descriptions from MULTIPLE SUBJECTS (LOCKED) section including all physical details, clothing, positioning for EVERY character, camera movement "Camera holds static for first 1 second, then [describe movement]", aspect ratio, lighting details, any special notes]
 
 Sound design: Music: [specify track/style or "None"] / [%], Ambient: [continuous background sounds or "None"] / [%], Foley: [specific sound effects for this clip with timing] / [%], Dialogue: [exact lines with character names, or "None"], Sound Transitions: [how sound connects to previous/next clip]
 
@@ -209,7 +221,7 @@ Clip 2: "Camera immediately pans left following the subject"
 Clip 3: "Camera zooms in quickly on the subject's face"
 
 ✅ CORRECT (buttery smooth transitions):
-Clip 2: "Camera holds static for 2 seconds on START FRAME, then slowly pans left 15° over remaining 4 seconds"
-Clip 3: "Camera holds static for 2 seconds maintaining framing, then gentle push-in over final 4 seconds"
+Clip 2: "Camera holds static for 1 second on START FRAME, then slowly pans left 15° over remaining 5 seconds"
+Clip 3: "Camera holds static for 1 second maintaining framing, then gentle push-in over final 5 seconds"
 
 ═══════════════════════════════════════════════════════════════════════════════
