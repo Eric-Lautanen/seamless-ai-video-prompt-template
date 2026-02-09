@@ -67,7 +67,7 @@ CRITICAL OUTPUT RULES — NO EXCEPTIONS
 - ZERO abbreviations
 - Copy all LOCKED sections word-for-word
 - If ENVIRONMENT is 200 words, write all 200 words EVERY clip
-- Each clip must output EXACTLY ONE fenced code block
+- Each clip must output EXACTLY ONE fenced code block in its own textarea,artifact,text file.
 - If the prompt cannot be copied in one action, output is INVALID
 - Duration may NOT change after clip generation begins
 - No per-clip stretching, padding, or time dilation
