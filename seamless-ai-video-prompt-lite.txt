@@ -21,7 +21,6 @@ USER SAYS "prefill"/"fill"/"update" → Fill input form only, output complete te
 CRITICAL OUTPUT RULES - NO EXCEPTIONS:
 - NEVER use "same as above", "see previous", "as before", "[same]", "ditto", or ANY shortcut text
 - EVERY clip must contain COMPLETE FULL TEXT of environment description copied WORD-FOR-WORD
-- EVERY clip must contain COMPLETE FULL TEXT of all subject descriptions copied WORD-FOR-WORD
 - EVERY clip must contain COMPLETE FULL negative prompt copied WORD-FOR-WORD
 - EVERY clip must contain COMPLETE camera movement specification (exact degrees/distance OR "remains static")
 - EVERY clip must contain COMPLETE sound design with ALL 5 components: Music/%, Ambient/%, Foley with timing/%, Dialogue with subject names, Transitions
@@ -48,20 +47,19 @@ CORE RULES
 
 - Duration ÷ clip length = number of clips
 - Same seed all clips
-- Clip 2+ START FRAME = previous clip END FRAME (export last frame, use as image input)
 - Copy ENVIRONMENT (LOCKED) word-for-word every clip
 - Copy SUBJECTS (LOCKED) word-for-word every clip
-- END FRAME: all subjects marked PRESENT in this clip are visible, centered, unchanged
 - Each prompt in its own code block for copy-paste
+- Clip 2+ START FRAME = final rendered frame of previous clip (used as image input)
+- Continuity is enforced exclusively through start-frame image inheritance
 
 SUBJECTS (LOCKED — DECLARATION ONLY)
 
 IMPORTANT:
 - SUBJECTS are globally declared entities for continuity locking.
-- DECLARING a subject does NOT mean it is physically present in every clip.
-- Physical presence is controlled PER CLIP.
 - Subject descriptions are immutable and must never change once declared.
-- ONLY subjects marked PRESENT for a clip are included in that clip’s prompt output.
+- A subject is considered PRESENT in a clip if and only if its full description appears in that clip’s prompt.
+- Subjects not listed in a clip do not exist in any form in that clip.
 
 Subject 1 — GLOBAL DESCRIPTION (LOCKED):
 [Full immutable description: age or scale, form, face or surface, materials, color, textures, clothing or components, props, default posture, identifying features.
@@ -146,11 +144,11 @@ Clip X of Y:
 [ENVIRONMENT (LOCKED) — full word-for-word text],
 [SUBJECTS (LOCKED) — ALL global subject descriptions copied word-for-word],
 
-SUBJECT PRESENCE FOR THIS CLIP:
-Subject 1: PRESENT / NOT PRESENT
-Subject 2: PRESENT / NOT PRESENT
-Only subjects marked PRESENT may appear visually, audibly, or physically in this clip.
+[SUBJECTS (LOCKED) — ONLY subjects marked PRESENT for this clip,
+copied word-for-word from their global descriptions],
 
+[SUBJECTS (LOCKED) — ONLY subjects that exist in this clip,
+copied word-for-word from their global descriptions],
 
 [Camera movement specification — MUST SPECIFY exact movement OR state "remains static"],
 [Aspect ratio — MUST write explicitly],
@@ -169,16 +167,11 @@ Negative prompt:
 Seed:
 [Exact 6-digit seed]
 
-
-END FRAME FOR NEXT CLIP:
-[MUST list ALL subjects marked PRESENT, with exact final positions and states.
-Subjects marked NOT PRESENT must not appear in any form.]
-
 ═══════════════════════════════════════════════════════════════════════════════
 CLIP GENERATION NOTES FOR AI
 
 - Clip 1: No START FRAME
-- Clip 2+: Use previous clip END FRAME as visual reference
+- Clip 2+: Use final rendered frame of previous clip as visual reference
 - Environment identical every clip — copy word-for-word
 - Subject descriptions identical every clip — copy word-for-word
 - Negative prompt identical every clip — copy word-for-word
