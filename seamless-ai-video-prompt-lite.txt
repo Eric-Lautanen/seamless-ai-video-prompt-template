@@ -8,7 +8,7 @@ CONTENT TYPE:
 DURATION:
 [How long do you want the full video to be?  example:  42 seconds]
 CLIP LENGTH:
-[How long will each clip be? Grok Imagine does 6/10 second clips.  example: 6 seconds]
+[How long will each clip be? example: 5 seconds]
 
 ═══════════════════════════════════════════════════════════════════════════════
 ═══════════════════════════════════════════════════════════════════════════════
