@@ -17,7 +17,7 @@ Example: 42 seconds]
 
 CLIP LENGTH:
 [Length of each clip.
-Example: 5 seconds]
+Example: 6 seconds]
 
 OPTIONAL DURATION EXTENSION (OFF BY DEFAULT)
 
