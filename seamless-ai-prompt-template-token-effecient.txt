@@ -3,7 +3,7 @@
 QUICK INPUT
 
 CONTENT TYPE:
-[Genre, style, narrative intent]
+[Genre, style, narrative intent + camera perspective (e.g., Male POV Cyberpunk / Stylized realism)]
 
 DURATION:
 [Total seconds]
@@ -12,7 +12,7 @@ CLIP LENGTH:
 [Seconds per clip]
 
 AUDIO:
-[Audio options]
+[Music / Ambient / Foley / Dialogue levels or None]
 
 CONTINUITY MODE:
 [CONTINUOUS / STRICT / EVOLVING]
@@ -44,6 +44,16 @@ OUTPUT REQUIREMENTS (MANDATORY)
 - Each prompt must be copyable in one action.
 - If any clip is not isolated in its own artifact, output is invalid.
 
+Each generated clip prompt MUST begin with:
+
+- Style (short form, e.g., Cyberpunk / Stylized realism)
+- Camera perspective (e.g., Male POV, Female POV, Third-person)
+- Aspect ratio (if declared)
+- Audio state (even if None)
+- Continuity mode
+
+These must remain identical across all clips unless EVOLVING mode visibly changes them.
+
 CORE STRUCTURE
 
 - Duration ÷ Clip Length = total clips
@@ -51,6 +61,29 @@ CORE STRUCTURE
 - Clip 2+ START FRAME = previous END FRAME
 - Continuity enforced at clip boundaries
 - No implicit resets or rebuilds
+- Style and camera perspective persist across all clips
+
+CLIP DETAIL DISTRIBUTION (TOKEN EFFICIENT)
+
+Clip 1:
+- Most detailed
+- Fully defines environment
+- Fully defines subject appearance
+- Establishes baseline lighting
+- Establishes camera perspective
+- Establishes audio state
+- Establishes object layout
+- Establishes tone and atmosphere
+
+Clips 2+:
+- Use short-form style reference (e.g., Cyberpunk / Stylized realism)
+- Maintain same camera perspective wording
+- Maintain same audio declaration
+- Brief action description only
+- Include dialogue only if present
+- Do NOT restate full environment unless changed
+- Do NOT restate full character description unless altered visibly
+- Must still describe END FRAME clearly
 
 VISIBILITY LOCK (BOUNDARY-BASED)
 
@@ -88,6 +121,8 @@ No silent disappearance.
 No silent substitution.
 No unexplained design change.
 No wearable altering appearance.
+No camera perspective shift unless declared.
+No audio state reset unless declared.
 
 NATURALISM PRIORITY
 
@@ -105,7 +140,7 @@ Continuity is enforced at clip boundaries.
 MODE RULES
 
 CONTINUOUS:
-Environment and subjects locked.
+Environment, style, audio state, and camera perspective locked.
 
 STRICT:
 Everything in CONTINUOUS plus:
@@ -120,6 +155,7 @@ Gradual, causally justified progression allowed.
 Changes must be visible before completion.
 No teleportation.
 No abrupt scene rewrite.
+Style and camera perspective remain unless explicitly evolved on-screen.
 
 TEMPORAL CONSISTENCY
 
@@ -128,6 +164,7 @@ TEMPORAL CONSISTENCY
 - Facing direction preserved unless intentional
 - Actions complete realistically
 - Background motion maintains momentum
+- Audio state persists unless visibly changed
 
 DURATION RESOLUTION
 
@@ -151,5 +188,8 @@ That END FRAME becomes the next START FRAME.
 
 All elements required for future actions
 must be visible in that END FRAME.
+
+Style, camera perspective, and audio state
+must remain consistent into the next clip.
 
 END TEMPLATE
