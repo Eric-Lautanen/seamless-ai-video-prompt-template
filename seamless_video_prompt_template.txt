@@ -760,6 +760,5 @@ Between Clip N and Clip N+1:
 ☐ Eye trace considered for viewer attention flow
 ☐   All elements used in Clip N+1 were visible in Clip N END FRAME
 
-
 ═══════════════════════════════════════════════════════════════════════════════
 END OF TEMPLATE
