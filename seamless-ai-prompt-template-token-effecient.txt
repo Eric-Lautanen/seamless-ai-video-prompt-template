@@ -6,97 +6,128 @@ QUICK INPUT FORM
 ────────────────────────
 
 CONTENT TYPE:
-[Genre, style, narrative intent, visual detail]
+[Genre, style, narrative intent]
 
 DURATION:
-[Total full video duration in seconds]
+[Total video duration in seconds]
 
 CLIP LENGTH:
 [Length of each clip in seconds]
 
-────────────────────────
-OPTIONAL DURATION EXTENSION (OFF BY DEFAULT)
-────────────────────────
-
-If scene cannot realistically fit duration:
-
-- AI MAY propose extension BEFORE clip generation
-- Must be MINIMUM required
-- Whole seconds only
-- Cannot exceed +30%
-- Clip length unchanged unless justified
-- Once extended → duration LOCKED
-
-If no extension required → use original duration exactly.
+CONTINUITY MODE:
+[CONTINUOUS / STRICT / EVOLVING]
 
 ────────────────────────
-AI EXECUTION RULES
+DURATION EXTENSION (OPTIONAL)
 ────────────────────────
 
-Upload template → Prefill only  
-Say "run" → Generate all clips  
-Say "prefill" → Fill only  
+If scene cannot realistically fit:
+
+- May extend BEFORE generation
+- Minimum required only
+- Whole seconds
+- ≤30%
+- Locks once declared
+
+If not needed → original duration enforced.
 
 ────────────────────────
-ARTIFACT RULES
+EXECUTION RULES
 ────────────────────────
 
-- ONE artifact per clip
-- ONE fenced code block per artifact
-- No combined clips
-- Filename: clip_[#]_of_[#].txt
-- Must copy in one action
-- No prompts directly in chat
+Upload → Prefill only  
+Say "run" → Generate clips  
+
+- One artifact per clip  
+- One fenced block per artifact  
+- Filename: clip_[#]_of_[#].txt  
+- No combined clips  
+- No prompts directly in chat  
 
 ────────────────────────
-CRITICAL OUTPUT RULES
+CORE STRUCTURE
 ────────────────────────
 
-- No shortcuts ("same as above", etc.)
-- All required sections fully restated each clip
-- No blank fields
-- No abbreviations
-- ENVIRONMENT & SUBJECTS copied verbatim each clip (unless EVOLVING mode)
-- Same seed for ALL clips
-- Duration locked after generation begins
-- No per-clip time stretching
-
-Repetition is intentional. Do not compress or optimize repetition.
-
-────────────────────────
-CORE CONTINUITY RULES
-────────────────────────
-
-- Duration ÷ Clip Length = total clips
-- Clip 2+ START FRAME = final frame of previous clip
-- Continuity exists ONLY through visible frame inheritance
-- No implicit resets or rebuilds
+- Duration ÷ Clip Length = total clips  
+- Same seed for ALL clips  
+- Clip 2+ START FRAME = previous END FRAME  
+- Continuity exists ONLY through visible frame inheritance  
+- No implicit resets or rebuilds  
 
 ────────────────────────
 VISIBILITY CONTINUITY LOCK
-(CONTINUOUS MODE ONLY — MANDATORY)
+(CONTINUOUS / STRICT / EVOLVING)
 ────────────────────────
 
-In CONTINUOUS mode:
+Any element used in the next clip
+must be visible in the current clip END FRAME.
 
-Any character, body part, prop, device, VFX, light source,
-reflection, silhouette, or environmental element
-that will appear OR be used in the next clip
-MUST be visible in the final frame of the current clip.
+Includes:
+- Characters
+- Body parts
+- Props
+- Devices
+- VFX
+- Light sources
+- Reflections
+- Silhouettes
+- Environmental elements
+
+Nothing may appear from non-existence.
+No off-screen implied presence.
+Partial visibility counts.
+Silhouettes count.
+
+If used next → must be visible now.
+
+────────────────────────
+LITE PERSISTENCE RULE
+────────────────────────
+
+All elements visible in the first clip
+become established baseline elements.
+
+Any element introduced in any clip
+must remain visually consistent and present
+in all subsequent clips
+until it is no longer required for the full sequence.
 
 Rules:
 
-- Nothing may "enter existence" at a new clip start
-- No off-screen implied presence
-- No new body parts without prior movement into frame
-- Silhouettes count as visible
-- Partial visibility counts
-- If used next clip → must be visible now
+- No silent disappearance
+- No silent substitution
+- No unexplained design change
+- No object leaving frame unless physically shown
+- No wearable item changing appearance
 
-The final frame must intentionally stage
-all elements required for the next clip.
+If an element will not be needed later,
+its removal must be shown on-screen before disappearance.
 
-If not visible → continuity invalid.
+Presence must remain continuous.
+Identity must remain consistent.
+
+────────────────────────
+MODE RULES
+────────────────────────
+
+CONTINUOUS:
+- Environment locked
+- Subjects locked
+
+STRICT:
+- Everything in CONTINUOUS PLUS:
+  - No lighting drift
+  - No color grade shift
+  - No focal length change
+  - No object repositioning unless animated
+  - No aesthetic reinterpretation
+
+EVOLVING:
+- Controlled physical progression allowed
+- Changes must be gradual and causally justified
+- Any evolving element must be visible before full change
+- No teleportation
+- No abrupt environment rewrite
 
 ────────────────────────
 TEMPORAL CONSISTENCY
@@ -104,38 +135,22 @@ TEMPORAL CONSISTENCY
 
 - Motion continues smoothly
 - No position jumps without cut
-- Facing direction preserved unless explicitly changed
+- Facing direction preserved unless changed intentionally
 - Actions complete realistically
 - Background motion maintains momentum
 
 ────────────────────────
-DURATION FEASIBILITY CHECK (MANDATORY)
-────────────────────────
-
-Before generating clips:
-
-1. Evaluate realism of:
-   - Actions
-   - Camera movement
-   - Dialogue pacing
-   - Interactions
-   - Continuity constraints
-
-2. If fits → use original duration
-3. If not → calculate minimum extension (≤30%), declare and lock
-
-────────────────────────
-DURATION RESOLUTION (DECLARE ONCE)
+DURATION RESOLUTION
 ────────────────────────
 
 Original Duration:
-[XX seconds]
+[XX]
 
 Extension:
-[None] OR [+X seconds — justification]
+[None] OR [+X seconds]
 
 Final Locked Duration:
-[XX seconds]
+[XX]
 
 Total Clips:
 [X]
@@ -146,10 +161,13 @@ FINAL FRAME REQUIREMENT
 
 Each clip MUST end with a fully described END FRAME.
 
-That END FRAME becomes the literal START FRAME of the next clip.
+That END FRAME becomes the literal START FRAME
+of the next clip.
 
-The END FRAME must visually contain all elements required
-for the next clip’s declared actions.
+The END FRAME must visually contain
+all elements required for subsequent actions.
+
+Failure to stage required elements invalidates continuity.
 
 ────────────────────────
 END TEMPLATE
