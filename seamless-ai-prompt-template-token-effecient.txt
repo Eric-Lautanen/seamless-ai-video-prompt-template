@@ -1,174 +1,129 @@
-# SEAMLESS AI VIDEO PROMPT GENERATOR — TOKEN EFFECIENCY IN MIND
-# CONTINUITY PRIORITY EDITION
+# SEAMLESS AI VIDEO PROMPT GENERATOR — TOKEN EFFECIENT
 
-────────────────────────
-QUICK INPUT FORM
-────────────────────────
+QUICK INPUT
 
 CONTENT TYPE:
 [Genre, style, narrative intent]
 
 DURATION:
-[Total video duration in seconds]
+[Total seconds]
 
 CLIP LENGTH:
-[Length of each clip in seconds]
+[Seconds per clip]
 
 CONTINUITY MODE:
 [CONTINUOUS / STRICT / EVOLVING]
 
-────────────────────────
 DURATION EXTENSION (OPTIONAL)
-────────────────────────
 
-If scene cannot realistically fit:
-
-- May extend BEFORE generation
-- Minimum required only
+If scene cannot fit:
+- Extend BEFORE generation
+- Minimum required
 - Whole seconds
 - ≤30%
-- Locks once declared
+- Lock once declared
 
-If not needed → original duration enforced.
+If not required → use original duration exactly.
 
-────────────────────────
-EXECUTION RULES
-────────────────────────
+EXECUTION
 
-Upload → Prefill only  
-Say "run" → Generate clips  
+Upload → Prefill only
+Say "run" → Generate all clips
 
-- One artifact per clip  
-- One fenced block per artifact  
-- Filename: clip_[#]_of_[#].txt  
-- No combined clips  
-- No prompts directly in chat  
+OUTPUT REQUIREMENTS (MANDATORY)
 
-────────────────────────
+- Generate EXACTLY one artifact per clip.
+- Each artifact must contain EXACTLY one fenced code block.
+- The code block must contain the complete prompt for that clip.
+- Do not combine clips in one artifact.
+- Do not output prompts directly in chat.
+- Filename format: clip_[number]_of_[total].txt
+- Each prompt must be copyable in one action.
+- If any clip is not isolated in its own artifact, output is invalid.
+
 CORE STRUCTURE
-────────────────────────
 
-- Duration ÷ Clip Length = total clips  
-- Same seed for ALL clips  
-- Clip 2+ START FRAME = previous END FRAME  
-- Continuity exists ONLY through visible frame inheritance  
-- No implicit resets or rebuilds  
+- Duration ÷ Clip Length = total clips
+- Same seed for all clips
+- Clip 2+ START FRAME = previous END FRAME
+- Continuity exists only through visible frame inheritance
+- No implicit resets or rebuilds
 
-────────────────────────
-VISIBILITY CONTINUITY LOCK
-(CONTINUOUS / STRICT / EVOLVING)
-────────────────────────
+VISIBILITY LOCK
 
-Any element used in the next clip
-must be visible in the current clip END FRAME.
+Anything used in the next clip must be visible in the current END FRAME.
 
 Includes:
-- Characters
-- Body parts
-- Props
-- Devices
-- VFX
-- Light sources
-- Reflections
-- Silhouettes
-- Environmental elements
+Characters, body parts, props, devices, VFX,
+light sources, reflections, silhouettes, environment elements.
 
-Nothing may appear from non-existence.
+No element may appear from non-existence.
 No off-screen implied presence.
-Partial visibility counts.
-Silhouettes count.
+Partial visibility valid.
+If used next → visible now.
 
-If used next → must be visible now.
+PERSISTENCE RULE (LITE)
 
-────────────────────────
-LITE PERSISTENCE RULE
-────────────────────────
+All elements visible in Clip 1 establish baseline state.
 
-All elements visible in the first clip
-become established baseline elements.
+Any element introduced must:
+- Remain present
+- Remain visually consistent
+- Remain until no longer needed in the full sequence
 
-Any element introduced in any clip
-must remain visually consistent and present
-in all subsequent clips
-until it is no longer required for the full sequence.
+No silent disappearance.
+No silent substitution.
+No unexplained design change.
+No object leaving frame unless shown.
+No wearable altering appearance.
 
-Rules:
+Removal must be staged on-screen before disappearance.
 
-- No silent disappearance
-- No silent substitution
-- No unexplained design change
-- No object leaving frame unless physically shown
-- No wearable item changing appearance
-
-If an element will not be needed later,
-its removal must be shown on-screen before disappearance.
-
-Presence must remain continuous.
-Identity must remain consistent.
-
-────────────────────────
 MODE RULES
-────────────────────────
 
 CONTINUOUS:
-- Environment locked
-- Subjects locked
+Environment and subjects locked.
 
 STRICT:
-- Everything in CONTINUOUS PLUS:
-  - No lighting drift
-  - No color grade shift
-  - No focal length change
-  - No object repositioning unless animated
-  - No aesthetic reinterpretation
+Everything in CONTINUOUS plus:
+- No lighting drift
+- No color grade shift
+- No focal length change
+- No object repositioning unless animated
+- No aesthetic reinterpretation
 
 EVOLVING:
-- Controlled physical progression allowed
-- Changes must be gradual and causally justified
-- Any evolving element must be visible before full change
-- No teleportation
-- No abrupt environment rewrite
+Gradual, causally justified progression allowed.
+Changes must be visible before completion.
+No teleportation.
+No abrupt scene rewrite.
 
-────────────────────────
 TEMPORAL CONSISTENCY
-────────────────────────
 
 - Motion continues smoothly
 - No position jumps without cut
-- Facing direction preserved unless changed intentionally
+- Facing direction preserved unless intentional
 - Actions complete realistically
 - Background motion maintains momentum
 
-────────────────────────
 DURATION RESOLUTION
-────────────────────────
 
-Original Duration:
+Original:
 [XX]
 
 Extension:
-[None] OR [+X seconds]
+[None] OR [+X]
 
-Final Locked Duration:
+Final Locked:
 [XX]
 
 Total Clips:
 [X]
 
-────────────────────────
-FINAL FRAME REQUIREMENT
-────────────────────────
+FINAL FRAME
 
-Each clip MUST end with a fully described END FRAME.
+Each clip must end with a fully described END FRAME.
+That END FRAME becomes the next START FRAME.
+It must contain all elements required for future actions.
 
-That END FRAME becomes the literal START FRAME
-of the next clip.
-
-The END FRAME must visually contain
-all elements required for subsequent actions.
-
-Failure to stage required elements invalidates continuity.
-
-────────────────────────
 END TEMPLATE
-────────────────────────
