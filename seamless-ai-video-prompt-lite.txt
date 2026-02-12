@@ -83,7 +83,6 @@ CRITICAL OUTPUT RULES — NO EXCEPTIONS
 - No per-clip stretching, padding, or time dilation
 
 NOTE FOR AI:
-This template intentionally repeats information.
 Repetition is required for continuity.
 Do NOT optimize, compress, or remove repetition.
 
@@ -95,429 +94,138 @@ CORE CONTINUITY RULES
 - ENVIRONMENT and SUBJECTS copied word-for-word every clip
   (ENVIRONMENT may change if using EVOLVING or PER-CLIP mode)
 - Clip 2+ START FRAME = final rendered frame of previous clip
-VISIBILITY CONTINUITY LOCK — MANDATORY (CONTINUOUS MODE ONLY)
+- Continuity exists ONLY through literal final-frame inheritance
 
-This rule enforces literal pixel inheritance between clips.
+═══════════════════════════════════════════════════════════════════════════════
+VISIBILITY & NATURAL BEHAVIOR CONTINUITY — CONTINUOUS MODE
 
-In CONTINUOUS mode:
+This rule enforces realistic continuity without robotic staging.
 
-- Any subject, body part, limb, prop, device, particle effect,
-  environmental element, silhouette, reflection, or light source
-  that will be visible OR used in the next clip
-  MUST already be visible within the final frame of the current clip.
+END-FRAME REQUIREMENT:
+- Any subject, body part, prop, device, environmental element, or light source
+  that will be visible OR used in the NEXT clip
+  MUST be visible in the FINAL FRAME of the CURRENT clip.
 
-- No element may "enter existence" at the start of a new clip.
+MID-CLIP FLEXIBILITY:
+- Elements may temporarily leave frame mid-clip.
+- Body parts may move naturally out of frame.
+- Props may be briefly occluded.
+- Natural motion is encouraged.
+- HOWEVER: If required next clip, the element MUST be visible again
+  by the final frame of the current clip.
 
-- No previously off-frame body parts may become visible unless they
-  physically moved into frame during the previous clip.
+NO FORCED STAGING:
+- Subjects must NEVER hold unnatural poses solely for continuity.
+- No “Superman arms out” positioning.
+- No rigid body locking.
+- No frozen gestures to preserve visibility.
+- Natural human behavior ALWAYS overrides mechanical staging.
 
-- If a character will speak, gesture, move, or interact in the next clip,
-  that character must be visibly present in the final frame of the current clip.
+IDENTITY PERSISTENCE ACROSS FULL SEQUENCE:
+- Any wearable item (example: wristwatch, ring, jacket),
+  hairstyle, facial hair, makeup, damage, dirt, sweat,
+  or defining feature introduced in Clip 1
+  must remain identical across ALL clips
+  unless explicitly removed within the narrative.
 
-- If a prop will be manipulated in the next clip,
-  that prop must be visible in the final frame of the current clip.
+- If a wristwatch exists in Clip 1,
+  it must be the SAME wristwatch in all later clips.
+- No silent swaps.
+- No design drift.
+- No color shifts.
+- No spontaneous appearance/disappearance.
 
-- Silhouettes count as valid visibility.
-- Partial visibility counts as valid inheritance.
-- Off-screen implied presence is forbidden.
+OFF-SCREEN PRESENCE RULE:
+- Off-screen implied presence does NOT count.
+- Visibility must be literal and on-frame at end if needed next clip.
 
-The AI must intentionally stage the final frame of each clip
-to include all elements required for the next clip’s actions.
+═══════════════════════════════════════════════════════════════════════════════
+TEMPORAL CONSISTENCY
 
-Failure to show required elements in the final frame invalidates continuity.
-
-- Continuity exists ONLY through start-frame image inheritance
-- No implicit resets, reinterpretations, or rebuilds
-
-TEMPORAL CONSISTENCY:
 - Motion must continue smoothly from previous clip's final frame
-- No sudden position jumps unless justified by camera cut
-- Subject facing direction must be maintained unless explicitly changed
-- Ongoing actions must complete realistically (no abrupt stops/starts)
-- Background elements in motion must maintain momentum
-
-═══════════════════════════════════════════════════════════════════════════════
-DURATION FEASIBILITY CHECK — MANDATORY
-
-Before generating clips, the AI MUST:
-
-1. Evaluate whether the following can realistically fit:
-   - Declared scene actions
-   - Camera movement complexity
-   - Dialogue pacing
-   - Subject motion and interactions
-   - Continuity and composition locks
-
-2. If the scene DOES fit:
-   - Use the user-specified duration exactly
-
-3. If the scene DOES NOT fit:
-   - Calculate the MINIMUM viable extended duration
-   - Ensure extension does NOT exceed 30% of original duration
-   - Declare the extension explicitly
-   - Lock the new duration BEFORE clip calculation
-
-═══════════════════════════════════════════════════════════════════════════════
-DURATION RESOLUTION (DECLARED ONCE)
-
-Original requested duration:
-[XX seconds]
-
-Extension applied:
-[None] OR [+X seconds — justification]
-
-Final locked duration:
-[XX seconds]
-
-Final clip count:
-[Y clips]
-
-═══════════════════════════════════════════════════════════════════════════════
-SUBJECTS (LOCKED — CLIP-VISIBLE ONLY)
-
-IMPORTANT:
-- Subject descriptions define ONLY what may appear within the camera frame
-- Any body parts, clothing, features, or props NOT described MUST NOT appear
-- Subject descriptions are immutable once declared
-- Subject descriptions do NOT imply full-body visibility
-- Camera MUST NOT reframe to reveal undisclosed areas
-- Subjects not listed in a clip do not exist in any form in that clip
-
-Subject 1 — GLOBAL DESCRIPTION (LOCKED):
-[Full immutable description: age or scale, form, face or surface,
-materials, colors, textures, clothing or components, props,
-default posture, identifying features.
-NO actions. NO positioning. NO temporal language.]
-
-Subject 2 — GLOBAL DESCRIPTION (LOCKED):
-[Same rules as Subject 1]
-
-(Repeat as needed. Do not renumber or rewrite once set.)
-
-═══════════════════════════════════════════════════════════════════════════════
-ENVIRONMENT STRATEGY
-
-[Select one:]
-- STATIC: Same environment for all clips (original behavior)
-- EVOLVING: Environment changes across clips (specify transition plan)
-- PER-CLIP: Each clip has distinct environment (list per clip below)
-
-═══════════════════════════════════════════════════════════════════════════════
-ENVIRONMENT DEFINITIONS
-
-If STATIC:
-[Single environment description — copied to all clips]
-
-If EVOLVING:
-Base Environment:
-[Starting environment description]
-
-Evolution Plan:
-Clip 1-X: [environment state description]
-Clip X-Y: [transition description — what changes and how]
-Clip Y-Z: [final environment state description]
-
-If PER-CLIP:
-Clip 1 Environment:
-[Complete standalone description: exact room dimensions, walls, floor, ceiling,
-architecture, furniture, props, exact placement, lighting sources,
-color temperature, background elements.]
-
-Clip 2 Environment:
-[Complete standalone description with same level of detail]
-
-Clip 3 Environment:
-[Complete standalone description with same level of detail]
-
-[Continue for each clip as needed...]
-
-CRITICAL RULE FOR ALL MODES:
-- Each clip's environment description must be COMPLETE and STANDALONE
-- NO references like "same as Clip 1" or "previous environment"
-- If EVOLVING mode: AI must generate complete environment text for each clip
-  based on the evolution plan
-- Describe ONLY what exists in that specific clip
-- No implied extensions or off-screen areas
-
-═══════════════════════════════════════════════════════════════════════════════
-CAMERA MOVEMENT RULES — CRITICAL
-
-CONTINUITY REQUIREMENTS:
-- Camera movement must be explicitly stated for EVERY clip
-- If no movement intended, state "camera remains completely static"
-- Camera position from previous clip's end = this clip's start
-- Impossible movements (sudden position jumps) forbidden unless using CUTS mode
-
-MOVEMENT SPECIFICATIONS MUST INCLUDE:
-- Type: pan, tilt, dolly, truck, pedestal, zoom, orbit, static
-- Direction: left, right, up, down, in, out, clockwise, counterclockwise
-- Speed: slow, medium, fast, or specific (e.g., "2 degrees per second")
-- Arc or path if relevant (e.g., "smooth 45-degree arc")
-
-FORBIDDEN UNLESS EXPLICIT:
-- Sudden reframing between clips
-- Unintended drift or shake
-- Random zoom in/out
-- Camera "finding" better composition
-- Auto-correction of framing
-
-CONSISTENCY LOCKS:
-- If Clip 1 uses handheld style, all clips must maintain this
-- If Clip 1 uses steady/locked-off camera, maintain throughout
-- Focal length must remain constant unless zoom is explicit
-- Camera height must remain constant unless pedestal movement specified
-
-If the user does not explicitly provide a 6-digit seed:
-- Generate ONE random 6-digit integer (000000–999999)
-- Declare it here
-- Use this EXACT seed for ALL clips
-- Never regenerate, modify, or vary it
-
-═══════════════════════════════════════════════════════════════════════════════
-STYLE (LOCKED)
-
-[Visual aesthetic: realism level, lens style, rendering look,
-grain, contrast, motion characteristics]
-
-═══════════════════════════════════════════════════════════════════════════════
-ASPECT RATIO (LOCKED)
-
-If specified by the user, use exactly.
-If NOT specified, default to 16:9.
-This value MUST be written explicitly in EVERY clip.
-
-═══════════════════════════════════════════════════════════════════════════════
-SOUND (LOCKED STRUCTURE, VARIABLE CONTENT)
-
-Music:
-[name or style, or None] / [%]
-
-Ambient:
-[continuous background sound or None] / [%]
-
-Foley:
-[specific sounds with timing] / [%]
-
-Transitions:
-[how sound connects between clips]
-
-DIALOGUE TIMING RULES:
-
-When multiple subjects are in conversation:
-- Dialogue should consume 80% or more of the clip duration
-- Avoid awkward silence at beginning or end of clips
-- Example: In a 6-second clip, dialogue should span ~4.8-6 seconds
-- Timing notation: [Subject name: "dialogue" (0.2s-5.8s)] where numbers indicate
-  when speech starts and ends within the clip
-
-For single-subject dialogue or monologue:
-- Allow natural pacing with pauses if appropriate
-- Still avoid dead air at clip boundaries
-
-Dialogue-free clips:
-- No minimum timing requirements
-- Ensure sound design fills the sonic space appropriately
-
-DIALOGUE CONTINUITY BETWEEN CLIPS:
-- If conversation continues across clips, speech should pick up immediately
-  or within 0.5 seconds of clip start
-- Final word of previous clip → first word of next clip should feel natural
-- No unintended gaps that break conversational rhythm
-
-═══════════════════════════════════════════════════════════════════════════════
-SCENE / CONCEPT (GLOBAL)
-
-[What happens across the full sequence.
-Include dialogue plan per clip if applicable.]
-
-═══════════════════════════════════════════════════════════════════════════════
-CONTINUITY MODE
-
-[Continuous / Cuts]
-
-If CUTS:
-[Cut motivation — time jump, perspective shift, etc.]
+- No sudden position jumps
+- Ongoing actions must complete naturally
+- Momentum must follow physical realism
+- Micro-movements (breathing, blinking, weight shifts) encouraged
 
 ═══════════════════════════════════════════════════════════════════════════════
 SCENE COMPOSITION LOCK — CRITICAL
 
-- Clip 1 defines the COMPLETE and FINAL set of visible elements
-  (unless using EVOLVING or PER-CLIP environment mode)
-- From Clip 2 onward (in STATIC or CONTINUOUS mode):
-  - NO new objects, props, furniture, screens, UI, text,
-    lights, particles, reflections, or background elements may appear
+- Clip 1 defines all visible elements (STATIC mode)
+- From Clip 2 onward (STATIC mode):
+  - NO new objects may appear
   - NO new subjects may enter
-  - NO objects may disappear unless explicitly animated out earlier
-  - NO new areas may be revealed via camera movement
-- Later clips may ONLY show:
-  - Movement of already-visible elements
-  - State changes of already-visible elements
-  - Lighting changes affecting ONLY existing light sources
-- All violations MUST be prevented via negative prompts
+  - NO objects may disappear unless visibly removed earlier
+  - Camera may not reveal undisclosed areas
 
-EXCEPTION FOR EVOLVING/PER-CLIP MODES:
-- Environment changes are ALLOWED as specified in ENVIRONMENT DEFINITIONS
-- Subject descriptions remain LOCKED across all clips
-- New elements may appear ONLY if they are part of the declared environment
-  for that specific clip
+Allowed:
+- Natural repositioning
+- Temporary occlusion
+- Lighting interaction changes
+- Emotional expression shifts
+- Realistic body language changes
 
 ═══════════════════════════════════════════════════════════════════════════════
-CRITICAL CONSISTENCY RULES — MANDATORY
+FINAL FRAME REQUIREMENTS
 
-The AI MUST enforce these rules in EVERY clip via negative prompts and descriptions:
-
-FORBIDDEN ENDINGS:
-- Clips must NEVER fade to black
-- Clips must NEVER fade to white
-- Clips must NEVER end in darkness
-- Final frame must contain visible, lit content matching the scene
-
-FORBIDDEN TRANSITIONS:
-- No fade-ins at clip start (except Clip 1 if explicitly requested)
-- No fade-outs at clip end
-- No white flashes between clips
-- No "cinematic" fades unless explicitly in the scene description
-- No automatic dimming or brightening
-
-SCALE & PROPORTION LOCKS:
-- Subject size relative to frame must remain consistent across clips
-- If Subject 1 occupies 40% of frame height in Clip 1, maintain this proportion
-- No unintended zooming or scaling between clips
-- Camera distance changes ONLY via explicit camera movement description
-
-IDENTITY CONSISTENCY:
-- Facial features must not drift or morph
-- Clothing colors, patterns, and materials must remain identical
-- Hair style, length, and color must not change
-- Body proportions must remain constant
-- Props must maintain size, color, and material properties
-
-LIGHTING CONSISTENCY (unless EVOLVING environment specifies changes):
-- Light source positions must not shift
-- Color temperature must remain constant
-- Shadow directions must stay consistent with light sources
-- Ambient light levels must not fluctuate randomly
-
-PHYSICS & MOTION:
-- Gravity direction must remain consistent
-- Object momentum must follow realistic physics
-- No sudden teleportation of subjects or objects
-- No objects floating unless explicitly described as suspended
-
-FRAME BOUNDARIES:
-- Subjects must not suddenly exit frame unless movement dictates it
-- Subjects must not suddenly appear in frame unless entering from off-screen
-- Partial subjects (cut off by frame edge) must remain partially visible
-  in the same way unless camera moves
+- Every clip must end on a stable, usable frame
+- Final frame must be fully lit and readable
+- No fades to black
+- No fade-outs
+- No white flashes
+- No cinematic dimming
+- Final frame must intentionally stage elements required for next clip
+- Staging must appear natural and motivated
 
 ═══════════════════════════════════════════════════════════════════════════════
 NEGATIVE PROMPT RULES — CLIP-SPECIFIC ONLY
 
 MAXIMUM: 10 negative prompts per clip
-SCOPE: Only address risks specific to THIS clip
+Each clip must analyze its own failure risks.
 
-NO GLOBAL NEGATIVES:
-- Do not carry forward negative prompts from previous clips
-- Do not create a reusable base list
-- Each clip gets a fresh analysis
+Do NOT reuse negative prompts.
 
-═══════════════════════════════════════════════════════════════════════════════
-PER-CLIP FAILURE ANALYSIS — MANDATORY (INTERNAL STEP)
-
-Before writing EACH clip prompt, the AI MUST:
-
-1. Examine the inherited start-frame image (or declared environment for that clip)
-2. Identify the TOP 10 risks specific to THIS clip:
-   - Elements that might appear but shouldn't (based on this clip's environment)
-   - Elements that might disappear but should persist
-   - Geometry, scale, or layout changes unique to this clip's composition
-   - Lighting inconsistencies specific to this clip's scene state
-   - Areas that might be revealed beyond this clip's environment scope
-   - Identity drift risks specific to this clip's subject positioning/actions
-   - Transition artifacts specific to this clip boundary
-3. Convert the TOP 10 risks into explicit negative prompt items
-4. Write these 10 items as the complete negative prompt for this clip
-5. Maximum 10 items — prioritize the most likely failures
-
-This analysis is NOT output separately.
-Its results appear ONLY in the clip's negative prompt section.
-
-CRITICAL: Each clip's negative prompt is INDEPENDENT and LIMITED TO 10 ITEMS.
+Negative prompts must:
+- Prevent identity drift
+- Prevent object swaps
+- Prevent lighting shifts
+- Prevent scale inconsistencies
+- Prevent new object intrusion
+- Prevent disappearance of required elements
+- Prevent robotic posing
 
 ═══════════════════════════════════════════════════════════════════════════════
-OUTPUT FORMAT (AI GENERATES THIS)
+OUTPUT FORMAT
 
-For each clip, create a NEW ARTIFACT with filename: clip_[number]_of_[total].txt
+For each clip create a NEW ARTIFACT:
+clip_[number]_of_[total].txt
 
-The artifact must contain ONLY a single fenced code block with:
+The artifact must contain ONLY one fenced code block with:
 
-```
-[STYLE — full text],
+[STYLE],
 
-[ENVIRONMENT — complete environment description for THIS specific clip,
-copied word-for-word from ENVIRONMENT DEFINITIONS],
+[ENVIRONMENT — full text for this clip],
 
-[SUBJECTS — ONLY subjects present in this clip,
-each copied word-for-word from locked descriptions],
+[SUBJECTS — only subjects present, copied verbatim],
 
-[Camera movement — MUST specify exact movement
-OR explicitly state "remains static"],
+[Camera movement — exact description or “remains static”],
 
-[Aspect ratio — explicit],
+[Aspect ratio],
 
-[Special notes for THIS clip —
-eye direction, micro-expressions, precise interactions]
+[Special notes — micro-expression, gaze direction, body language,
+natural behavior notes, required end-frame visibility staging],
 
 Sound design:
-Music: [exact or None] / [%]
-Ambient: [exact or None] / [%]
-Foley: [exact sounds with timing] / [%]
-Dialogue: [Subject name: "exact line" (start_time-end_time)] OR None
-  Example: [Subject 1: "Hello there" (0.2s-2.1s), Subject 2: "Hi" (2.5s-3.2s)]
-  Multi-subject conversations: ensure dialogue spans 80%+ of clip duration
-Transitions: [exact connection]
+Music:
+Ambient:
+Foley:
+Dialogue:
+Transitions:
 
-Negative prompt (10 items maximum, THIS CLIP ONLY):
-[10 specific negative prompts addressing this clip's unique failure risks,
-comma separated, no carryover from previous clips]
+Negative prompt (max 10, clip-specific):
 
 Seed:
-[Exact 6-digit seed]
-```
-
-═══════════════════════════════════════════════════════════════════════════════
-CLIP GENERATION NOTES FOR AI
-
-- Clip 1: establishes ALL visible elements (in STATIC mode)
-  OR establishes elements per its specific environment definition (in EVOLVING/PER-CLIP modes)
-- Clip 2+: absolutely NO new elements may appear beyond what's in that clip's
-  environment definition
-- All prevention handled via negative prompts (max 10 per clip)
-- NEVER assume persistence unless enforced
-- NEVER use shortcuts or references to previous clips
-- NEVER reuse negative prompts from previous clips
-- Each clip gets fresh failure analysis → fresh negative prompts
-- Each clip's prompt must be completely standalone and copyable
-- Dialogue ~15–20 words max per clip
-- Multi-subject conversations: dialogue must span 80%+ of clip duration
-- No implied off-screen presence
-- Environment text must be complete for each clip, even if identical to previous clips
-- The final frame must intentionally stage all elements required for the next clip’s declared actions.
-
-DIALOGUE PACING VERIFICATION:
-Before writing each conversational clip, verify:
-- Clip length: [X] seconds
-- Minimum dialogue duration: [X × 0.8] seconds
-- Dialogue timing specified explicitly in sound design
-- No awkward pauses at clip start or end
-- Conversational flow maintained from previous clip
-
-FINAL FRAME REQUIREMENTS:
-- Every clip must end with a fully visible, properly lit frame
-- Final frame must show subjects/environment clearly
-- No progressive darkening toward clip end
-- No "cinematic" fade unless explicitly part of the scene
-- Last frame = next clip's start frame (must be usable)
+[6-digit number, identical across all clips]
 
 ═══════════════════════════════════════════════════════════════════════════════
 END OF TEMPLATE
