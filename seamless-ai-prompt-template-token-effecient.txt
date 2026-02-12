@@ -1,4 +1,4 @@
-# SEAMLESS AI VIDEO PROMPT GENERATOR — TOKEN EFFECIENT
+# SEAMLESS AI VIDEO PROMPT GENERATOR — LITE
 
 QUICK INPUT
 
@@ -46,40 +46,58 @@ CORE STRUCTURE
 - Duration ÷ Clip Length = total clips
 - Same seed for all clips
 - Clip 2+ START FRAME = previous END FRAME
-- Continuity exists only through visible frame inheritance
+- Continuity enforced at clip boundaries
 - No implicit resets or rebuilds
 
-VISIBILITY LOCK
+VISIBILITY LOCK (BOUNDARY-BASED)
 
-Anything used in the next clip must be visible in the current END FRAME.
+Anything required in the next clip
+must be visible in the current END FRAME.
 
-Includes:
-Characters, body parts, props, devices, VFX,
-light sources, reflections, silhouettes, environment elements.
+Elements may temporarily leave frame
+or become occluded mid-clip
+if natural to motion or blocking.
 
-No element may appear from non-existence.
-No off-screen implied presence.
-Partial visibility valid.
-If used next → visible now.
+However:
 
-PERSISTENCE RULE (LITE)
+If needed in future clips,
+they must be visible again by END FRAME.
+
+No element may appear from non-existence
+at the start of a new clip.
+
+PERSISTENCE RULE (LITE — FLEXIBLE)
 
 All elements visible in Clip 1 establish baseline state.
 
 Any element introduced must:
-- Remain present
+- Remain part of the scene
 - Remain visually consistent
-- Remain until no longer needed in the full sequence
+- Exist across the sequence
+until no longer needed
+
+Temporary occlusion or frame exit is allowed
+if caused by natural movement.
+
+Permanent removal must be shown on-screen.
 
 No silent disappearance.
 No silent substitution.
 No unexplained design change.
-No object leaving frame unless shown.
 No wearable altering appearance.
 
-Removal must be staged on-screen before disappearance.
+NATURALISM PRIORITY
 
-Identity includes color, material, size, and design.
+Continuity must not override realistic human behavior.
+
+- Arms swing naturally when walking.
+- Weight shifts follow human biomechanics.
+- Blocking follows believable cinematic logic.
+- No rigid posing to preserve visibility.
+- No mechanical staging for rule compliance.
+
+Natural motion is preferred.
+Continuity is enforced at clip boundaries.
 
 MODE RULES
 
@@ -122,10 +140,13 @@ Final Locked:
 Total Clips:
 [X]
 
-FINAL FRAME
+FINAL FRAME REQUIREMENT
 
 Each clip must end with a fully described END FRAME.
+
 That END FRAME becomes the next START FRAME.
-It must contain all elements required for future actions.
+
+All elements required for future actions
+must be visible in that END FRAME.
 
 END TEMPLATE
