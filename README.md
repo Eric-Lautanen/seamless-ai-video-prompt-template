@@ -124,6 +124,8 @@ For the absolute best results with modern models (Veo, Sora, Gen-3 Alpha):
 * Pika Labs
 * OpenAI Sora (when available)
 * Google Veo (when available)
+* Grok Imagine
+* Wan AI
 
 ---
 
