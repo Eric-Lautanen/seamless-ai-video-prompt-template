@@ -79,6 +79,8 @@ No wearable altering appearance.
 
 Removal must be staged on-screen before disappearance.
 
+Identity includes color, material, size, and design.
+
 MODE RULES
 
 CONTINUOUS:
