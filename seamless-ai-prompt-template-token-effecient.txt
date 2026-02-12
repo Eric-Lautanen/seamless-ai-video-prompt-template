@@ -11,6 +11,9 @@ DURATION:
 CLIP LENGTH:
 [Seconds per clip]
 
+AUDIO:
+[Audio options]
+
 CONTINUITY MODE:
 [CONTINUOUS / STRICT / EVOLVING]
 
