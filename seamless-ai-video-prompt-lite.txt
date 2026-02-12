@@ -164,6 +164,30 @@ Subject 2 — GLOBAL DESCRIPTION (LOCKED):
 (Repeat as needed. Do not renumber or rewrite once set.)
 
 ═══════════════════════════════════════════════════════════════════════════════
+
+VISIBILITY CONTINUITY (LOCK — MANDATORY)
+
+In CONTINUOUS mode:
+
+Any subject, body part, prop, device, limb, particle, or environmental element that will be visible or used in the next clip MUST already be visible within the final frame of the current clip.
+
+No element may “enter existence” at the start of a new clip.
+
+No previously off-frame body parts may become visible unless they physically moved into frame during the previous clip.
+
+If a character will speak, move, gesture, or interact in the next clip, that character must be visibly present in the final frame of the current clip.
+
+If a prop will be manipulated in the next clip, that prop must be visible in the final frame of the current clip.
+
+Silhouettes count as visible.
+
+Partial visibility counts as valid inheritance.
+
+Off-screen implied presence is forbidden.
+
+Failure to show required elements in the final frame invalidates continuity.
+
+═══════════════════════════════════════════════════════════════════════════════
 ENVIRONMENT STRATEGY
 
 [Select one:]
@@ -486,6 +510,7 @@ FINAL FRAME REQUIREMENTS:
 - No progressive darkening toward clip end
 - No "cinematic" fade unless explicitly part of the scene
 - Last frame = next clip's start frame (must be usable)
+- The final frame must intentionally stage all elements required for the next clip’s actions.
 
 ═══════════════════════════════════════════════════════════════════════════════
 END OF TEMPLATE
