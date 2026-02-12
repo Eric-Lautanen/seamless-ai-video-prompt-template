@@ -8,14 +8,16 @@ Generate professional, multi-clip AI video sequences with perfect consistency. T
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![AI Video](https://img.shields.io/badge/GenAI-Video%20Workflow-blue)](https://github.com/Eric-Lautanen/seamless-ai-video-prompt-template)
+
+## 🤖 Compatible LLMs (The "Brain")
+This template is optimized for the following 2026 flagship models. Upload the `.txt` template of your choice and say **"Prefill"** to begin.
+
 [![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)](https://chatgpt.com)
 [![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white)](https://claude.ai)
 [![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)](https://gemini.google.com)
 [![DeepSeek](https://img.shields.io/badge/DeepSeek-4D6BFE?style=for-the-badge&logo=deepseek&logoColor=white)](https://chat.deepseek.com)
 [![Grok](https://img.shields.io/badge/Grok-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/i/grok)
 [![Qwen](https://img.shields.io/badge/Qwen-615ced?style=for-the-badge&logo=alibabacloud&logoColor=white)](https://chat.qwenlm.ai)
-
----
 
 ---
 
