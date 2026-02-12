@@ -1,0 +1,156 @@
+# SEAMLESS AI VIDEO PROMPT GENERATOR — LITE
+# CONTINUITY PRIORITY EDITION
+
+────────────────────────
+QUICK INPUT FORM
+────────────────────────
+
+CONTENT TYPE:
+[Genre, style, narrative intent, visual detail]
+
+DURATION:
+[Total full video duration in seconds]
+
+CLIP LENGTH:
+[Length of each clip in seconds]
+
+────────────────────────
+OPTIONAL DURATION EXTENSION (OFF BY DEFAULT)
+────────────────────────
+
+If scene cannot realistically fit duration:
+
+- AI MAY propose extension BEFORE clip generation
+- Must be MINIMUM required
+- Whole seconds only
+- Cannot exceed +30%
+- Clip length unchanged unless justified
+- Once extended → duration LOCKED
+
+If no extension required → use original duration exactly.
+
+────────────────────────
+AI EXECUTION RULES
+────────────────────────
+
+Upload template → Prefill only  
+Say "run" → Generate all clips  
+Say "prefill" → Fill only  
+
+────────────────────────
+ARTIFACT RULES
+────────────────────────
+
+- ONE artifact per clip
+- ONE fenced code block per artifact
+- No combined clips
+- Filename: clip_[#]_of_[#].txt
+- Must copy in one action
+- No prompts directly in chat
+
+────────────────────────
+CRITICAL OUTPUT RULES
+────────────────────────
+
+- No shortcuts ("same as above", etc.)
+- All required sections fully restated each clip
+- No blank fields
+- No abbreviations
+- ENVIRONMENT & SUBJECTS copied verbatim each clip (unless EVOLVING mode)
+- Same seed for ALL clips
+- Duration locked after generation begins
+- No per-clip time stretching
+
+Repetition is intentional. Do not compress or optimize repetition.
+
+────────────────────────
+CORE CONTINUITY RULES
+────────────────────────
+
+- Duration ÷ Clip Length = total clips
+- Clip 2+ START FRAME = final frame of previous clip
+- Continuity exists ONLY through visible frame inheritance
+- No implicit resets or rebuilds
+
+────────────────────────
+VISIBILITY CONTINUITY LOCK
+(CONTINUOUS MODE ONLY — MANDATORY)
+────────────────────────
+
+In CONTINUOUS mode:
+
+Any character, body part, prop, device, VFX, light source,
+reflection, silhouette, or environmental element
+that will appear OR be used in the next clip
+MUST be visible in the final frame of the current clip.
+
+Rules:
+
+- Nothing may "enter existence" at a new clip start
+- No off-screen implied presence
+- No new body parts without prior movement into frame
+- Silhouettes count as visible
+- Partial visibility counts
+- If used next clip → must be visible now
+
+The final frame must intentionally stage
+all elements required for the next clip.
+
+If not visible → continuity invalid.
+
+────────────────────────
+TEMPORAL CONSISTENCY
+────────────────────────
+
+- Motion continues smoothly
+- No position jumps without cut
+- Facing direction preserved unless explicitly changed
+- Actions complete realistically
+- Background motion maintains momentum
+
+────────────────────────
+DURATION FEASIBILITY CHECK (MANDATORY)
+────────────────────────
+
+Before generating clips:
+
+1. Evaluate realism of:
+   - Actions
+   - Camera movement
+   - Dialogue pacing
+   - Interactions
+   - Continuity constraints
+
+2. If fits → use original duration
+3. If not → calculate minimum extension (≤30%), declare and lock
+
+────────────────────────
+DURATION RESOLUTION (DECLARE ONCE)
+────────────────────────
+
+Original Duration:
+[XX seconds]
+
+Extension:
+[None] OR [+X seconds — justification]
+
+Final Locked Duration:
+[XX seconds]
+
+Total Clips:
+[X]
+
+────────────────────────
+FINAL FRAME REQUIREMENT
+────────────────────────
+
+Each clip MUST end with a fully described END FRAME.
+
+That END FRAME becomes the literal START FRAME of the next clip.
+
+The END FRAME must visually contain all elements required
+for the next clip’s declared actions.
+
+────────────────────────
+END TEMPLATE
+────────────────────────
