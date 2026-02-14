@@ -97,6 +97,36 @@ CORE CONTINUITY RULES
 - Continuity exists ONLY through literal final-frame inheritance
 
 ═══════════════════════════════════════════════════════════════════════════════
+DIALOGUE PERFORMANCE LAYER (TOKEN EFFICIENT)
+
+Applies only when dialogue exists in a clip.
+
+When dialogue is present:
+
+- Specify emotion
+- Specify tone of voice
+- Specify vocal intensity
+- Specify delivery style (whispered, strained, breathless, controlled, cold, trembling, clipped, etc.)
+- Keep descriptors concise (2–6 words per attribute max)
+- Do not over-describe unless emotion shifts mid-line
+
+Format inside the Dialogue section:
+
+Character Name (emotion, tone, intensity, delivery):
+"Dialogue line"
+
+If emotion shifts mid-line:
+
+Character Name (emotion → emotion shift, tone consistent):
+"Dialogue line"
+
+If multiple characters speak:
+Apply performance tags to each speaker individually.
+
+If no dialogue:
+Do not include performance tags.
+
+═══════════════════════════════════════════════════════════════════════════════
 VISIBILITY & NATURAL BEHAVIOR CONTINUITY — CONTINUOUS MODE
 
 This rule enforces realistic continuity without robotic staging.
@@ -220,6 +250,7 @@ Music:
 Ambient:
 Foley:
 Dialogue:
+(If dialogue exists, apply the DIALOGUE PERFORMANCE LAYER formatting)
 Transitions:
 
 Negative prompt (max 10, clip-specific):
