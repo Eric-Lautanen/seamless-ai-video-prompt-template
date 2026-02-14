@@ -85,6 +85,35 @@ Clips 2+:
 - Do NOT restate full character description unless altered visibly
 - Must still describe END FRAME clearly
 
+DIALOGUE PERFORMANCE LAYER (TOKEN EFFICIENT)
+
+Applies only when dialogue exists in a clip.
+
+When dialogue is present:
+
+- Specify emotion
+- Specify tone of voice
+- Specify vocal intensity
+- Specify delivery style (whispered, strained, breathless, controlled, cold, trembling, clipped, etc.)
+- Keep descriptors concise (2–6 words per attribute max)
+- Do not over-describe unless emotion shifts mid-line
+
+Format:
+
+Character Name (emotion, tone, intensity, delivery):
+"Dialogue line"
+
+If emotion shifts mid-line:
+
+Character Name (emotion → emotion shift, tone consistent):
+"Dialogue line"
+
+If multiple characters speak:
+Apply performance tags to each speaker individually.
+
+If no dialogue:
+Do not include this layer.
+
 VISIBILITY LOCK (BOUNDARY-BASED)
 
 Anything required in the next clip
