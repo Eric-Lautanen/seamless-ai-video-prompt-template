@@ -142,7 +142,16 @@ A: These templates are designed for general creativity. If you trigger safety re
 
 ---
 
-## 📜 License
-MIT License. Free to use for personal or commercial projects.
+## 📄 License
+
+This project is licensed under the MIT License with Commons Clause
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software—**except** you may not sell the Software itself, or
+offer any product or service that incorporates it, without explicit written
+permission from the copyright holder.
 
 **If this saves you hours of frustration, give the repo a star! ⭐**
