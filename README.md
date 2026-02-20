@@ -6,7 +6,6 @@ Generate professional, multi-clip AI video sequences with perfect consistency. T
 
 **Three versions available. Choose the one that matches your workflow.**
 
-[![License: MIT](https://img.shields.io/badge/license-MIT%20with%20Commons%20Clause-green)](https://opensource.org/licenses/MIT)
 [![AI Video](https://img.shields.io/badge/GenAI-Video%20Workflow-blue)](https://github.com/Eric-Lautanen/seamless-ai-video-prompt-template)
 
 ## 🤖 Compatible LLMs (The "Brain")
